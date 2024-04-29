@@ -1,0 +1,62 @@
+Volvamos al principio de este curso,
+cuando hablamos sobre ataques y vulnerabilidades. El tipo especial de vulnerabilidades
+que analizamos llamado "vulnerabilidades de día cero"
+es particular, ya que son desconocidas hasta aprovecharse activamente en el entorno. El potencial de estas fallas desconocidas es
+algo que deberías tener en cuenta cuando busques proteger las redes
+y los sistemas de tu empresa. Aunque es un riesgo desconocido pueden tomarse medidas para manejarlo
+y controlar el acceso a los sistemas. Nuestro objetivo general es
+la reducción de riesgos. Dos términos importantes sobre los riesgos
+de seguridad son "vectores de ataque" y "superficies de ataque". Un vector de ataque es un método
+o mecanismo por el que un atacante o software malicioso obtiene
+acceso a una red o sistema. Algunos ejemplos son los archivos adjuntos
+de correos, los protocolos o servicios de red las interfaces de red
+y las entradas del usuario. Son enfoques o rutas de acceso diferentes
+que un atacante podría usar para vulnerar los sistemas, si puede aprovecharlos. La superficie de ataque es
+la suma de todos diversos vectores de ataque de un sistema determinado. Es como la combinación
+de todas las formas en que un atacante podría interactuar con el sistema,
+más allá de las vulnerabilidades conocidas. No es posible conocer
+todas las vulnerabilidades del sistema así que presta atención a todas las vías
+que un actor externo usaría para interactuar con nuestros sistemas
+como una posible superficie de ataque. La importante es mantener las superficies
+de ataque lo más pequeñas posible. Esto reduce las posibilidades de que
+un atacante descubra una falla desconocida y vulnere nuestros sistemas. Hay muchos enfoques para aplicar
+como especialista en TI para reducir las superficies de ataque, y todos se resumen
+en simplificar los sistemas y servicios. Cuanto menos complejidad, menor
+posibilidad de tener fallas sin detectar. Así que, asegúrate de inhabilitar
+los servicios o protocolos adicionales si no son
+completamente necesarios, quítalos. Cada superficie de ataque adicional
+operativa representa una superficie que podría tener
+una vulnerabilidad no detectada. Esa vulnerabilidad podría aprovecharse
+y derivar en un riesgo. Este concepto también se aplica
+al acceso a las LCA solo permite el acceso
+cuando sea totalmente necesario. Por ejemplo,
+quizá no sea necesario que el personal tenga acceso directo a las impresoras
+desde afuera de la red local. Puedes ajustar las reglas de firewall
+para evitar ese tipo de acceso. Otra forma de mantener el sistema simple
+es reducir las implementaciones de software. En vez de tener cinco soluciones de software
+para completar cinco tareas distintas reemplázalas
+por una solución unificada, si es posible. Esa solución única debería
+requerir menos código complejo lo que reduce la cantidad
+de posibles vulnerabilidades. También asegúrate
+de inhabilitar los componentes de software y los sistemas implementados
+innecesarios o que no se usan. A través de la inhabilitación
+de las funciones que no se usan reduces aún más las superficies de ataque. No solo reduces la cantidad de formas
+en la que un atacante puede ingresar sino que también minimizas
+la cantidad de código activo. Es importante aplicar este enfoque
+en cada nivel de los sistemas y redes que están a tu cargo. Podría parecer obvio tomar estas medidas
+en los servidores y las infraestructuras de red esenciales, pero es igual
+de importante hacerlo en las plataformas de computadoras y laptops
+que usa el personal. Muchos sistemas operativos de consumidor
+vienen con varios servicios y softwares predeterminados que se habilitan de inmediato y que seguramente no usarías
+en un entorno o red empresarial. Por ejemplo, el acceso a Telnet para un switch administrado debe
+estar inhabilitado en un entorno práctico. Deberías inhabilitarlo de inmediato
+si lo encuentras en un dispositivo. El acceso a APIs de proveedores
+específicos también debería inhabilitarse si no piensas usar estos servicio
+o herramientas. Podrían ser inofensivos, en especial
+si estableces reglas de firewall estrictas y LCA de red. Este servicio podría representar
+un riesgo bastante bajo pero, ¿por qué correr algún tipo de riesgo? Recuerda, el concepto de defensa
+en profundidad intenta mitigar el riesgo e implementar capas de seguridad. Ahora, analicemos el enfoque
+de seguridad basado en capas. ¿Y si evaden las medidas de control de acceso
+o estas fallan de forma imprevista? Como especialista en asistencia de TI,
+es justo lo que deberías tener en cuenta. ¿Cómo protegemos este componente si
+fallan los sistemas de seguridad anteriores?

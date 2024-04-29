@@ -1,0 +1,88 @@
+Analizamos brevemente
+la encriptación de discos cuando vimos la encriptación de alto nivel. Es hora de entrar en detalle. La encriptación de disco completo, o FDE es un factor importante de la defensa
+de los modelos de seguridad detallados. Brinda protección contra algunas
+formas de ataque físico. Como especialista en asistencia de TI puede que asistas en la implementación
+de una solución de FDE, si aún no existe ayudes con la migración entre las soluciones
+de FDE y soluciones problemas de los sistemas de FDE,
+como con las contraseñas olvidadas así que, la FDE es clave. Los sistemas que tienen
+todo su disco duro encriptado son resilientes frente al robo de datos. Evitarán que un atacante robe
+información potencialmente confidencial de un disco duro robado o perdido. Si no se sabe la contraseña
+de encriptación o no se tiene acceso a la clave de encriptación,
+los datos del disco duro no serán útiles. Este es un mecanismo de seguridad
+muy importante para implementar en más dispositivos móviles, como laptops,
+teléfonos celulares y tablets. También se recomienda
+para las computadoras y los servidores ya que la encriptación de discos
+ofrece confidencialidad e integridad. Esto significa que un atacante
+con acceso físico a un sistema no podrá reemplazar
+los archivos del sistema por otros maliciosos ni instalar software malicioso. Un disco completamente encriptado
+protege a los datos contra el robo y la manipulación no autorizada
+aunque el atacante tenga acceso al disco. Pero, para que un sistema pueda
+iniciarse con una FDE configurada hay algunos archivos esenciales
+que deben estar accesibles. Deben estar disponibles antes de que
+el disco principal pueda desbloquearse y pueda continuar el proceso de inicio. Por esto, las configuraciones de FDE tienen
+una partición en el disco desencriptada que posee
+los archivos de inicio esenciales. Los ejemplos incluyen elementos
+como el kernel y bootloader esenciales para iniciar el sistema operativo. Estos archivos son vulnerables a ser
+reemplazados por archivos modificados y potencialmente maliciosos
+por un atacante con acceso físico. Aunque es posible
+vulnerar una máquina de este modo se necesitaría un atacante
+sofisticado y determinado para lograrlo. También existe protección
+contra este ataque en forma de un protocolo de inicio seguro,
+que forma parte de las especificaciones UEFI. El inicio seguro usa la criptografía de clave
+pública para proteger estos elementos encriptados del proceso de inicio. Para ello, integra la firma y la verificación
+del código de los archivos de inicio. En principio, el inicio seguro
+se configura con una clave de plataforma que es la clave pública
+correspondiente a la clave privada que se usó para firmar esos archivos. Esta clave de plataforma
+se escribe en el firmware y se usa en el momento de inicio
+para verificar la firma de estos archivos. Solo los archivos que se firman correctamente
+y que son confiables se podrán ejecutar. De esta forma, un inicio seguro ofrece
+protección contra la manipulación física con la partición de inicio desencriptada. Existen soluciones propias de encriptación
+de disco completo de Microsoft y Apple llamadas BitLocker
+y FileVault 2, respectivamente. También hay muchas soluciones
+de código abierto y de terceros. En Linux,
+el paquete dm-crypt es muy popular. También hay soluciones de PGP,
+TrueCrypt, VeraCrypt y muchos otros. Los esquemas de encriptación de disco
+completo dependen de una clave secreta para la encriptación y desencriptación. Suelen proteger
+al acceso a esta clave con contraseña y, en algunos casos, la clave de encriptación
+se usa para derivar una clave de usuario que luego se usa
+para encriptar la clave maestra. Si la clave de encriptación debe cambiarse,
+la clave de usuario puede intercambiarse sin necesitar la desencriptación completa
+y la reencriptación de los datos protegidos. Esto sería necesario si la clave
+de encriptación maestra debiera cambiarse. La contraseña que protege la clave requiere
+la frase de contraseña de entrada del usuario para desbloquear la clave de encriptación. Luego, puede usarse para acceder
+al contenido protegido del disco. En muchos casos, podría ser la misma
+que la contraseña de la cuenta de usuario para simplificar el proceso y reducir
+la cantidad de contraseñas a memorizar. Al implementar una solución de encriptación
+de disco completo a gran escala es primordial pensar cómo manejar los casos
+en los que se olvida la contraseña. Esta es otra contrapartida
+de la practicidad de la FDE. Si se olvidan las frases de contraseña,
+el contenido del disco no se puede recuperar. ¡Uf! Por eso, muchas soluciones
+de encriptación de discos empresariales tienen una funcionalidad
+de custodia de claves. La custodia de claves permite que la clave
+de encriptación se almacene de forma segura para que una parte autorizada
+la recupere más adelante. Si alguien olvida la frase
+de contraseña para desbloquear el disco encriptado de su laptop los administradores de sistemas
+pueden recuperar la custodia de claves o la frase de contraseña de recuperación
+y desbloquear el disco. Suele ser una clave
+o frase de contraseña independiente que desbloquea el disco,
+además de la definida por el usuario. Esto permite la recuperación
+si se olvida una contraseña. La clave de recuperación desbloquea el disco
+para luego iniciar el sistema por completo. Se podría comparar la encriptación de disco
+completo con la basada en archivos. En esta, solo se encriptan algunos archivos
+o carpetas, no todo el disco. Esta suele implementarse como
+una encriptación de directorio principal. Su finalidad varía un poco con la de la FDE. La encriptación de directorio principal
+o basada en archivos solo garantiza la confidencialidad e integridad
+de los archivos protegidos con encriptación. No suele usarse
+para encriptar archivos de sistema porque, a menudo,
+hay vulneraciones de seguridad y usabilidad. Cuando el disco completo no está encriptado,
+es posible reiniciar una máquina de forma remota sin perder el acceso. Si reinicias una máquina
+con un disco completamente encriptado la contraseña de desbloqueo del disco debe
+ingresarse antes de que se termine el inicio y se pueda acceder mediante la red. Aunque la encriptación basada
+en archivos es un poco más práctica está menos protegida
+contra los ataques físicos. Un atacante podría modificar
+o reemplazar archivos del sistema central y vulnerar la máquina para obtener
+acceso a los datos encriptados. Este es un buen ejemplo
+de por qué entender las amenazas y los riesgos que estas representan
+es una parte importante del diseño de arquitecturas de seguridad
+y de la elección de la defensa correcta. En la lección siguiente, veremos
+el endurecimiento de aplicaciones. Allí nos vemos.

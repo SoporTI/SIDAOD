@@ -1,0 +1,87 @@
+Aunque algunas partes de las funciones
+de software quedan expuestas varios ataques se basan
+en aprovechar los errores y el software. Esto provoca
+un comportamiento confuso y no deseado que puede poner en peligro al sistema
+que ejecuta el software vulnerable. Estas vulnerabilidades pueden solucionarse
+con parches de software y actualizaciones que corrigen los errores
+que aprovechan los atacantes. Como especialista en asistencia de TI es fundamental que instales
+las actualizaciones de software y los parches de seguridad de manera oportuna para proteger
+los sistemas y las redes de tu empresa. Las actualizaciones no solo mejoran
+los productos de software con la adición de funciones nuevas
+y la mejora del rendimiento y la estabilidad sino que también resuelven
+vulnerabilidades de seguridad. Hay algunos errores de software
+presentes en la funcionalidad principal del software en cuestión. Eso impide mitigar la vulnerabilidad a través
+de la inhabilitación del servicio vulnerable. No es algo bueno. Un ejemplo es
+la vulnerabilidad Heartbleed. Un error en la biblioteca
+de código abierto de TLS, OpenSSL. Esto se descubrió
+y se difundió mucho en abril de 2014. El error apareció por la forma en que
+la biblioteca controlaba los mensajes de monitoreo de TLS. Son mensajes especiales que permiten
+a una de las partes de la sesión TLS indicar a la otra que quiere
+mantener activa la sesión. Para ello, se envía
+una solicitud de mensaje de monitoreo de TLS un paquete con una cadena de texto
+y la longitud de la cadena. El extremo receptor debería responder
+con la misma cadena de texto. Si la solicitud del mensaje
+de monitoreo contiene el texto "Sigo activo" y la longitud de 15 el extremo receptor respondería
+con el mismo texto, "Sigo activo". Pero el error de la biblioteca OpenSSL era
+que el lado que respondía asignaba espacio de memoria
+según el valor del paquete recibido. Esto se basaba en la longitud especificada
+de la cadena, como se define en el paquete no en la longitud real de la cadena. El valor no se verificaba. Esto implicaba que un atacante podía enviar
+una solicitud de mensaje de monitoreo con formato incorrecto y una longitud
+especificada mucho mayor a la permitida. La respuesta contenía
+el mensaje de texto original pero también bits de memoria
+del sistema de respuesta. Así, un atacante podía enviar
+una solicitud de mensaje de monitoreo con formato incorrecto
+con el texto "Sigo activo" pero con una longitud de 500,
+ya que el valor de longitud no se verificaba. Esto implica que la respuesta
+obtenida sería "Aún sigo activo" y, luego,
+los siguientes 485 caracteres de la memoria. Un atacante podía leer hasta 64 kilobytes
+de la memoria de su objetivo. Es probable que la biblioteca OpenSSL
+haya usado esta memoria antes así que podría contener información
+confidencial de otras sesiones de TLS. Un error así implicaba que un atacante podía
+recuperar las claves privadas que se usaban para proteger las sesiones de TLS
+y desencriptar las sesiones protegidas de TLS para así recuperar datos,
+como las credenciales de acceso. Es un gran ejemplo de un error en el código
+que genera una vulnerabilidad del software de gran importancia. Solo podría solucionarse
+con una actualización de software o si se cambiara a otra biblioteca de TLS. Aunque la funcionalidad de monitoreo
+está activada por defecto se puede desactivar
+desde la biblioteca OpenSSL pero no era un simple argumento
+para enviar a una aplicación. Para inhabilitarla, había que compilar
+la biblioteca con una marca especificada para desactivar
+los mensajes de monitoreo. Luego, reemplazar la versión instalada
+por la compilada personalizada. No es algo que haría la mayoría. Esta también era una biblioteca que usaban
+mucho las aplicaciones del servidor y del cliente. Por tanto, no podría reemplazarse
+la biblioteca OpenSSL por una versión
+personalizada de otra biblioteca. Para solucionar la vulnerabilidad
+y el software cliente que implementó OpenSSL, solo se debía esperar por un parche
+del proveedor del software. ¡Muy rebuscado! Y aquí van las malas noticias. Como los softwares se vuelven
+más complejos con el tiempo es probable que estos tipos de errores
+se vuelvan más comunes. De hecho, los atacantes buscarán
+este tipo de vulnerabilidad. La mejor protección es contar
+con un buen sistema y política en tu empresa. El sistema tendría que buscar, distribuir
+y verificar las actualizaciones de software para implementarlo. Es un problema complejo si se trata
+de una gran organización con muchas máquinas que deben gestionarse y que ejecutan
+muchos productos de software. Aquí es donde las herramientas
+de administración facilitan la tarea. Con soluciones como Microsoft SCCM
+o Puppet Labs, y las herramientas Puppet y Facter, los administradores
+obtienen un panorama general de qué software está instalado en todas
+las flotas de sistemas administrados. Así, el equipo de seguridad puede analizar
+qué software y versiones específicas están instalados y comprender mejor el riesgo
+de un software vulnerable de la flota. Cuando se publican
+y envían las actualizaciones a la flota estas herramientas de informes aseguran
+que las instalaciones se hayan aplicado. SCCM incluso puede forzar la instalación
+de actualizaciones tras cumplirse una cierta fecha límite. Aplicar parches es necesario
+para el software, el sistema operativo y el firmware que se ejecutan
+en dispositivos de infraestructura. El código que se ejecuta en cada dispositivo
+puede presentar errores de software proclives a vulnerabilidades de seguridad en routers,
+switches, teléfonos o impresoras. Los proveedores de sistemas operativos
+suelen enviar rápido los parches de seguridad cuando encuentran un problema. Suelen publicar correcciones de seguridad
+por fuera del ciclo de actualizaciones del SO para garantizar una reparación oportuna,
+dadas las implicaciones de seguridad. Pero en los dispositivos integrados
+como equipos de redes o impresoras esto quizá no sea lo habitual. Los dispositivos de infraestructura
+esenciales deben abordarse con cuidado al aplicar actualizaciones. Siempre existe el riesgo de introducir
+un error con la actualización de software y afectar la funcionalidad del dispositivo o de que el proceso de actualización en sí
+salga mal y cause una interrupción. Espero puedas comprender la importancia
+de aplicar parches de software y actualizaciones de firmware
+de forma oportuna. Sería muy vergonzoso si terminaras
+en problemas por una vulnerabilidad que podrías corregir sin problemas
+con una actualización de software.

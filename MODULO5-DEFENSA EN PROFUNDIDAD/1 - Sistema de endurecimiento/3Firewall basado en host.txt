@@ -1,0 +1,59 @@
+Mencionamos brevemente
+los firewalls basados en host cuando vimos la supervisión de redes
+y los sistemas de detección de intrusiones. Los firewalls basados en host son importantes
+para crear varias capas de seguridad. Evitan que los hosts individuales se vean
+vulnerados cuando se usan en entornos poco confiables y potencialmente maliciosos. También protegen a los hosts individuales de los pares potencialmente vulnerados
+dentro de una red de confianza. El firewall basado en la red
+debe proteger la red interna a través del filtrado
+del tráfico entrante y saliente. Mientras que el firewall basado en host
+de cada host individual protege a esa sola máquina. Como el firewall basado en la red,
+aún deberíamos empezar con una regla de denegación implícita y,
+luego, habilitar de manera selectiva los servicios específicos
+y los puertos que se usarán. Así se puede empezar con un ajuste
+predeterminado seguro y solo permitir el tráfico
+que conocemos y en el que confiamos. Es como empezar una configuración de firewall
+completamente segura y, luego, hacerle orificios
+para el tráfico específico que necesitamos. Podría verse muy diferente
+a tu configuración de firewall de red ya que es poco probable que el personal necesite acceso remoto SSH
+a sus laptops, por ejemplo. Recuerda que, para proteger sistemas debes minimizar
+las superficies de ataque y la exposición. Un firewall basado en host
+desempeña un papel importante al reducir los elementos
+accesibles para un atacante externo. Proporciona flexibilidad
+mientras que solo permite la conexión a servicios selectivos de un host determinado
+desde redes o rangos de IP específicos. Esta capacidad de restringir
+las conexiones de ciertos orígenes suele usarse para implementar
+un host muy seguro en la red. Desde allí, el acceso
+a sistemas sensibles o esenciales o a la infraestructura está permitido. Se llaman "hosts" o "redes de bastión"
+y están endurecidos específicamente y minimizados para reducir
+lo que se puede ejecutar en ellos. Los hosts de bastión suelen
+estar expuestos a Internet por lo que deberías
+prestar atención al endurecimiento y el bloqueo para reducir
+las posibilidades de vulnerabilidad. Pero también pueden usarse
+como puerta de enlace o portal de acceso a servicios más sensibles como servidores de autenticación
+centrales o controladores de dominio. Esto te permitirá implementar
+mecanismos de autenticación más seguros y LCA en los hosts de bastión sin generar
+inconvenientes para toda la empresa. La supervisión y el registro pueden
+priorizarse para estos hosts con más facilidad. Estos hosts o redes también suelen tener
+una conectividad de red muy limitada. En general, se limitan solo a la zona segura
+que deben proteger y no mucho más. Las aplicaciones que tienen permiso
+para instalarse y ejecutarse en estos hosts también estarán restringidas
+a los que son estrictamente necesarios ya que estas máquinas tienen
+un propósito específico. Parte de las reglas
+de los firewalls basados en host también proporcionará LCA que permitan
+acceder desde la subred de la VPN. Es una buena práctica mantener
+separada la red a la que se conectan los clientes de VPN con subredes y VLAN. Esto te dará más flexibilidad para reforzar
+la seguridad en estos clientes de VPN. También te permite crear
+capas de defensa adicionales. Aunque un host de VPN debería
+protegerse a través de otros medios sigue siendo un host que opera
+en un entorno potencialmente malicioso. Este host luego iniciará una conexión remota
+a tu red interna confiable. Estos hosts representan otro vector potencial
+de ataque y vulnerabilidad. La capacidad de supervisar por separado
+el tráfico entrante y saliente es muy útil. Hay algo importante a tener en cuenta
+respecto de los firewalls basados en host en especial en sistemas clientes,
+como laptops. Si los usuarios del sistema
+tienen derechos administrativos podrán cambiar las reglas
+y la configuración del firewall. Esto es algo que deberías tener presente
+y asegurarte de supervisar con el registro. Si la herramienta de administración
+lo permite, también deberías evitar que se inhabilite el firewall basado en host. Esto se puede hacer
+con máquinas de Microsoft Windows cuando se administran
+con Active Directory, por ejemplo.

@@ -1,0 +1,14 @@
+La defensa en profundidad es
+el concepto de tener varios sistemas de defensa superpuestos
+para proteger los sistemas de TI. Esto asegura cierta cantidad de redundancia
+para las medidas de protección. También evita un riesgo catastrófico
+si un solo sistema falla o si se descubre
+una vulnerabilidad en un sistema. Es como tener varias líneas de defensa. Si un atacante logra traspasar el firewall aún estarás protegido por los sistemas
+de autenticación sólidos dentro de la red. Esto requeriría que el atacante encuentre
+más vulnerabilidades en más sistemas antes de generar un daño real. En las lecciones siguientes, nos enfocaremos
+en unir los diferentes sistemas y medidas de seguridad que analizamos hasta ahora
+en un diseño de seguridad integral. Ofrecerá defensa en profundidad ante
+varias amenazas conocidas y desconocidas. Para el final de este curso,
+podrás implementar los métodos apropiados para el endurecimiento
+de sistemas y aplicaciones. También podrás determinar
+las políticas que deben usarse para la seguridad del sistema operativo. ¿Sí? Empecemos.

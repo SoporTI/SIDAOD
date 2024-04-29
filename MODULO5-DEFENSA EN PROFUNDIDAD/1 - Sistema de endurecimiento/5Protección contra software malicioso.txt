@@ -1,0 +1,98 @@
+La protección contra software malicioso es esencial para los modelos de seguridad
+de las empresas en estos tiempos. Como especialista en asistencia de TI,
+es importante conocer lo que hay allí afuera. Hoy en día, Internet está lleno
+de bots, virus, gusanos y otros ataques automatizados. Muchos sistemas desprotegidos
+se verían vulnerados en minutos si se conectaran a Internet cada día
+sin la protección adecuada. Y deben contar
+con actualizaciones del sistema esenciales. Aunque los sistemas operativos modernos
+redujeron este vector de amenaza con firewalls básicos
+habilitados de forma predeterminada aún hay una gran cantidad
+de ataques en Internet. Las medidas contra softwares maliciosos
+juegan un rol muy importante porque alejan este tipo de ataque
+de los sistemas y protegen a los usuarios. Los softwares antivirus existen
+desde hace mucho tiempo pero algunos expertos en seguridad cuestionan
+el valor que proporcionan a una empresa en especial, porque softwares maliciosos
+y ataques más sofisticados han estado activos en los últimos años. El software antivirus está basado en firmas. Esto significa que tiene
+una base de datos de firmas que identifican softwares maliciosos conocidos como el hash de archivo único
+de un objeto binario malicioso o el archivo asociado a una infección. O podrían ser las características del tráfico
+de red que el software malicioso usa para comunicarse
+con un servidor de comando y control. El software antivirus supervisa
+y analiza elementos, como archivos nuevos que se crean o modifican en el sistema,
+para estar alerta a todo comportamiento que coincida con una firma
+de software malicioso conocido. Si detecta una actividad que coincide
+con la firma, según el tipo de firma intentará evitar
+que el software malicioso dañe el sistema. Pero puede que algunas firmas solo detecten
+el software malicioso luego de la infección. En ese caso, podría intentar poner
+en cuarentena los archivos infectados. Si no es posible, registrará la detección
+y alertará sobre esta. En un nivel superior, así es
+cómo funcionan todos los productos antivirus. Pero hay dos problemas
+con los softwares antivirus. El primero es que dependen de las firmas
+de antivirus que distribuyen sus proveedores. El segundo es que dependen de que este
+proveedor detecte los softwares maliciosos nuevos y escriba firmas nuevas
+para las nuevas amenazas encontradas. Hasta que el proveedor no escriba
+firmas nuevas, las publique y distribuya el software antivirus no puede protegerte
+de estas amenazas emergentes. Los antivirus, que están diseñados
+para proteger sistemas en realidad representan
+una superficie adicional de ataque. Debes estar pensando
+"¿Cómo?" "¿Mi propio antivirus puede ser
+otra amenaza para el sistema?" "¿Qué sucede?" Se debe a la tarea habitual
+del motor del antivirus. Tomas los objetos binarios arbitrarios
+y potencialmente maliciosos como entrada y ejecuta varias operaciones con ellos. Por ello, hay muchos códigos complejos
+en los que puede haber errores muy graves. En particular, este tipo
+de vulnerabilidad se detectó en el motor del antivirus Sophos en 2012. Pareciera que el software antivirus no es
+lo mejor y que presenta grandes desventajas. Entonces, ¿por qué seguimos recomendándolo
+como una pieza clave del diseño de seguridad? En pocas palabras, por esto. Nos protege frente a los ataques
+más comunes de Internet. Aún hay que protegerse de las amenazas más
+evidentes que pueden afectar a los sistemas. Y los antivirus son
+una solución sencilla para ello. No importa cuánto le enseñes
+al personal, aún habrá algunos que hagan clic en un correo electrónico
+con un archivo adjunto infectado. En un entorno de amenazas externas
+tan ruidoso como el de la actualidad es útil pensar en el antivirus como un filtro
+para el ruido de estos ataques. Te permite quitar el ruido del segundo plano y enfocarte en las amenazas dirigidas
+más importantes o específicas. Nuestro concepto de defensa y profundidad
+implica varias capas de protección. El software antivirus es solo una pieza
+de defensa contra el software malicioso. Si un antivirus no puede protegernos
+de las amenazas que no conocemos ¿cómo nos protegemos de lo desconocido? Los antivirus funcionan
+con un modelo de lista de bloqueo buscan en una lista de elementos maliciosos
+conocidos y bloquean las coincidencias. Hay un tipo de protección contra
+software malicioso que hace lo contrario. El software de listado de binarios permitidos
+funciona con una lista de aprobación. Es una lista de softwares buenos
+y confiables conocidos y solo se permite ejecutar
+lo que figura en la lista. Todo lo demás se bloquea. Es como aplicar la regla de LCA de denegación
+implícita para la ejecución de software. De forma predeterminada, todo se bloquea. Solo lo que está explícitamente
+permitido ejecutarse puede hacerlo. Cabe mencionar que esto solo suele
+aplicarse a los objetos binarios ejecutables no a los archivos arbitrarios,
+como documentos PDF o archivos de texto. Esto nos defendería normalmente
+de las amenazas desconocidas pero a costa de la practicidad. Piensa con qué frecuencia descargas
+e instalas un software nuevo en tu máquina. Ahora, imagina si deberías recibir
+aprobación antes de poder descargar e instalar un software nuevo. Sería muy molesto, ¿no? Ahora, imagina que cada actualización
+del sistema deba recibir la aprobación de la lista antes de aplicarse. Desde ya, desconfiar de todo
+no sería muy sostenible. Por eso, el software de listado de binarios
+permitidos puede confiar en el software con un par de mecanismos diferentes. El primero es usar el hash
+criptográfico único de los objetos binarios que se usa para identificar
+objetos binarios únicos. Se usa para aprobar ejecutables individuales. El otro mecanismo de confianza es
+un certificado de firma de software. ¿Recuerdas cuando hablamos
+sobre la criptografía de claves públicas y las firmas que usan pares de claves
+públicas-privadas? La firma de software o de código es
+la misma idea, pero aplicada al software. Un proveedor de software puede firmar
+criptográficamente los objetos binarios que distribuye con una clave privada. Para verificar la firma
+en el tiempo de ejecución se la revisa con una clave pública
+incluida en el certificado y se verifica la cadena de confianza
+de la clave pública. Si el hash coincide
+y la clave pública es de confianza se puede verificar que el software es
+de alguien que tiene la clave privada de firma de código
+de los proveedores de software. Los sistemas de listado de binarios
+permitidos pueden configurarse para confiar en los certificados de firma
+de código de proveedores específicos. Permiten ejecutar todos los objetos
+binarios firmados con el certificado. Esto es útil para confiar en un contenido
+automáticamente, como las actualizaciones del sistema, el software y el uso común
+de proveedores confiables y de renombre. Pero, ¿puedes advertir la desventaja? Cada certificado de firma
+de código nuevo que es confiable aumenta la superficie de ataque. Un atacante podría vulnerar
+ese certificado de un proveedor de software en el que tu empresa confía y usarlo para firmar un software malicioso
+dirigido a tu empresa. Así,  se eludiría cualquier defensa
+de listado de binarios permitidos que haya. No es algo bueno. Este mismo caso se dio en 2013 con Bit9 una empresa de software
+de listado de binarios permitidos. Los hackers ingresaron a su red interna
+y hallaron una máquina virtual desprotegida. Tenía una copia de la clave privada
+de los certificados de firma de código. Robaron esa clave
+y la usaron para firmar software malicioso que no hubiera sido confiable por defecto
+para todas las instalaciones de Bit9.

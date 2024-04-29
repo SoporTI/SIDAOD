@@ -1,0 +1,80 @@
+Algo fundamental de toda arquitectura
+de seguridad son los registros y las alertas. No serviría de mucho contar con todas estas
+defensas si no sabemos si funcionan o no. Necesitamos visibilidad
+de los sistemas de seguridad establecidos para ver el tipo de tráfico que estos ven. También debemos tener visibilidad
+de los registros de dispositivos y equipos de la infraestructura que gestionamos. Pero no basta con tener registros. Necesitamos formas de protegerlos
+y de facilitar su análisis y revisión. Si en tu empresa hay un equipo de seguridad
+especializado, se encargará del análisis pero en una empresa más pequeña,
+esta sería responsabilidad del equipo de TI. Asegurémonos de que cuentes
+con las habilidades necesarias para investigar incidentes. Muchas técnicas de investigación también
+pueden aplicarse para solucionar problemas. Todo sistema y servicio que se ejecuta
+en los hosts crea algún registro con distintos niveles de detalle. Depende de qué registra y qué eventos
+debe registrar según su configuración. Un servidor de autenticación registra
+cada intento de autenticación, exitoso o no. Un firewall registra el tráfico
+que coincide con las reglas con detalles, como direcciones de origen
+y destino y los puertos que se usan. Toda esta información de registro
+brinda detalles sobre el tráfico y la actividad de la red y los sistemas. Estos pueden aplicarse para detectar riesgos
+o intentos de ataques al sistema. Cuando hay una gran cantidad
+de sistemas alrededor de la red cada uno con su formato de registro puede ser un difícil
+entender todos estos datos. Aquí son útiles los sistemas de información
+de seguridad y administración de eventos o SIEMS. Un SIEM  puede considerarse
+un servidor de registros centralizado con funciones adicionales de análisis. SIEM es una forma de registro centralizado
+para la administración de la seguridad. Un sistema SIEM recibe registros
+de muchos sistemas diferentes. Consolida los registros de muchas ubicaciones
+y los coloca en una ubicación centralizada. Esto facilita mucho el manejo de registros. Como especialista en asistencia de TI,
+un paso importante del análisis de registros es la normalización. Es el proceso de tomar datos de registros
+en formatos diferentes y convertirlos a un formato estandarizado consistente
+con una estructura de registro definida. Como especialista en TI, podrías configurar
+la normalización para fuentes de registro. Por ejemplo, las entradas de registros
+del firewall podrían usar una marca de tiempo con formato de año, mes y día y los registros de las máquinas cliente
+pueden usar el formato día, mes y año. Para normalizar estos datos,
+debes elegir un formato de fecha estándar y definir los campos para los tipos
+de registro que deben convertirse. Cuando se reciben los registros
+de estas máquinas, las entradas de registro se convierten al estándar que definimos
+y se almacenan en el servidor de registros. Así podemos analizar y comparar datos de
+registros entre diferentes tipos de registros y sistemas de forma mucho más fácil. Pero,
+¿qué tipo de información deberías registrar? Es una gran pregunta. Si registras demasiada información,
+es difícil analizar los datos y hallar información útil. Además, los requisitos de almacenamiento
+para guardar registros se vuelven costosos muy rápido. Pero si registras pocos datos,
+no obtendrás estadísticas útiles para los sistemas y la red. Puede ser difícil encontrar un punto medio. Dependerá de las características únicas
+de los sistemas que se supervisan y del tipo de actividad de la red. No importa qué eventos se registren,
+todos deberían tener información que ayude a entender lo que sucedió
+y a reconstruir los eventos. Hay muchos campos
+para capturar y entradas de registro como la marca de tiempo, el evento
+o el código de error, el servicio o la aplicación que se registra,
+la cuenta de usuario o del sistema asociada al evento
+y los dispositivos involucrados en el evento. Las marcas de tiempo son muy importantes
+para entender cuándo ocurrió un evento. Los campos como la dirección
+de origen y destino indican quién le hablaba a quién. Para los registros de aplicaciones,
+puedes tomar información útil del usuario registrado asociado con el evento
+y del cliente que usa. Además de asistir en el análisis,
+un servidor de registro centralizado presenta ventajas de seguridad. Mantener los registros en un sistema dedicado facilita la protección
+del sistema contra los ataques. Los atacantes suelen apuntar a los registros
+después de una infiltración para poder cubrir sus rastros. Si los sistemas esenciales envían registros
+a servidores remotos protegidos los detalles de una infiltración
+aún deberían estar registrados. Un equipo de detección de intrusiones podrá
+reconstruir los eventos que derivaron en la vulneración. Una vez que configuramos el registro
+y registramos los eventos en un servidor centralizado, ¿qué hacemos con los datos? Analizar los detalles de los registros
+depende de lo que se quiera lograr. En general, cuando analizas los registros
+agregados como especialista de TI deberías prestar atención a los patrones
+y las conexiones entre el tráfico. Así que, si ves
+un gran porcentaje de hosts de Windows todos conectados a una dirección
+específica por fuera de tu red deberías investigarlo. Podría ser un indicio de infección. Una vez centralizados
+y estandarizados los registros puedes escribir alertas
+automatizadas basadas en reglas. Quizá debas definir una regla de alerta
+para los intentos fallidos y repetidos de autenticación
+en un servidor de autenticación esencial. Muchas soluciones de SIEM también ofrecen
+paneles útiles para que los analistas examinen estos datos. Tener los datos en un formato visual
+puede proporcionar más estadísticas. También puedes escribir tus propios sistemas
+de supervisión y alertas. No importa si usas una solución de SIEM
+o si escribes la tuya puede ser útil desglosar elementos,
+como los protocolos habituales de la red ver rápido los comunicadores
+principales de la red y ver los errores informados
+con el tiempo para revelar patrones. Otro componente importante del registro
+a tener en cuenta como especialista de TI es la retención. La necesidad de almacenar registros variará
+según la cantidad de sistemas registrados la cantidad de registros
+de detalles y la velocidad de su creación. Por cuánto tiempo quieras o necesites
+mantener los registros también influirá en los requisitos de almacenamiento
+de un servidor de registros. Ejemplos de servidores de registros
+y SIEM son rsyslog, de código abierto Splunk Enterprise Security, IBM Security
+Qradar y RSA Security Analytics.

@@ -1,0 +1,56 @@
+Como ves, el software de las aplicaciones representa una superficie
+de ataque considerable. Este es el caso cuando hay una gran
+flota de sistemas en una organización. Es importante contar
+con ciertas políticas de aplicaciones. Estas políticas tienen dos objetivos. No solo determinan
+qué aplicaciones están permitidas o no sino que también ayudan a la gente
+a usar el software de forma más segura. Hemos visto los riesgos de un software
+cuando se vulnera la seguridad. Es lógico tener una política para actualizar
+el software de forma oportuna. Una recomendación o, incluso,
+un requisito frecuente es admitir únicamente la versión más reciente
+de un determinado software o exigir su uso. Desde la perspectiva de la asistencia de TI esto es importante
+porque las actualizaciones de software suelen solucionar problemas
+que alguien detecta. Pero desde el lado de la seguridad,
+tener la versión más reciente de un software garantiza que se aplicaron
+todos los parches de seguridad y que se usa la versión más segura. Esto debería detallarse
+con claridad en las políticas. La gente suele demorar en aplicar
+actualizaciones en los softwares. En muchas ocasiones, aplicar
+una actualización implica reiniciarla lo que puede ser poco práctico
+y molesto para los usuarios. En general, una buena idea es inhabilitar
+las clases de software riesgoso por política. Los softwares para compartir archivos
+y los softwares piratas suelen estar muy relacionados
+con infecciones de software malicioso. Tampoco suelen tener
+un uso empresarial. Ni que hablar de las implicaciones legales
+de este tipo de software. Comprender lo que necesitan
+tus usuarios para trabajar sirve para delimitar el enfoque
+hacia las políticas y pautas de software. Si hay un caso de uso habitual
+para un determinado software sería útil elegir una determinada
+implementación de software y exigir su uso. Esto permite evaluar la solución más segura y beneficiarse
+de una instalación de software más uniforme. Recuerda:
+la idea es reducir las superficies de ataque. Cada parte de software
+que ejecuta la misma tarea representa un conjunto distinto
+de posibles superficies de ataque con un riesgo de vulnerabilidad al acecho. Ayudar a los usuarios a completar
+sus tareas a través de la recomendación o prestación de un cierto software
+contribuye a un entorno más seguro. Brindarles soluciones claras para completar
+las tareas también es útil para ellos. Si quieres emplear una solución
+de lista de espera binaria también es importante definir
+una política en torno a qué software agregar a la lista. Quizá no sea necesario
+agregar videojuegos a la lista de espera si tu empresa no es
+un estudio de videojuegos. Estas políticas suelen requerir
+algún caso de uso empresarial o justificación para evitar
+muchas solicitudes únicas de software. Otro tipo de software
+para el que debes definir políticas son las extensiones del navegador
+o los complementos. Dado que ahora varios flujos de trabajo
+solo residen dentro del navegador web representan un vector potencial
+para software malicioso que puede ignorarse. Las extensiones que requieren acceso completo
+a los sitios web que se visitan son riesgosas ya que el desarrollador de extensiones
+puede modificar estas páginas. Algunas extensiones incluso envían
+la entrada del usuario a un servidor remoto. Esto podría ocasionar una fuga
+de información confidencial. Clasificar con claridad las extensiones
+y los complementos riesgosos facilita la protección de tus sistemas
+y ofrece orientación a los usuarios. Pero las políticas no suelen
+ser suficientes para brindar a los usuarios la información que necesitan
+para tomar decisiones fundamentadas. Sus decisiones pueden repercutir
+en la seguridad de tu organización. Aquí entran en juego
+la educación y capacitación. Cubrimos mucha información detallada
+sobre la seguridad en estas lecciones. Tómate tu tiempo y repasa
+los videos para asimilarla.
