@@ -1,0 +1,40 @@
+Analicemos en profundidad
+los certificados más allá de solo su función. El estándar X.509 es lo que define el formato
+de los certificados digitales. También define una lista
+de revocación de certificados o CRL, que es una forma de distribuir
+una lista de certificados ya no válidos. El estándar X.509 se emitió en 1988 y la versión moderna y actual
+del estándar es la versión 3. Los campos que se definen
+en un certificado X.509 son Versión, a qué versión
+del estándar X.509 se adhiere el certificado. Número de serie, un identificador único
+para el certificado, asignado por la AC y que permite que la AC administre
+e identifique certificados individuales. Algoritmo de firma de certificados. Este campo indica
+qué algoritmo de clave pública se usa para la clave pública y qué algoritmo de hash
+se usa para firmar el certificado. Nombre del emisor. Este campo contiene
+información sobre la autoridad que firmó el certificado. Validez. Contiene dos subcampos:
+No antes y No después que definen las fechas
+para las que es válido el certificado. Sujeto. Este campo contiene información de identificación sobre la entidad
+a la que se emitió el certificado. Información de la clave pública del sujeto. Estos dos subcampos definen el algoritmo
+de la clave pública y la propia clave. Algoritmo de firma de certificados al igual que el campo
+Información de la clave pública del sujeto son campos que deben coincidir. Valor de firma de certificados,
+los propios datos de la firma digital. También hay huellas digitales de certificados
+que no son realmente campos del certificado pero que las procesan los clientes
+cuando validan o inspeccionan certificados. Solo son resúmenes de hashes
+de todo el certificado. Una alternativa al modelo centralizado
+de PKI para establecer confianza y vincular identidades
+es lo que se llama "red de confianza". Una red de confianza es donde las personas,
+en lugar de las autoridades certificadoras firman las claves públicas de otras personas. Antes de que una persona firme una clave,
+primero debe verificar la identidad de la otra
+a través de un mecanismo acordado que suele ser
+con algún tipo de identificación licencia de conducir, pasaporte, etc. Una vez que determina que la persona
+es quien dice ser, firmar la clave pública es básicamente avalar a la persona. Dices que confías
+en que esta clave pública le pertenece. Este proceso es recíproco, es decir,
+ambas partes firman la clave de la otra. En general, las personas interesadas
+en establecer una red de confianza organizan lo que se llama
+"evento de firma de claves" en el que los participantes
+realizan la misma verificación y firma. Al final del evento,
+las claves públicas de cada uno deberían estar firmadas por el resto,
+lo que establece una red de confianza. En el futuro,
+cuando uno de estos participantes del evento de firma de claves inicial
+establezca confianza con un miembro nuevo la red de confianza se extenderá para incluir
+a este miembro nuevo y a otras personas en las que también confía. Esto permite conectar las redes de confianza
+independientes mediante las personas y hacerlas crecer.

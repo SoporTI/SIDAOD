@@ -1,0 +1,104 @@
+En esta sección, veremos algunas
+aplicaciones prácticas de los conceptos de encriptación que abordamos hasta ahora. En la última sección, mencionamos SSL/TLS cuando hablamos sobre certificados digitales. Ahora que entendemos cómo funcionan
+y el rol esencial de las AC veamos cómo se relacionan con la protección
+del tráfico web a través de HTTPS. Seguramente oíste sobre HTTPS, pero
+¿sabes qué es y en qué se diferencia de HTTP? HTTPS es la versión segura de HTTP,
+el Protocolo de transferencia de hipertexto. Entonces,
+¿cómo nos protege HTTPS en Internet? HTTPS también se llama HTTP por SSL, o TLS,
+ya que, en esencia, encapsula el tráfico HTTP a través de un canal seguro encriptado
+con SSL o TLS. Quizá oíste que SSL y TLS se usan
+de forma indistinta, pero SSL 3.0 la última versión de SSL,
+quedó obsoleta en 2015. Es importante mencionar
+que TLS es independiente de HTTPS y que es un protocolo genérico
+que habilita las comunicaciones seguras y la autenticación a través de una red. TLS también se usa para proteger
+otras comunicaciones, además de navegar como llamadas VoIP (Skype o Hangouts),
+correo electrónico, mensajería instantánea e incluso la seguridad de la red wifi. TLS otorga tres cosas. Uno, una línea de comunicación segura es decir, que los datos que se transmiten
+están protegidos de los espías. Dos, la capacidad de autenticar
+las dos partes que se comunican aunque el cliente
+solo suele autenticar el servidor. Y tres, la integridad de las comunicaciones,
+es decir, que se verifica que los mensajes en tránsito no se pierdan ni se modifiquen. TLS proporciona un canal seguro
+para que una aplicación se comunique con el servicio. Pero debe haber un mecanismo para establecer
+este canal en primera instancia. Esto es lo que se conoce
+como "protocolo de enlace TLS". Yo soy un poco más informal,
+pero bueno, sigamos. El protocolo de enlace se inicia
+cuando un cliente establece una conexión con un servicio habilitado TLS
+que se denomina "ClientHello". Este incluye información sobre el cliente,
+como la versión de TLS que admite los conjuntos de algoritmos de cifrado
+admitidos y quizá otras opciones de TLS. Luego, el servidor responde con el mensaje
+"ServerHello", en el que selecciona la versión más alta del protocolo
+en común con el cliente y elige un conjunto de algoritmos de cifrado
+de la lista para usar. También transmite su certificado digital
+y un último mensaje "ServerHelloDone". Luego, el cliente valida el certificado
+que el servidor envió para garantizar que es confiable
+y para el nombre de host apropiado. Suponiendo que el certificado se verifique el cliente envía
+el mensaje "ClientKeyExchange". Aquí elige un mecanismo de intercambio
+de claves para establecer de forma segura un secreto compartido con el servidor,
+que se usará con un algoritmo de cifrado de encriptación simétrica
+para encriptar todas las comunicaciones. El cliente también envía
+el mensaje "ChangeCipherSpec", que indica que cambiará a la comunicación segura,
+ahora que tiene toda la información necesaria para empezar a comunicarse
+a través del canal seguro. Luego sigue el mensaje encriptado "Finished" que sirve para verificar que el protocolo
+de enlace se completó con éxito. El servidor responde con "ChangeCipherSpec" y el mensaje encriptado "Finished"
+una vez que recibió el secreto compartido. Una vez completado, los datos
+de la aplicación fluyen por el canal seguro. ¡Felicitaciones por eso! La clave de sesión es la clave
+de encriptación simétrica compartida de las sesiones TLS para encriptar
+los datos que se envían de ida y vuelta. Como la clave deriva
+de la clave pública/privada si la clave privada se vulnera, un atacante
+podría decodificar todos los mensajes transmitidos y que estaban codificados
+con claves derivadas de la clave privada. Para protegerse, existe
+el concepto de "confidencialidad directa". Se trata de una propiedad
+de un sistema criptográfico para que si la clave privada se ve vulnerada,
+las claves de la sesión sigan protegidas. SSH o Secure Shell es un protocolo
+de red seguro que usa la encriptación para permitir el acceso a un servicio de red
+a través de redes inseguras. En general, verás que SSH se usa
+para acceder de forma remota a sistemas de líneas de comandos. Pero el protocolo es muy flexible y tiene
+provisiones para permitir puertos de red arbitrarios y que el tráfico en esos puertos
+pase a través del canal encriptado. Se diseñó en un principio
+como un reemplazo seguro del protocolo Telnet y otros protocolos Shell inseguros
+de acceso remoto, como rlogin y rexec. Es muy importante que los protocolos Shell
+y de acceso remoto usen encriptación. Si no, estos servicios transmitirán
+nombres de usuarios y contraseñas con combinaciones de teclas y resultados
+de terminales en texto sin formato. Esto abre la posibilidad
+de que un espía intercepte credenciales y combinaciones de teclas; no está bien. SSH usa una criptografía de clave pública
+para autenticar la máquina remota a la que se conecta el cliente,
+y tiene provisiones para permitir la autenticación de usuarios a través
+de certificados de cliente, si se desea. El protocolo SSH es muy flexible y modular y admite una amplia variedad de mecanismos
+de intercambio de claves, como Diffie-Hellman y una serie de algoritmos
+de cifrado de encriptación simétrica. También admite
+varios métodos de autenticación incluso los personalizados
+que puedes escribir. Cuando se emplea la autenticación
+de claves públicas el usuario que quiere autenticarse
+genera un par de claves. Luego, debe distribuir esas claves públicas
+en todos los sistemas en los que desea autenticarse a través del par de claves. Al autenticarse, SSH garantizará
+que la clave pública que se presenta coincida con la clave privada, que siempre
+debería estar en posesión del usuario. PGP significa "privacidad bastante buena". ¿No es un nombre creativo? PGP es una aplicación de encriptación
+que permite la autenticación de datos y la privacidad de terceros y que depende
+de la encriptación asimétrica para lograrlo. Suele usarse para la comunicación
+encriptada a través de correo electrónico pero está disponible como una solución
+de encriptación de discos completa o para encriptar archivos,
+documentos o carpetas arbitrarias. Phil Zimmermann desarrolló PGP en 1991,
+y todo el mundo podía usarla libremente. El código fuente incluso
+se distribuyó junto con el software. Zimmermann era un activista antinuclear y el activismo político lo impulsó
+a desarrollar el software de encriptación PGP a fin de facilitar la comunicación segura
+para otros activistas. PGP despegó una vez lanzado
+y se abrió camino en todo el mundo lo que puso a Zimmermann en aprietos
+con el gobierno federal de EE.UU. En ese momento, las normas de exportación
+federales de EE.UU. consideraban una munición a la tecnología de encriptación
+que empleaba claves de más de 40 bits. Esto significaba que PGP estaba sujeto
+a restricciones similares a las de cohetes bombas, armas de fuego
+e incluso armas nucleares. PGP se diseñó para usar claves
+con un mínimo de 128 bits. Así que, se las vio
+con las restricciones de exportación. Zimmermann enfrentó una investigación federal por la amplia distribución
+de su software criptográfico. Él adoptó un enfoque creativo
+para desafiar estas restricciones y publicó el código fuente
+en un libro impreso disponible para todos. La idea era que el contenido del libro
+debía estar protegido por la Primera Enmienda de la constitución de EE.UU. Muy inteligente, ¿no? La investigación se cerró
+en 1996 sin registrar cargos y Zimmermann ni siquiera
+tuvo que ir a la corte. PGP es reconocido por ser muy seguro
+y porque no hay mecanismos que puedan descifrar la encriptación
+por medios criptográficos o informáticos. Se lo comparó con la encriptación militar,
+y hay muchos casos de gobiernos y policías que no pudieron recuperar los datos
+protegidos con la encriptación PGP. En estos casos,
+los organismos de seguridad suelen recurrir a medidas legales para exigir la entrega
+de claves o contraseñas. Al principio, PGP usaba el algoritmo RSA,
+aunque se lo reemplazó por DSA para evitar problemas de licencia.

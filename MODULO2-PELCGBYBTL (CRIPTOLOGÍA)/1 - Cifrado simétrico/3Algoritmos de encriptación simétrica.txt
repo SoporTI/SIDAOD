@@ -1,0 +1,87 @@
+En la última sección, vimos los conceptos
+básicos de algoritmos de encriptado simétrico y un ejemplo del cifrado César,
+un tipo de cifrado de sustitución. Sin embargo, no podríamos proteger
+nada de valor con el cifrado. Debe haber algoritmos simétricos
+más complejos y seguros. Por supuesto que los hay. Uno de los primeros estándares de cifrado es el DES, las iniciales en inglés
+de "estándar de cifrado de datos". IBM diseñó el DES en la década de 1970
+con algunos aportes de la Agencia de Seguridad Nacional
+de Estados Unidos. El DES se adoptó como un FIPS o Estándar Federal de Procesamiento
+de Información para Estados Unidos. Esto significa que el DES
+se adoptó como estándar federal para encriptar  y proteger
+datos gubernamentales. El DES es un cifrado de bloques simétrico
+que usa tamaños de clave de 64 bits y opera en bloques de 64 bits de tamaño. Aunque el tamaño de la clave
+tiene una longitud de 64 bits, 8 bits se usan solo para comprobar la paridad. Una forma sencilla de comprobar errores. Esto significa que la longitud
+de la clave real para el DES es de solo 56 bits. Una aclaración breve sobre los tamaños
+de las claves de encriptación en los algoritmos de encriptado simétrico es que se usa la misma clave para encriptar y
+desencriptar, y el resto es igual. La clave es una pieza única
+que protege tus datos. Además, la clave simétrica se debe
+mantener en secreto para garantizar la confidencialidad
+de los datos que se están protegiendo. El tamaño de clave definido en bits
+es el número total de bits o datos que componen
+la clave de encriptación. Puedes considerar el tamaño de la clave
+como el límite del total de claves posibles para un algoritmo
+de encriptación determinado. La longitud de la clave
+es muy importante en criptografía ya que define
+la fuerza máxima posible del sistema. Imagina un algoritmo
+de encriptado simétrico ideal donde no haya fallas
+ni debilidades en el algoritmo en sí. En esta situación, la única forma posible
+de que un adversario rompa tu encriptación sería atacar la clave en lugar del algoritmo. Un método de ataque
+consiste en adivinar la clave y ver si el mensaje se descodifica con éxito. Esto se conoce como ataque de fuerza bruta. Las claves más largas
+protegen contra este tipo de ataque. Tomemos como ejemplo la clave de DES:
+64 bits menos los 8 bits de paridad nos dan una longitud de clave de 56 bits. Esto significa que hay un máximo
+de 2 a la potencia 56 o 72 cuatrillones de claves. Parece una tonelada de claves,
+y en los años setenta lo era. Pero como la tecnología avanzó
+y las computadoras aumentaron su rapidez y eficacia las claves de 64 bits
+resultaron demasiado pequeñas. Lo que antes eran solo ataques teóricos
+al tamaño de la clave se hicieron realidad en 1998, cuando la EFF (Electronic Frontier
+Foundation) descifró un mensaje encriptado con DES en 56 horas. Debido a la debilidad inherente
+del tamaño pequeño de clave del DES se diseñaron y propusieron
+algoritmos de reemplazo. En las décadas de 1980 y 1990,
+aparecieron varios nuevos. Muchos mantuvieron
+el tamaño de bloque de 64 bits pero usaron un tamaño de clave mayor que permitía sustituir el DES
+con mayor facilidad. En 1998, el NIST,
+Instituto Nacional de Estándares y Tecnología quería reemplazar el DES
+por un algoritmo nuevo. En 2001, se adoptó el AES,
+Advanced Encryption Standard luego de un concurso internacional. El AES es el primer y único cifrado público
+aprobado por la Agencia de Seguridad Nacional de Estados Unidos
+para su uso con información ultrasecreta. El AES también es un cifrado simétrico
+por bloques similar al DES, al que reemplazó. El AES usa bloques de 128 bits el doble que el DES,
+y admite claves de 128, 192 o 256 bits. Por al gran tamaño de las claves, los ataques
+de fuerza bruta contra AES son teóricos en este momento, ya que la potencia
+de cálculo necesaria o el tiempo requerido con la tecnología moderna superan
+cualquier cosa factible hoy en día. Quiero señalar que estos algoritmos son los diseños generales
+de los propios cifradores. Estos diseños se deben implementar
+en el software o hardware antes de que las funciones de encriptación
+se puedan aplicar y poner en práctica. Al momento de evaluar diferentes
+algoritmos de encriptación es importante tener en cuenta la rapidez
+y facilidad de implementación. Lo ideal es que un algoritmo
+no sea tan difícil de implementar ya que una implementación compleja
+puede generar errores y pérdidas de seguridad debido a errores
+que ingresaron en la implementación. La velocidad es importante
+porque a veces los datos se encriptan al pasarlos varias veces por el cifrado. Los dispositivos a veces terminan realizando
+este tipo de operaciones criptográficas. Cuanto más rápido puedan realizarse
+con el mínimo impacto para el sistema, mejor. Es por esto que algunas plataformas
+implementan estos algoritmos criptográficos y hardware para acelerar los procesos
+y quitar parte de la carga de la CPU. Por ejemplo, las CPU modernas de Intel
+o AMD tienen instrucciones AES integradas en las propias CPUs. Esto permite una velocidad de cálculo
+y una eficiencia mucho mayor cuando se trabaja
+con cargas de trabajo criptográficas. Hablemos de lo que una vez
+fue un algoritmo muy usado y popular pero que desde entonces se demostró
+su debilidad y se desaconseja su uso. RC4 o Rivest Cipher 4 es un cifrado
+de flujo simétrico que se adoptó por su sencillez y rapidez. RC4 admite claves de 40 a 2,048 bits. Las debilidades de RC4 no se deben a ataques
+de fuerza bruta, sino que el propio cifrado tiene debilidades
+y vulnerabilidades inherentes que no solo son posibles teóricamente. Hay muchos ejemplos que demuestran
+que RC4 no funciona. Un ejemplo reciente de ruptura de RC4
+es el RC4 NOMORE attack. Este ataque fue capaz de recuperar
+una cookie de autenticación de una conexión cifrada TLS en solo 52 horas. Como se trata de un ataque al propio cifrado
+RC4, cualquier protocolo que use este cifrado es potencialmente vulnerable al ataque. Incluso así, se usó RC4 en varios protocolos
+de encriptación populares como WEP para encriptación inalámbrica
+y WPA, su sucesor. También se admitía en SSL y TLS hasta 2015,
+cuando RC4 se abandonó en todas las versiones de TLS debido a debilidades inherentes. Por este motivo la mayoría de los navegadores web principales
+abandonaron la compatibilidad con RC4 junto con todas las versiones de SSL
+y usan TLS en su lugar. La configuración segura preferida es TLS 1.2
+con AES GCM, un modo de funcionamiento específico para el cifrado por bloques AES
+que lo convierte en un cifrado de flujo. GCM o Galois/Counter Mode funciona al tomar
+un valor semilla aleatorio, lo incrementa y encripta el valor, mientras crea bloques
+de texto cifrado numerados en secuencia. Luego, los textos cifrados se incorporan
+al texto sin formato que se va a cifrar.

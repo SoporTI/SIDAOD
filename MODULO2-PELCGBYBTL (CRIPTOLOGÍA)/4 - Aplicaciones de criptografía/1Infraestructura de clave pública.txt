@@ -1,0 +1,78 @@
+En esta lección, abordaremos la PKI,
+o infraestructura de clave pública. Un adelanto:
+es una pieza esencial para proteger las comunicaciones
+por Internet de la actualidad. Antes, hablamos sobre la criptografía
+de claves públicas y cómo puede usarse para transmitir datos de forma segura
+por un canal que no es de confianza y verificar la identidad
+de un emisor con firmas digitales. La PKI es un sistema que define la creación,
+el almacenamiento y la distribución de certificados digitales. Un certificado digital
+es un archivo que comprueba que una entidad es propietaria
+de una cierta clave pública. Un certificado contiene información
+sobre la clave pública la entidad a la que pertenece
+y una firma digital de un tercero que verificó esta información. Si la firma es válida y confiamos
+en la entidad que firmó el certificado podemos confiar
+en la clave pública que se usará para comunicarse de forma segura
+con la entidad que la posee. La entidad responsable de almacenar, emitir
+y firmar certificados se llama AC, o autoridad certificadora. Es un componente esencial de un sistema PKI. También existe la AR, o autoridad de registro que es responsable de verificar
+las identidades de cualquier entidad que solicite la firma y el almacenamiento
+de certificados con la AC. Este rol suele agruparse con la AC. Se necesita un repositorio central
+para almacenar e indexar claves de forma segura y un sistema de administración
+de certificados de algún tipo facilita la gestión del acceso
+a certificados de almacenamiento y la emisión de certificados. Hay varios tipos diferentes de certificados
+con aplicaciones o usos diversos. El que quizá conozcas mejor
+es el certificado del servidor SSL o TLS. Es un certificado
+que un servidor web presenta a un cliente como parte de la configuración inicial
+segura de una conexión SSL/TLS. El cliente, que suele ser un navegador web,
+verificará que el sujeto del certificado coincida con el nombre de host del servidor
+al que intenta conectarse el cliente. El cliente también verificará
+que el certificado esté firmado por una autoridad certificadora
+en la que confía. Es posible que un certificado sea válido
+para varios nombres de host. En algunos casos, se puede emitir un certificado comodín
+en el que el nombre de host se reemplaza por un asterisco que denota la validez de todos los nombres
+de host de un dominio. También es posible que un servidor use
+lo que se llama "certificado autofirmado". Quizá te diste cuenta por el nombre,
+este certificado lo firma la misma entidad que lo emite. Esto sería como firmar
+tu propia clave pública con tu clave privada. A menos que ya confíes en esta clave,
+este certificado no se verificará. Otro tipo de certificado
+es un certificado de cliente SSL/TLS. Es un componente opcional
+de las conexiones SSL/TLS y no es tan común
+como los certificados de servidor. Como lo dice su nombre,
+estos certificados están vinculados a clientes y se usan
+para autenticar el cliente en el servidor lo que permite el control de acceso
+a un servicio SSL/TLS. Difieren de los certificados de servidor
+en que a los certificados de cliente no los emite una AC pública. En general, el operador del servicio
+tendría su propia AC interna que emite y gestiona los certificados
+de cliente para su servicio. También hay certificados
+de firma de código para firmar programas ejecutables. Esto permite a los usuarios
+de las aplicaciones firmadas verificar las firmas y garantizar
+que no se haya manipulado la aplicación. También les permite verificar
+que la aplicación proviene del autor del software
+y no de un twin malicioso. Ya mencionamos la confianza
+en la autoridad certificadora pero no lo explicamos,
+así que analicemos cómo funciona. La PKI depende mucho
+de las relaciones de confianza entre las entidades y de la creación
+de una red o cadena de confianza. Esta cadena de confianza
+debe comenzar en algún lado y es con la autoridad de certificación raíz. Estos certificados raíz están autofirmados
+porque son el comienzo de la cadena de confianza, y no hay autoridad
+superior que pueda firmar en su nombre. Esta autoridad de certificación raíz
+ahora puede usar el certificado autofirmado y la clave privada asociada
+para empezar a firmar otras claves públicas y emitir certificados. Se construye una estructura de árbol con la clave privada raíz
+en la cima de la estructura. Si la AC raíz firma
+un certificado y establece un campo en el certificado llamado AC:TRUE el certificado se marca como
+una AC intermediaria o subordinada. Esto significa que la entidad
+a la que se emitió este certificado ahora puede firmar otros certificados,
+y esta AC tiene la misma confianza que la AC raíz. Una AC intermediaria también puede firmar
+otras AC intermediarias. Puedes ver que esta extensión
+de confianza desde una AC raíz a las intermediarias
+puede empezar a crear una cadena. A un certificado que no tiene autoridad
+como AC se lo conoce como "certificado de hoja"
+o de "entidad final". Similar a una hoja de un árbol,
+es el extremo de su estructura y puede considerarse lo opuesto a las raíces. Te preguntarás cómo estas AC raíz
+terminan siendo de confianza. Es una muy buena pregunta. Para iniciar esta cadena de confianza,
+debes confiar en un certificado de AC raíz si no, la cadena completa
+no será de confianza. Para ello, se distribuyen los certificados
+de AC raíz por canales alternativos. Cada proveedor principal de SO
+envía una gran cantidad de certificados confiables
+de AC raíz con su SO y suelen tener sus propios programas
+para facilitar la distribución de certificados de AC raíz. La mayoría de los navegadores usan
+la tienda de certificados raíz del SO.

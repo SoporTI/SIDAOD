@@ -1,0 +1,80 @@
+Hola de nuevo. Empecemos. Otra aplicación interesante
+en el campo de la criptografía es el módulo de plataforma
+de confianza, o TPM. Se trata de un dispositivo de hardware
+que suele estar integrado en el hardware de una computadora,
+que es un procesador criptográfico dedicado. Los TPM ofrecen la creación segura
+de claves y de números aleatorios certificación remota,
+y vinculación y sellado de datos. Los TPM tienen una clave RSA secreta y única
+que se graba en el hardware al fabricarlos que les permite completar tareas,
+como la autenticación de hardware. Esto puede detectar cambios
+sin autorizar en el hardware del sistema. La certificación remota implica
+la autenticación de la configuración de software y hardware
+de un sistema en un sistema remoto. Así, el sistema remoto
+determina su integridad. Esto se puede hacer con un TPM
+a través de la creación de un hash seguro de la configuración del sistema con una clave
+RSA única incorporada en el mismo TPM. Otro uso de la clave secreta de encriptación
+respaldada por hardware es la vinculación y el sellado de datos. Requiere la clave secreta
+para derivar una clave única que luego se usa para encriptar los datos. En esencia, así se vinculan
+los datos encriptados al TPM y, por ende, al sistema
+en el que se instaló el TPM pues solo la clave almacenada en el hardware
+del TMP podrá desencriptar los datos. El sellado es similar a la vinculación,
+ya que los datos se encriptan con la clave de encriptación ya mencionada. Pero, para desencriptar los datos,
+el TPM debe tener un estado particular. El TPM es un estándar con varias revisiones
+que puede implementarse como un chip de hardware discreto, integrarse
+en otro chip del sistema implementarse en un firmware o software
+o virtualizarse en un hipervisor. La implementación más segura es el chip
+discreto, ya que estos paquetes de chip también son resistentes a la manipulación
+y evitan ataques físicos en el chip. Los dispositivos móviles tienen algo parecido
+llamado "elemento seguro", similar a un TPM. Es un chip resistente a la manipulación
+que suele incorporarse en el microprocesador o integrarse
+en la placa madre de dispositivos móviles. Ofrece almacenamiento seguro
+de claves criptográficas y brinda un entorno seguro
+para las aplicaciones. Una evolución de los elementos seguros
+es el entorno de ejecución confiable o TEE, el cual va más allá. Brinda un entorno de ejecución aislado
+por completo que se ejecuta a la par del SO principal. Esto permite aislar las aplicaciones
+del SO principal y de otras aplicaciones instaladas en él. También aísla los procesos seguros
+entre sí cuando se ejecutan en el TEE. Los TPM han recibido críticas
+sobre la confiabilidad de sus fabricantes. Como la clave secreta se graba
+en el hardware durante su fabricación el fabricante tendría acceso
+a la clave en ese momento. Es posible que el fabricante almacene
+las claves y las use para duplicar un TPM capaz de vulnerar la seguridad
+que el módulo debería brindar. Hubo un caso de ataque físico a un TPM
+en el que un investigador de seguridad pudo ver y acceder
+a todo el contenido de un TMP. Pero este ataque requirió
+un microscopio electrónico y equipo de precisión micrométrica
+para manipular el circuito del TPM. Aunque el proceso llevó demasiado tiempo y requirió un equipo muy especializado,
+demostró que un ataque así es posible a pesar de la protección
+contra la manipulación. Los TPM suelen usarse más
+para asegurar la integridad de la plataforma lo que evita cambios no autorizados
+en el sistema, ya sea en hardware o software o la encriptación de disco completo,
+con el TPM que protege todo su contenido. La encriptación de disco completo, o FDE,
+como indica el nombre, es la práctica de encriptar toda la unidad del sistema,
+no solo sus archivos confidenciales. Esto permite proteger todo su contenido
+ante el robo o la manipulación de datos. Hay muchas opciones para implementar FDE como el producto comercial PGP,
+Bitlocker de Microsoft que se integra muy bien con los TPM, Filevault 2 de Apple
+y el software de código abierto dm-crypt que permite encriptar los sistemas Linux. La configuración de la FDE tiene
+una partición o partición lógica que posee los datos que se encriptarán, en general,
+el volumen raíz, donde se instala el SO. Pero para iniciar el volumen, primero debe
+desbloquearse durante el momento de inicio. Como el volumen está encriptado, el BIOS
+no puede acceder a los datos para iniciarlo. Es por eso que las configuraciones
+de FDE tienen una pequeña partición de inicio desencriptada con elementos
+como el kernel, el bootloader y un NRD. Durante el momento de inicio, se cargan
+estos elementos y solicitan al usuario una frase de contraseña para desbloquear
+el disco y seguir con el inicio. La FDE también puede incorporar al TPM con las claves de encriptación de TPM
+para proteger el disco. Y la integridad de su plataforma evita
+desbloquear el disco si la configuración del sistema cambió. Esto ofrece protección contra la manipulación
+de hardware y el robo o clonación de discos. Antes de finalizar
+este módulo sobre encriptación quisiera mencionar
+el concepto de aleatoriedad. Antes, cuando explicamos
+los distintos sistemas de encriptación seguía apareciendo un punto en común,
+del cual dependen estos sistemas. ¿Te diste cuenta de cuál era? Si no pudiste, no hay problema. Es la selección de números aleatorios. Es un concepto fundamental en la encriptación porque, si el proceso de selección
+de números no es aleatorio podría haber algún patrón que un intruso
+podría detectar si observara con atención y analizara los mensajes encriptados
+con el paso del tiempo. Lo que no es completamente aleatorio
+se denomina "pseudoaleatorio". Es por ello que los sistemas operativos
+conservan lo que se llama "grupo de entropía". En esencia, es una fuente
+de datos aleatorios que ayudan a obtener generadores de números aleatorios. También hay generadores dedicados de números
+aleatorios y generadores de números pseudoaleatorios que pueden incorporarse
+en un dispositivo o servidor de seguridad para garantizar que se elijan números
+aleatorios al crear claves criptográficas. Espero que los temas sobre criptografía
+te hayan sido interesantes y esclarecedores. Así fue cuando los aprendí.

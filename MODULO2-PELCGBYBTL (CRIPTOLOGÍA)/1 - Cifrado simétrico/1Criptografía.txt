@@ -1,0 +1,101 @@
+Cuando eras menor, ¿tú y tus hermanos tenían un lenguaje secreto
+para comunicarse delante de tus padres? No importaba demasiado de qué hablaran
+siempre y cuando tus padres no se enteraran. Eso era lo más divertido. Quizás era un juego divertido
+cuando eras más joven pero desde que existe el ser humano creamos formas de enviarles
+mensajes secretos a otras personas. En esta lección, aprenderemos
+cómo funcionan la criptografía simétrica la asimétrica y el hashing. También veremos cómo describir
+los algoritmos más comunes en criptografía y aprenderemos cómo elegir
+el método criptográfico más adecuado en cualquier contexto. Pero antes de meternos de lleno
+en los detalles de la criptografía los distintos tipos que existen
+en nuestras aplicaciones repasemos algo de la terminología
+y los principios generales que te ayudarán
+a entender los detalles después. El tema de la criptografía
+o el ocultamiento de los mensajes de posibles enemigos
+ha estado entre nosotros durante años. Y avanzó muchísimo con la llegada
+de la tecnología, las computadoras y las telecomunicaciones modernas. La encriptación consiste
+en tomar un mensaje, llamado texto simple y aplicarle una operación,
+llamada algoritmo de cifrado para que recibas como resultado
+un mensaje confuso, ilegible llamado texto cifrado. El proceso inverso,
+tomar el resultado confuso y reconvertirlo en un texto simple y legible
+se llama desencriptación. Por ejemplo, veamos
+un algoritmo de cifrado simple en el que reemplazamos
+la a por la o y la o por la y. Usaremos el texto simple "Hello World"
+y se lo daremos a un algoritmo básico. ¿Cuál te parece
+que será el texto cifrado resultante? Bueno, esperemos que sea "Holly Wyrld". Es muy fácil descifrar este texto cifrado
+porque este es un ejemplo muy sencillo. De hecho, un algoritmo
+de cifrado tiene dos componentes el algoritmo de encriptación y la clave. El algoritmo de encriptación
+es la lógica o el proceso subyacente que se usa para convertir
+el texto simple en texto cifrado. Por lo general, estos algoritmos
+son operaciones matemáticas muy complejas. Pero también existen algunos algoritmos
+muy básicos que podemos ver en detalle para los que no necesitas un doctorado
+en Matemáticas para que los entiendas. El otro componente fundamental
+de un algoritmo es la clave que introduce algo único
+a tu algoritmo de cifrado. Sin la clave, cualquier persona que use
+el mismo algoritmo podrá descifrar tu mensaje y eso revelaría tu secreto. Recapitulemos. Primero, eliges el algoritmo de encriptación
+que quieres usar para encriptar tu mensaje. Luego, eliges una clave. Ahora tienes un algoritmo de cifrado
+por el que puedes pasar tu mensaje en texto simple y obtener un texto cifrado listo para enviarlo al mundo,
+seguro y a salvo de miradas indeseadas. ¿No te hace sentir
+como un personaje del misterio internacional? Pero espera. Dado que el objetivo principal
+de la criptografía es proteger tus secretos de ser leídos por terceros no autorizados tiene sentido que al menos
+un componente del algoritmo de cifrado también deba mantenerse en secreto, ¿verdad? Puedes argumentar
+que manteniendo el algoritmo en secreto tus mensajes están
+a salvo de los terceros curiosos y, técnicamente, estarías en lo cierto. A este concepto general
+se lo conoce como seguridad por ocultación y, básicamente, quiere decir
+que si nadie conoce el algoritmo o la práctica general de seguridad que usamos estaremos a salvo de los atacantes. Piensa en ocultar
+la llave de tu casa debajo del tapete. Siempre y cuando el ladrón no sepa que ahí
+es donde ocultas tu llave, estarás a salvo. Pero si alguien descubre esa información la seguridad se va por la ventana
+junto con tus pertenencias. Sin dudas, la seguridad por ocultación
+no es algo en lo que debas confiar para proteger las comunicaciones
+ni los sistemas, ni tampoco la casa. Este concepto general en criptografía
+se denomina principio de Kerckhoff. Este principio establece que un criptosistema
+o una colección de algoritmos para la generación de claves y para las operaciones
+de encriptación y desencriptación que componen un servicio criptográfico
+deberían mantenerse a salvo. Incluso, si todo acerca del sistema
+sale a la luz, excepto la clave. Esto quiere decir que, aun si tu enemigo
+conoce el algoritmo de encriptación exacto que usas para asegurar tus datos,
+le será imposible recuperar el texto simple a partir de un texto cifrado interceptado. Quizás también oigas que se refieren
+a este principio como la máxima de Shannon o el enemigo conoce el sistema.
+Las implicaciones son las mismas. El sistema debería permanecer a salvo incluso si tu adversario conoce exactamente
+qué tipo de sistema de encriptación usas siempre y cuando nadie conozca la clave. Ya definimos la encriptación,
+pero la disciplina general que abarca la práctica de codificar y ocultar mensajes
+a terceros se denomina criptografía. Al estudio de esta práctica
+se lo conoce como criptología Lo opuesto, buscar mensajes ocultos
+o tratar de descifrar un mensaje codificado se conoce como criptoanálisis. Estos dos campos evolucionaron
+juntos a lo largo de la historia con el desarrollo
+de nuevos cifrados y criptosistemas a medida que los anteriores
+se rompían o resultaban vulnerables. Una de las primeras descripciones registradas
+del criptoanálisis data del siglo IX del matemático árabe que describió
+un método de análisis de frecuencias para descifrar mensajes codificados. El análisis de frecuencias
+es la práctica de estudiar la frecuencia con la que aparecen
+las letras en un texto cifrado. La premisa de este tipo de análisis
+es que en las lenguas escritas algunas letras
+aparecen con más frecuencia que otras y algunas
+se agrupan con más frecuencia que otras. Por ejemplo, las letras que más se usan
+en inglés son la e, la t, la a y la o. Y los pares más comunas
+con estas letras son th, er, on y an. Algunos algoritmos de cifrado, en especial los clásicos
+por transposición y por sustitución conservan la frecuencia relativa
+de las letras en el texto simple por lo que son potencialmente
+vulnerables a este tipo de análisis. Durante la Primera
+y la Segunda Guerra Mundial la criptografía y el criptoanálisis
+jugaron un papel cada vez más importante. Hubo un alejamiento de la lingüística
+y del análisis de frecuencias y un acercamiento a los análisis
+basados en las matemáticas. Esto tuvo que ver
+con el desarrollo de algoritmos más complejos y sofisticados. Un punto de inflexión
+importante en el criptoanálisis tuvo lugar durante la II Guerra Mundial cuando los aliados de EE.UU.
+empezaron a incorporar matemáticas sofisticadas
+para ayudar a romper los esquemas de encriptación del eje. También se vieron los primeros usos
+de la tecnología de automatización aplicada al criptoanálisis
+en Inglaterra, en Bletchley Park. La primera computadora
+digital programable, llamada Colossus se desarrolló para ayudar con este esfuerzo. Mientras las primeras computadoras
+se usaban para descifrar la criptografía esto abrió la puerta a un gran salto adelante en el desarrollo de criptosistemas
+mucho más sofisticados y complejos. La esteganografía es una práctica relacionada
+pero claramente diferente de la criptografía. Es la práctica de ocultar información
+de ciertos observadores sin codificarla. Piensa en escribir
+un mensaje con tinta invisible. El mensaje está en texto simple y no es necesario decodificarlo
+para leerlo, pero está oculto de la vista. La tinta es invisible y debe volverse visible
+con un mecanismo conocido por el receptor. Las técnicas modernas de esteganografía incluyen incrustar mensajes
+y archivos en otros archivos como imágenes o videos. Un observador casual
+solo verá la imagen de un tierno perrito pero si la introduces
+en un software de esteganografía extraerá un mensaje oculto
+dentro del archivo de imagen. Lo que no es secreto
+es lo divertido que resulta descubrir los datos curiosos, ¿no?

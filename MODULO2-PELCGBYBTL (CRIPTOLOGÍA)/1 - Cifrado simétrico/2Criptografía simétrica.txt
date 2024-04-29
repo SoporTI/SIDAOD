@@ -1,0 +1,61 @@
+Hasta ahora, vimos de manera
+general sistemas criptográficos centrándonos en conceptos de encriptación,
+pero no de desencriptación. Tiene sentido que si le estás enviando
+un mensaje protegido a alguien quieras que tu destinatario
+pueda decodificar el mensaje y leerlo y tal vez incluso responder
+con un mensaje codificado propio. Veamos la primera categoría
+de algoritmos de encriptación y profundicemos en más detalles sobre cómo funciona
+junto con algunos pros y contras. Cuando antes vimos el principio de Kerckhoff ¿recuerdas qué componente del cifrado
+es importante mantener en secreto? Así es, la clave debe mantenerse privada
+para garantizar que un espía no pueda decodificar mensajes encriptados. En esta situación, asumimos que el algoritmo
+en uso es lo que se conoce como algoritmo de clave simétrica. Estos tipos de algoritmos
+de encriptado se denominan simétricos porque usan la misma clave
+para encriptar y desencriptar mensajes. Veamos un ejemplo sencillo de un algoritmo
+de encriptación de clave simétrica para analizar el proceso general
+de encriptación y desencriptación de un mensaje. Un cifrado de sustitución es un mecanismo
+de encriptación que reemplaza partes del texto sin formato
+con textos cifrados. Recuerda nuestro ejemplo
+anterior de "Hello World". Ese es un ejemplo de cifrado de sustitución ya que estamos sustituyendo
+algunos caracteres por otros. En este caso, la clave sería
+el mapeo de caracteres entre texto plano y texto cifrado. Sin saber con qué letras se reemplazan,
+no podrás decodificar con facilidad el texto cifrado
+y recuperar el texto sin formato. Si tienes la clave o la tabla de sustitución
+puedes revertir el proceso y descifrar el mensaje codificado
+con la operación inversa. Un ejemplo conocido de cifrado de sustitución es el cifrado César,
+que es un abecedario de sustitución. En este caso, estás reemplazando caracteres
+del abecedario por otros, por lo general cambiando o rotando el alfabeto,
+un conjunto de números o caracteres. El número del desplazamiento es la clave. Otro ejemplo popular es el denominado ROT13,
+donde el abecedario rota 13 lugares. Pero en realidad ROT13 es un cifrado César
+que usa una clave de 13. Volvamos a nuestro ejemplo de Hello World y veamos la codificación
+con el cifrado ROT13. Nuestros textos cifrados
+terminan siendo URYYB JBEYQ. Para revertir este proceso
+y volver a los textos sin formato realizamos la operación inversa y buscamos los caracteres
+en el lado de salida de la tabla de mapeo. Es posible que notes algo
+sobre la tabla de mapeo ROT13 o el hecho de que estamos compensando
+el abecedario en 13 caracteres. Trece es exactamente la mitad del abecedario. Esto da como resultado que el cifrado
+ROT13 sea inverso a sí mismo. Lo que esto significa es que puedes recuperar
+el texto sin formato de los textos cifrados con la operación ROT13
+en los textos cifrados. Hay dos categorías más en las que se pueden
+colocar los cifrados de clave simétrica. Hay cifrados de bloque
+o sus cifrados de flujo. Esto se relaciona
+con cómo operan los cifrados en el texto sin formato a encriptar. Como su nombre lo indica, un cifrado de flujo
+toma un flujo de entrada y encripta la secuencia, un carácter
+o un dígito a la vez lo que genera un carácter
+o dígito cifrado a la vez. Existe una relación uno a uno entre los datos
+que entran y los que salen encriptados. La otra categoría de cifrados simétricos
+son los cifrados en bloque. El cifrado toma datos y los coloca
+en un depósito o bloque de datos de tamaño fijo y luego codifica
+ese bloque completo como una unidad. Si los datos a encriptar no son tan grandes
+como para llenar el bloque el espacio adicional se rellenará para garantizar que el texto
+sin formato encaje en los bloques. Los cifrados de flujo suelen ser más rápidos
+y menos complejos de implementar pero pueden ser menos seguros
+que los cifrados de bloque si la generación y el manejo de claves no se realizan bien. Si se usa la misma clave para encriptar datos
+dos o más veces, es posible romper el cifrado y recuperar el texto sin formato. Para evitar la reutilización de claves,
+se usa un vector de inicialización o IV. Se trata de un fragmento de datos aleatorios
+que se integran en la clave de encriptación y la clave combinada resultante
+se usa para encriptar los datos. La idea es que, si tienes
+una clave maestra compartida generes una clave de encriptación única. Esa clave se usa una vez al generar
+una nueva clave con la maestra y la IV. Para que se pueda desencriptar el mensaje,
+se debe enviar el IV en texto sin formato junto con el mensaje encriptado. Un buen ejemplo de esto se puede ver
+al inspeccionar la trama 802.11 de un paquete inalámbrico web encriptado. El IV se incluye en texto sin formato justo
+antes de la carga útil de datos encriptados.

@@ -1,0 +1,61 @@
+Uno de los primeros sistemas prácticos de criptografía asimétrica
+desarrollado fue RSA. Lleva las iniciales de sus tres coinventores:
+Ron Rivest, Adi Shamir y Len Adleman. El sistema criptográfico se patentó en 1983
+y lo lanzó al dominio público RSA Security en el año 2000. El sistema RSA especifica mecanismos
+para la generación y distribución de claves junto con la operación de encriptación
+y desencriptación con estas claves. No profundizaremos
+sobre las matemáticas involucradas ya que implica un nivel bastante alto
+y están más allá del alcance de esta clase. Es importante saber que el proceso de generación de claves
+depende de la elección de dos números primos únicos, aleatorios
+y por lo general muy grandes. El DSA, o algoritmo de firma digital es otro ejemplo de sistema
+de criptografía asimétrica aunque se usa para firmar y verificar datos. Se patentó en 1991 y forma parte del Estándar
+federal de procesamiento de información del Gobierno de EE.UU. Al igual que RSA, la especificación
+abarca el proceso de generación de claves junto con la firma y verificación de datos
+con los pares de claves. Es importante señalar que la seguridad
+del sistema depende de la elección de un valor inicial aleatorio
+que se incorpora al proceso de firma. Si este valor se filtra o se puede inferir,
+si el número primo no es aleatorio entonces es posible que un atacante
+recupere la clave privada. De hecho, esto le sucedió a Sony en 2010
+con su consola de juegos PlayStation 3. Resulta que no se estaban asegurando de que este valor aleatorio
+se cambiara para cada firma. Eso generó que un grupo de hackers
+llamado Fail0verflow pudiera recuperar la clave privada que Sony usó
+para firmar el software para su plataforma. Esto permitió a modders escribir y firmar
+software personalizado que se podía ejecutar en la plataforma de consola,
+que de otro modo estaría bloqueada. Por eso la piratería de juegos se convirtió
+en un problema para Sony, ya que facilitaba la copia y distribución ilícitas de juegos,
+que provocaba pérdidas en las ventas. Ya vimos que los sistemas asimétricos se usan
+como mecanismos de intercambio de claves para establecer un secreto compartido
+que se usará con cifrado simétrico. Otro algoritmo
+de intercambio de claves popoular es DH o Diffie-Hellman, sus coinventores. Veamos cómo funciona el algoritmo
+de intercambio de claves DH. Supongamos que dos personas desean
+comunicarse a través de un canal no seguro. Los llamaremos Suzanne y Daryll. Me encariñé bastante con ellos dos. Primero, Suzanne y Daryll se ponen de acuerdo
+sobre el número inicial, que sería aleatorio y un número entero muy grande. Este número debe ser diferente en cada sesión
+y no es necesario que sea secreto. Ahora, cada persona elige otro número grande
+al azar, pero se mantiene en secreto. Luego, combinan su número compartido
+con su respectivo número secreto y se envían el resultado mezclado entre sí. Cada persona combina su número
+secreto con el valor combinado que recibió en el paso anterior. El resultado es un nuevo valor, el mismo
+en ambos lados sin revelar mucha información a posibles espías para descubrir
+el secreto compartido. Este algoritmo se diseñó solo
+para el intercambio de claves aunque se intentó adaptarlo
+con fines de cifrado. Incluso se usó como parte de un sistema PKI
+(infraestructura de clave pública). La criptografía de curva elíptica, o ECC,
+es un sistema de encriptado de clave pública que usa la estructura algebraica
+de curvas elípticas sobre campos finitos para generar claves seguras. ¿Qué significa eso? Los sistemas tradicionales de clave pública usan la factorización
+de números primos grandes mientras que ECC usa curvas elípticas. Una curva elíptica se compone de un conjunto
+de coordenadas que se ajustan a una ecuación similar a algo como y al cuadrado
+es igual a x al cubo + ax + b. Las curvas elípticas tienen
+un par de propiedades interesantes y únicas. Una es la simetría horizontal que significa que cualquier punto
+de la curva puede reflejarse a lo largo del eje x y seguir
+formando la misma curva. Además de esto, cualquier línea no vertical
+cruzará la curva en tres lugares como máximo. Es esta última propiedad la que permite
+usar curvas elípticas en la encriptación. Los sistemas de encriptación
+basados en curvas elípticas pueden lograr una seguridad similar a la de los sistemas de clave pública
+tradicionales con claves más pequeñas. Por ejemplo, una clave de curva elíptica
+de 256 bits sería comparable a una clave RSA de 3,072 bits. Esto es muy beneficioso ya que reduce la cantidad
+de datos necesarios para almacenar y transmitir cuando se trata de claves. Diffie-Hellman y DSA tienen variantes
+de curva elíptica, llamadas ECDH y ECDSA. El NIST de EE.UU. recomienda el uso
+de encriptado EC y la NSA permite su uso para proteger hasta datos ultrasecretos
+con claves EC de 384 bits. Sin embargo, la NSA expresó su preocupación
+acerca de que el encriptado EC sea muy vulnerable a ataques
+de computación cuántica ya que que la tecnología de computación
+cuántica sigue evolucionando y madurando.

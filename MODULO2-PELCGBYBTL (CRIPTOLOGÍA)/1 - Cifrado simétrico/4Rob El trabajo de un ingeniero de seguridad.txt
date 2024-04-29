@@ -1,0 +1,13 @@
+[MÚSICA] Me llamo Ron Ankeny y trabajo como ingeniero de seguridad del equipo
+de Infraestructura de Control de Acceso. Hay servidores a los que solo acceden
+ciertas personas porque son confidenciales. Al sistema financiero,
+solo debe acceder el equipo de Finanzas. Eso es lo que hacemos. Controlamos las políticas que dan acceso
+a las personas a ciertas cosas de Google. Un ingeniero de seguridad
+debe encargarse de que Google esté protegido. Las personas quieren supervisar su servicio. Tienen un servicio que funciona y quieren
+asegurarse de que realmente funcione. Debes supervisar eso o es posible que intenten
+acceder de forma remota para administrarlo. Esta máquina puede estar en la otra
+punta del país en un centro de datos. Imagina que estoy
+hablando contigo, contándote algo y hay una persona maliciosa junto a nosotros,
+si hablamos explícitamente nos puede escuchar. Si hablamos en código, en un canal encriptado no puede escucharnos. Si alguien tiene un diseño
+y dice "Sí, queremos que sea sencillo queremos usar TELNET", diré "No". Sé configurar algo un poco más seguro y estos son los motivos
+por los que deberías hacerlo.

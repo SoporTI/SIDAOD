@@ -1,0 +1,52 @@
+La criptografía asimétrica
+permite una comunicación segura a través de un canal no fiable. Pero, con la criptografía asimétrica,
+necesitamos comunicar de forma segura el secreto compartido
+o la clave con la otra parte. Si ese es el caso,
+la criptografía asimétrica podría ser mejor. Si bien funciona correctamente
+en entornos que no son de confianza también es computacionalmente
+más costosa y compleja. Por otro lado, los algoritmos de criptografía
+asimétrica son más rápidos y eficaces a la hora de encriptar grandes
+cantidades de datos. De hecho, lo que hacen muchos esquemas
+de comunicación segura es aprovechar las ventajas relativas de ambos tipos de
+encriptación usándolos para distintos fines. En la criptografía asimétrica,
+se elige un algoritmo como mecanismo de intercambio
+de claves o cifrado. Eso significa que la clave de criptografía
+simétrica o secreto compartido se transmite de forma segura a la otra parte
+a través de la criptografía asimétrica para mantener seguro el secreto
+compartido en tránsito. Una vez que se recibe el secreto compartido
+los datos se pueden enviar con rapidez eficacia y seguridad a través de una criptografía
+asimétrica encriptada. Un último tema a mencionar está relacionado
+con la criptografía asimétrica y son los MAC o códigos
+de autenticación de mensajes. No te los confundas con las direcciones
+MAC (control de acceso a medios). Un MAC es un bit de información
+que permite autenticar un mensaje recibido y garantiza que el mensaje procede
+del supuesto remitente y no de un tercero que se hace pasar por él. También garantiza que el mensaje
+no se haya modificado de alguna manera para proporcionar integridad a los datos. Esto se parece a las firmas digitales que usan criptografía
+de clave pública, ¿cierto? Aunque es muy similar, difiere un poco,
+ya que la clave secreta que se usa para generar el MAC es la misma
+que se usa para su verificación. En este sentido, es similar al sistema
+de criptografía simétrica y la clave secreta se debe acordar de antemano
+por todas las partes comunicantes o compartida de alguna forma segura. Esto describe un tipo popular
+de MAC seguro llamado HMAC o código de autenticación
+de mensaje con clave hash. HMAC usa una función hash criptográfica
+con una clave secreta para generar un MAC. Se puede usar cualquier función hash
+criptográfica como SHA-1 o MD5. La solidez o seguridad del MAC
+depende de la seguridad subyacente de la función hash criptográfica usada. El MAC se envía junto con el mensaje
+que se está verificando. El receptor verifica el MAC
+con la misma operación en el mensaje recibido y luego compara el MAC calculado
+con la recibida con el mensaje. Si los MAC son los mismos,
+se autentica el mensaje. También existen MAC basados en cifrados de criptografía simétrica,
+en bloque o en flujo como DES o AES, que se denominan CMAC
+o códigos de autenticación de mensaje basados en cifrado. El proceso es similar a HMAC, pero en vez
+de usar una función hash para un resumen se usa un cifrado simétrico con una clave
+compartida para encriptar el mensaje y la salida resultante se usa como MAC. Un ejemplo específico y popular
+de CMAC es CBC-MAC o código de autenticación de mensajes a través de encadenamiento
+de bloques de cifrado. CBC-MAC es un mecanismo para compilar
+MAC a través de cifrados por bloques. Esto funciona al tomar un mensaje y encriptarlo a través de un cifrado
+por bloques que opera en modo CBC. El modo CBC es un modo operativo para cifrados por bloques
+que incorpora el texto cifrado por bloques ya encriptados en los siguientes bloques
+de texto sin formato. Crea una cadena de bloques encriptados
+que requieren la cadena completa sin modificar para descifrarlos. Esta cadena de bloques encriptados
+de forma interdependiente significa que cualquier modificación
+en el texto sin formato dará como resultado una salida final diferente al final de la cadena,
+lo que garantiza la integridad del mensaje.

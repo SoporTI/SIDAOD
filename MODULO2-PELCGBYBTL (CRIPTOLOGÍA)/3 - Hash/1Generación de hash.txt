@@ -1,0 +1,47 @@
+Ya vimos dos formas de encriptado,
+simétrico y asimétrico. En esta lección, veremos un tipo
+de función especial que se usa mucho en informática y especialmente
+en seguridad, el hashing. No, no hablamos del plato,
+aunque sabe muy rico. El hashing o la función hash
+es un tipo de función u operación que toma una entrada de datos arbitraria y la asigna a una salida
+de un tamaño fijo llamada hash o resumen. El tamaño de salida se especifica
+en bits de datos y, a veces se incluye en el nombre de la función hash. Significa que ingresas cualquier cantidad
+de datos en una función hash y la salida resultante
+siempre será del mismo tamaño pero la salida debe ser única para la entrada
+de modo que dos entradas diferentes nunca deberían producir la misma salida. Las funciones hash tienen
+una gran cantidad de aplicaciones en la informática y se suelen usar
+para identificar datos de forma única. Seguro conoces el término tabla hash
+en el contexto de la ingeniería de software. Es un tipo de estructura de datos que usa
+hashes para acelerar las búsquedas de datos. El hashing también se puede usar
+para identificar conjuntos de datos y bases de datos o archivos duplicados
+para acelerar la búsqueda de tablas o eliminar datos duplicados
+y así ahorrar espacio. En función de la aplicación,
+se pueden querer varias propiedades y existe una variedad de funciones hash
+para diversas aplicaciones. Veremos las funciones hash criptográficas,
+usadas para diversas aplicaciones como autenticación, integridad
+de mensajes, huellas dactilares detección de corrupción de datos
+y firmas digitales. El hash criptográfico es diferente
+del cifrado porque las funciones hash criptográficas
+deben ser unidireccionales. Son similares porque se pueden introducir
+textos sin formato en la función hash y obtener un resultado ininteligible,
+pero no se pueden recuperar estos textos a partir del resultado del hash. La función hash criptográfica ideal
+debería ser determinista, lo que significa que el mismo valor de entrada siempre
+debería devolver el mismo valor hash. La función debe ser rápida de calcular
+y eficiente, no debería ser factible revertir la función y recuperar el texto
+sin formato del resumen de hash. Un pequeño cambio en la entrada debería
+resultar en un cambio en la salida, de modo que no haya correlación entre el cambio en la
+entrada y el cambio resultante en la salida. Por último, la función no debería permitir
+colisiones de hash, es decir dos entradas diferentes
+asignadas a la misma salida. Las funciones hash criptográficas
+son muy similares a los cifrados de bloques de claves simétricas en el sentido
+de que operan en bloques de datos. De hecho, muchas funciones hash populares
+se basan en cifrados por bloques modificados. Veamos un ejemplo básico para demostrar
+cómo funciona una función hash. Usaremos una función hash imaginaria
+con fines de demostración. Digamos que tenemos una cadena de entrada
+de "Hello World" y la introducimos en una función hash que genera
+el hash resultante de E49AOOFF. Cada vez que introducimos esta cadena
+en nuestra función obtenemos el mismo resultado de resumen hash. Ahora modifiquemos un poco la entrada,
+para que se convierta en "hello world" ahora todo en minúscula aunque este cambio nos parece pequeño la salida hash resultante es FF1832AE,
+bastante diferente. Aquí hay un ejemplo igual
+pero con una función real hash en este caso, md5sum. Esperemos que ya hayas comprendido
+el concepto de las funciones hash.

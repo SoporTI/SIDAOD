@@ -1,0 +1,31 @@
+En esta sección, abordaremos algunas funciones hash populares tanto actuales como históricas. MD5 es una función hash popular
+y muy usada que se diseñó a principios
+de la década de 1990 como una función hash criptográfica. Funciona con bloques de 512 bits y genera un resumen de hash de 128 bits. Mientras que MD5 se publicó en 1992 en 1996 se descubrió una falla en el diseño y los criptógrafos recomendaron
+usar el hash SHA1 una alternativa más segura. Pero, esta falla no se consideró importante y la función hash siguió usándose y adoptándose ampliamente. En 2004, se descubrió que MD5 es susceptible a colisiones de hash,
+lo que permite que una persona que actúe de mala fe cree un archivo malicioso que genere el mismo resumen MD5
+que otro archivo legítimo diferente. Esas personas son de lo peor, ¿no lo crees? Poco después de descubrir esta falla los investigadores
+de seguridad pudieron generar dos archivos diferentes
+con un resumen de hash MD5 coincidente. En 2008, los investigadores de seguridad dieron un paso más
+y demostraron la posibilidad de crear un certificado SSL falso que se validó
+debido a una colisión de hash MD5. Debido a estas vulnerabilidades muy graves en la función hash se recomendó dejar de usar MD5 para las aplicaciones criptográficas en 2010. En 2012, esta colisión de hash se usó con un mal propósito
+en el software malicioso Flame que usó un certificado digital
+de Microsoft falsificado para firmar el malware y parecía que el software malicioso era uno legítimo que provenía de Microsoft. Cuando se descubrieron
+las fallas de diseño en MD5 se recomendó usar SHA1 como reemplazo. SHA1 es parte
+del paquete de funciones del algoritmo de hash seguro diseñado por la NSA
+y publicado en 1995. Funciona con un bloque de 512 bits y genera un resumen de hash de 160 bits. SHA1 es otra función hash criptográfica de amplio uso en protocolos populares, como TLS/SSL PGP/SSH y IPSec. SHA1 también se usa en sistemas
+de control de versiones, como Git que usa hashes para identificar revisiones y asegurar la integridad de los datos con la detección de daños o manipulaciones. SHA1 y SHA2 fueron obligatorios en algunos casos del gobierno de EE.UU. para la protección
+de información confidencial aunque el Instituto Nacional de Estándares y Tecnología recomendó dejar de usar SHA1
+y depender de SHA2 en 2010. Muchas otras organizaciones
+también recomendaron reemplazar SHA1 con SHA2 o SHA3. SHA1 también mostró algunas debilidades y vulnerabilidades cuando los investigadores trataban de demostrar colisiones de hash realistas. Durante los 2000,
+se formularon muchos ataques teóricos y se demostraron
+algunas colisiones parciales. Pero las colisiones completas
+con estos métodos requieren de mucha potencia de procesamiento. Se estimó que un ataque de este tipo
+requería $2.77 millones en recursos de CPU
+de computación en la nube. ¡Vaya! En 2015, se desarrolló un método de ataque distinto
+que no demostró una colisión completa pero fue la primera vez que se demostró uno de estos ataques lo que tuvo implicaciones importantes para la seguridad futura de SHA1. Algo que antes era posible solo en teoría, ahora se volvía posible con métodos de ataque más eficientes y aumentos
+en el rendimiento de la computación en especial en el área
+de los procesamientos acelerados de GPU y los recursos en la nube. Una colisión completa
+con este método de ataque se estimaba posible con un procesamiento en la nube de CPU y GPU de aproximadamente $75 a $120,000 dólares mucho más económico
+que los ataques anteriores. A principios de 2017 se publicó la primera
+colisión completa de SHA1. Con recursos de CPU y GPU importantes se crearon dos archivos PDF únicos que tenían el mismo hash SHA1. La potencia de procesamiento estimada para hacerlo se describió como equivalente a 6,500 años de procesamiento de una sola CPU y 110 años de una sola GPU, sin detenerse. Son muchos años. También existe el concepto de MIC o comprobación de integridad del mensaje. No debe confundirse con MAC o código de autenticación de mensajes ya que su funcionamiento y lo que protegen es diferente. Un MIC es, en esencia un resumen de hash del mensaje en cuestión. Considéralo como
+una suma de comprobación del mensaje que asegura que el contenido del mensaje no fuera modificado en el camino. Pero, sin dudas, es diferente del MAC que mencionamos antes. No usa claves secretas es decir, que el mensaje no está autenticado. No hay nada que evite que el atacante modifique el mensaje recalcule la  suma de comprobación y modifique el MIC adjunto al mensaje. Considera al MIC como la protección frente a daños o pérdidas accidentales pero no contra acciones maliciosas o manipulaciones.

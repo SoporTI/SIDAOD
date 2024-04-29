@@ -1,0 +1,65 @@
+Ya hablamos sobre los ataques a los hashes. Ahora, aprendamos más detalles,
+incluido cómo defenderse contra ellos. Una aplicación de la función hash
+criptográfica es la autenticación. Cuando accedes a tu cuenta de correo,
+ingresas tu dirección y contraseña. ¿Qué crees que sucede en segundo plano en el correo para autenticarte? Debe verificar que la contraseña
+que ingresaste es la correcta de tu cuenta. Podrías tomar la contraseña
+proporcionada por el usuario y buscar la contraseña de la cuenta
+que se guardó y compararlas, ¿no? Si son iguales, el usuario está autenticado. Parece una solución simple. Pero ¿te parece segura? En la situación de autenticación deberíamos guardar las contraseñas
+de usuarios en texto sin formato. Es una mala idea. No deberías almacenar información sensible
+como contraseñas en texto sin formato. En cambio, deberías hacer lo que hacen
+la mayoría de los sistemas de autenticación almacenar un hash de la contraseña
+en lugar de la contraseña misma. Cuando accedes a tu cuenta de correo la contraseña que ingresas
+pasa por la función hash y, luego, el resumen de hash resultante
+se compara con el hash guardado. Si estos coinciden,
+sabemos que la contraseña es correcta y se te autentica. La contraseña no debería guardarse en texto
+sin formato porque si se vulneran los sistemas las contraseñas
+de otras cuentas quedan para el atacante. Si un atacante accede a tu sistema y copia la base de datos
+de las cuentas y las contraseñas sería una muy mala situación. Si solo se guardan los hashes de contraseñas,
+lo más que podrá obtener el atacante serán los hashes,
+que no son útiles por sí solos. ¿Y si el atacante quisiera saber a qué
+contraseñas corresponden los hashes robados? Atacaría con fuerza bruta
+la base de datos de hashes de contraseñas. Entonces, el atacante intentará
+todos los valores de entrada posibles hasta que un hash coincida con el que trata
+de recuperar el texto sin formato. Cuando hay coincidencia, sabemos
+que la entrada generada que coincide con el hash es la contraseña correspondiente. Como imaginarás,
+un ataque así puede ser muy intensivo en términos de procesamiento
+según la función hash usada. Una característica importante a destacar
+sobre estos ataques es que, técnicamente es imposible protegerse
+de ellos por completo. Un ataque exitoso contra el sistema
+más seguro que te puedas imaginar es una actividad del tiempo
+y los recursos del atacante. Con tiempo y recursos ilimitados,
+cualquier sistema puede ser forzado. ¡Uf! Lo mejor que podemos hacer para protegernos
+contra estos ataques es subir el nivel brindar el tiempo y los recursos
+intensivos suficientes para que no sea posible en un período útil
+o con la tecnología existente. Otro método común para subir el nivel
+en materia de procesamiento y protegernos frente a los ataques es ejecutar la contraseña
+a través de la función hash varias veces. A veces, a través de miles de iteraciones. Esto requerirá muchos más procesamientos en cada intento de estimar la contraseña. Eso nos lleva a las tablas rainbow
+(arcoíris). Que no te engañe el nombre colorido. Las personas de mala fe usan
+estas tablas para acelerar el proceso de recuperación de contraseñas
+de hashes robados. Una tabla rainbow es una tabla preprocesada
+de todos los valores de contraseñas posibles y sus hashes correspondientes. La idea de los ataques de tablas rainbow es
+intercambiar la potencia computacional por espacio en el disco, preprocesar
+los hashes y almacenarlos en una tabla. Un atacante puede determinar
+cuál es la contraseña correspondiente para un hash determinado
+solo con buscarlo en su tabla rainbow. No es como un ataque de fuerza bruta,
+en el que se procesa el hash para cada suposición. Es posible descargar
+las tablas rainbow de Internet para listas de contraseñas populares
+y funciones hash. Esto reduce aún más
+la necesidad de recursos computacionales y se requiere mucho espacio de almacenamiento
+para los datos de contraseñas y hashes. Te preguntarás cómo protegerte
+contra estas tablas rainbow preprocesadas. Aquí entra en juego la sal. Y no, no me refiero a la sal de mesa. Una sal de contraseña se refiere a los datos
+aleatorios adicionales agregados a la función hash que generan un hash único
+para la combinación de contraseña y sal. Funciona de esta manera. Una sal grande elegida al azar se concatena o se pega al final de la contraseña. La combinación de la sal y la contraseña pasa
+por la función hash para generar el hash, que se almacena junto a la sal. Para un atacante, esto significa que deberá procesar una tabla rainbow
+para cada valor de sal posible. Si se usa una sal grande,
+los requisitos computacionales y de almacenamiento para generar
+tablas rainbow útiles son casi imposibles. Los primeros sistemas UNIX usaban
+una sal de 12 bits que implica un total de 4,096 sales posibles. Un atacante debería generar hashes para cada contraseña
+en su base de datos 4,096 veces. Los sistemas modernos como Linux,
+BSD y Solaris usan una sal de 128 bits. Significa que hay 2 a la potencia 128
+valores posibles de sal que son más de 340 undecillones,
+es decir 340 con 36 ceros atrás. Es claro que una sal de 128 bits sube
+el nivel lo suficiente para que un ataque de tabla rainbow
+no sea posible en ningún período realista. Otra situación en la que
+si le agregas sal a algo, se pone aún mejor. Así concluimos
+la lección sobre las funciones hash.

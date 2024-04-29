@@ -1,0 +1,51 @@
+En la siguiente lección veremos la segunda clase de cifradores,
+llamados asimétricos o de clave pública. ¿Recuerdas por qué los cifrados simétricos
+se denominan simétricos? Es porque se usa la misma clave
+para encriptar que para desencriptar. Esto contrasta con los sistemas de encriptado
+asimétrico porque, como su nombre indica se usan claves diferentes
+para encriptar y desencriptar. ¿Cómo funciona eso exactamente? Imaginemos que hay dos personas
+que desean comunicarse de forma segura. Las llamaremos Suzanne y Daryll. Como en este ejemplo usan un encriptado
+asimétrico, lo primero que debe hacer cada uno es generar una clave privada. Luego, con el uso de esta clave privada,
+se obtiene una clave pública. La fortaleza
+del sistema de encriptado asimétrico proviene de la dificultad computacional de averiguar la clave privada
+correspondiente dada una clave pública. Una vez que Suzanne y Daryll generaron
+los pares de claves privada y pública intercambian las claves públicas. Habrás adivinado que la clave pública
+es pública y puede compartirse con cualquiera, mientras que la privada
+debe mantenerse en secreto. Una vez que Suzanne y Daryll
+intercambiaron las claves públicas están listos para empezar
+a intercambiar mensajes seguros. Cuando Suzzane le quiere enviar
+un mensaje encriptado a Daryll usa la clave pública de Daryll para encriptar
+el mensaje y enviarle el texto cifrado. Darryl puede usar esta clave privada
+para desencriptar el mensaje y leerlo. Debido a la relación entre las claves privada
+y pública, solo la clave privada de Daryll puede descifrar los mensajes cifrados
+con la clave pública de Daryll. Lo mismo ocurre
+con los pares de claves de Suzanne. Cuando Daryll está listo
+para responder el mensaje a Suzanne usa la clave pública de Suzanne
+para codificar su mensaje y Suzanne usa su clave privada
+para desencriptar el mensaje. ¿Entiendes por qué se llama criptografía
+asimétrica o de clave pública? Acabamos de describir las operaciones
+de encriptación y desencriptación a través de un sistema encriptado asimétrico. Pero hay otra función muy útil que el sistema
+puede realizar: las firmas de clave pública. Volvamos al ejemplo de Suzanne y Daryll. Supongamos que Suzanne quiere enviarle
+un mensaje a Daryll y hacerle saber que ella fue quien le envió
+el mensaje y no otra persona y también que el mensaje
+no se modificó ni manipuló. Podría hacerlo al componer el mensaje
+y combinarlo con su clave privada para generar una firma digital. Luego, envía este mensaje
+junto con la firma digital asociada a Daryll. Suponemos que Suzanne y Daryll
+ya intercambiaron claves públicas. Daryll ahora puede verificar el origen
+y la autenticidad del mensaje al combinar el mensaje, la firma digital
+y la clave pública de Suzanne. Si el mensaje se firmó con la clave privada
+de Suzanne y no la de otra persona y el mensaje no se modificó en absoluto,
+entonces debería validarse una firma digital. Si el mensaje se modificó
+hasta por un carácter de espacio en blanco la validación fallará
+y Daryll no deberá confiar en el mensaje. Se trata de un componente importante
+del sistema encriptado asimétrico. Sin la verificación del mensaje, cualquiera
+podría usar la clave pública de Daryll y enviarle un mensaje encriptado
+que dijera que viene de Suzanne. Los tres conceptos que nos garantiza
+un sistema encriptado asimétrico son la confidencialidad,
+la autenticidad y el no repudio. La confidencialidad se garantiza con el mecanismo
+de encriptación-desencriptación ya que nuestros datos encriptados son confidenciales
+y secretos ante terceros no autorizados. El mecanismo de firma digital garantiza
+la autenticidad, ya que permite autenticar el mensaje o verificar que no se manipuló. No repudio significa que el autor del mensaje
+no puede impugnar el origen del mensaje. En otras palabras, esto nos permite
+asegurarnos de que el mensaje procede de la persona
+que afirma ser el autor.

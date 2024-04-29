@@ -1,0 +1,67 @@
+Hablemos sobre cómo proteger
+el tráfico de red. Como vimos, la encriptación se usa
+para proteger datos teniendo en cuenta tanto
+su seguridad como integridad. Una aplicación común de esta tecnología
+es para proteger los datos en tránsito. Pero, ¿y si nuestra aplicación
+no está encriptada? ¿O si queremos otorgar
+acceso remoto a recursos internos que son muy confidenciales
+para exponerlos sin más a Internet? Usamos una VPN,
+o solución de red privada virtual. Una VPN es un mecanismo
+para conectar de forma remota un host o una red a una red privada interna. Así, los datos pasan
+por un canal público, como Internet. Es como un túnel encriptado por el que fluye
+todo el tráfico de red de sistemas remotos lo que canaliza de forma transparente
+los paquetes por el túnel a través de la red privada remota. Las VPN también pueden ser de punto a punto,
+donde dos puertas de enlace se conectan por VPN, lo que enlaza dos redes privadas
+a través de un túnel encriptado. Existen muchas soluciones de VPN
+que usan distintos métodos y protocolos,
+con diversas ventajas y desventajas. Analicemos las más conocidas. IPsec o seguridad del Protocolo de Internet es un protocolo VPN diseñado junto con IPV6. Al principio, debía cumplir las normas
+de implementación de IPV6 pero con el tiempo dejó de ser obligatorio. Usarlo con IPV6 es opcional. IPsec encripta un paquete IP
+y lo encapsula en un paquete IPsec. Luego, el paquete se enruta
+al extremo de la VPN donde se desencapsula y se desencripta
+para enviarse al destino final. IPsec admite dos modos de funcionamiento,
+el modo transporte y el modo túnel. En el modo transporte,
+se encripta solo la carga útil del paquete IP y los encabezados IP quedan intactos. Aviso: También se usan los encabezados
+de autenticación, y los valores obtienen hash y se verifican
+con las capas de transporte y aplicaciones. Así, se evita usar
+lo que podría modificar estos valores como NAT o PET. En el modo túnel, todo el paquete IP
+y la carga útil del encabezado se encriptan y se encapsulan en otro paquete IP
+con encabezados nuevos. Si bien no es una solución de VPN en sí,
+L2TP, o Protocolo de tunelización de capa 2 suele usarse para admitir VPN. Una implementación habitual
+de L2TP incluye a IPsec cuando los datos confidenciales
+son necesarios. Como L2TP en sí no ofrece encriptación es un simple protocolo de tunelización
+para encapsular diferentes protocolos o tráfico en una red que podría ser
+incompatible con el tipo de tráfico enviado. L2TP también puede segregar
+y administrar el tráfico. Los ISP usan L2TP para compartir acceso
+de red al extremo de un cliente, por ejemplo. La combinación de L2TP
+e IPsec se denomina "L2TP IPsec" y se homologó oficialmente
+en el documento RFC 3193 de la IETF. Para establecer una conexión L2TP IPsec se negocia una asociación de seguridad IPsec
+que gestiona los detalles de una conexión segura, lo que incluye
+el intercambio de claves, si se usa. También puede compartir secretos,
+claves públicas y muchos otros mecanismos. La comunicación segura se establece con
+una carga útil de seguridad de encapsulación. Es parte del conjunto de protocolos IPsec
+que encapsulan paquetes IP lo que ofrece la confidencialidad,
+integridad y autenticación de los paquetes. Una vez efectuada la encapsulación segura es momento de negociar
+y establecer el túnel L2TP. Así, IPsec encapsula los paquetes L2TP,
+lo que protege los datos de la red privada interna. En esta configuración, es importante
+distinguir entre el túnel y el canal seguro. L2TP suministra el túnel que permite el paso
+de paquetes sin modificar de una red a otra. Por otro lado, IPsec suministra
+el canal seguro que aporta la confidencialidad, integridad
+y autenticación de los datos que se pasan. SSL/TLS también se usa
+en implementaciones VPN para proteger el tráfico de red, en lugar
+de sesiones o conexiones individuales. Un ejemplo es OpenVPN,
+que usa la biblioteca de OpenSSL para gestionar el intercambio de claves y la
+encriptación de datos con canales de control. Así, OpenVPN también puede usar
+todos los algoritmos de cifrado implementados por la biblioteca de OpenSSL. Las formas de autenticación admitidas son los
+secretos precompartidos, la de certificados y con nombre de usuario y contraseña. La autenticación basada en certificados
+sería la opción más segura, pero requiere más asistencia y sobrecarga de gestión,
+ya que cada cliente necesita un certificado. La autenticación con nombre de usuario
+y contraseña puede usarse junto con la basada en certificados
+para brindar más capas de seguridad. Recuerda que OpenVPN no implementa
+directamente la autenticación con nombre de usuario y contraseña, sino que usa módulos
+para conectarse a estos sistemas. OpenVPN pueden funcionar
+a través de TCP o UDP. Por lo general, mediante el puerto 1194. Permite enviar opciones de configuración
+de red desde el servidor a un cliente y admite dos interfaces de red. Puede depender de un túnel IP de capa 3
+o de un TAP de Ethernet de capa 2. El TAP de Ethernet es más flexible,
+lo que permite transportar más tráfico. Respecto a la seguridad OpenVPN admite encriptaciones de
+hasta 256 bits con la biblioteca de OpenSSL. También se ejecuta en el espacio del usuario,
+lo que disminuye la gravedad de las posibles vulnerabilidades.
