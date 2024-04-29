@@ -1,0 +1,32 @@
+Durante este curso, será importante
+que recuerdes este acrónimo en inglés: CIA. No, no me refiero a la Agencia
+Central de Inteligencia de EE.UU. aunque sí tienen
+mucho que ver con la seguridad nacional. Cuando digo CIA,
+me refiero a las siglas en inglés de confidencialidad, integridad
+y disponibilidad. Estos tres principios clave son la base
+de lo que se conoce como la tríada CIA. Un modelo guía para diseñar
+políticas de seguridad de la información. Estos tres principios te ayudarán
+a desarrollar políticas de seguridad en el ambiente laboral
+y en tus entornos personales. Comencemos por la confidencialidad. "Confidencialidad" significa
+mantener las cosas ocultas. En TI, se refiere
+a mantener los datos que ocultaste seguros y lejos de miradas indeseadas. Un método particular de confidencialidad
+que probablemente uses a diario es la protección con contraseña. Solo tú, y quizás un socio, deberías conocer la contraseña para acceder
+a tu cuenta bancaria en línea. Para que la confidencialidad funcione,
+debes limitar el acceso a tus datos solo a quienes
+realmente necesitan acceder a ellos. La I de CIA se refiere a integridad. "Integridad" significa mantener los datos
+exactos e intactos. Los datos que enviamos o recibimos deben seguir
+siendo iguales durante su recorrido. Imagina que descargas un archivo de Internet y que, en el sitio web de la descarga,
+te informan que el archivo tiene 3 MB. Pero al finalizar la descarga, te das cuenta
+de que tiene 30 MB. Eso es una alerta. Durante la descarga sucedió
+algo potencialmente peligroso. Es posible que haya
+un archivo no deseado en tu disco duro. Por último, veamos la A de CIA,
+que es la inicial en inglés de la palabra "disponibilidad". "Disponibilidad" significa que las personas
+que deben tener acceso a nuestra información pueden acceder a ella fácilmente. Esto puede significar
+muchas cosas, como estar preparado en caso de pérdida
+de datos o de caída del sistema. Con los ataques de seguridad
+pueden robarte de todo. Tiempo, objetos materiales o tu dignidad. Hay quien te roba el tiempo que necesitas
+para volver a poner en marcha tus servicios. Algunos ataques de seguridad mantienen
+tu sistema rehén hasta que pagas un rescate. Parece aterrador. Y lo es. Por eso que estás aquí: para aprender
+cómo evitar este tipo de ataques. En este curso, verás cómo
+todos los aspectos de la seguridad giran en torno a estos tres
+principios clave: confidencialidad integridad y disponibilidad.

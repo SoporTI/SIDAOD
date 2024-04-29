@@ -1,0 +1,59 @@
+Antes de adentrarnos
+en cómo combatir a los ladrones digitales veamos un poco de terminología. Usaremos estos términos durante todo el curso por lo que deberías
+conocerlos muy bien antes de empezar. El primero es "riesgo" la posibilidad de sufrir una pérdida
+y un evento de ataque al sistema. Digamos que compras un teléfono. Una medida de seguridad
+para proteger tu dispositivo es establecer un bloqueo de pantalla
+con una contraseña o un patrón que agregas para evitar
+que otros accedan a tu información. Un bloqueo de pantalla
+es una función de seguridad que ayuda a prevenir el acceso no deseado creando una acción
+que debes ejecutar para obtener acceso. Si eliges no agregarle un bloqueo de pantalla te arriesgas a que alguien
+pueda acceder con facilidad a tu teléfono y robarte los datos. Incluso, agregar algo simple
+como una clave o un bloqueo de pantalla puede ayudarte a proteger
+datos personales o empresariales si caen en manos equivocadas. El próximo término es "vulnerabilidad",
+una falla en el sistema que puede aprovecharse
+para comprometer al sistema. Las vulnerabilidades pueden ser agujeros
+de los que puedes o no estar al tanto. Quizás te tomas unas largas vacaciones y cierras cada puerta
+y ventana de tu casa con llave antes de irte, pero
+te olvidas de la ventana del baño. Esa ventana, ahora, es una vulnerabilidad que los ladrones
+pueden usar para entrar a tu casa. O tal vez estás escribiendo una app web y activas una cuenta de depuración
+para pruebas durante el desarrollo pero te olvidas
+de desactivarla antes de lanzar la app. Ahora tienes una vulnerabilidad en tu app
+que un atacante podría descubrir. Hay un caso particular de vulnerabilidad
+llamado vulnerabilidad de día cero o día cero, a secas. Este es un tipo de vulnerabilidad desconocido para el proveedor
+o desarrollador del software pero conocido para el atacante. El nombre se refiere al tiempo nulo
+que tuvo el proveedor de software para reaccionar
+a la vulnerabilidad y repararla. Cero días. Otro término clave es "exploit" que es un software que se usa
+para aprovecharse de un error de seguridad o de una vulnerabilidad. Los atacantes escriben exploits
+para las vulnerabilidades que encuentran en el software
+para causar daños en el sistema. Digamos que un atacante
+descubre una vulnerabilidad de día cero decide aprovecharse
+de un error previamente desconocido y escribe un código de exploit de día cero. El código atacará y se aprovechará
+específicamente de este error desconocido para obtener acceso
+y ocasionar daño a los sistemas. Nada bueno. El siguiente término es "amenaza". La posibilidad de peligro
+que podría explotar una vulnerabilidad. Las amenazas son posibles atacantes,
+algo así como los ladrones. No todos los ladrones
+intentarán entrar en tu casa para robarte tus bienes más preciados pero podrían y, por eso,
+se los considera una amenaza. A continuación, "hacker". En el mundo de la seguridad,
+un hacker es una persona que intenta ingresar
+a un sistema o explotarlo. La mayoría asociamos
+a los hackers con figuras maliciosas pero, en realidad,
+hay dos tipos comunes de hackers. Los hackers de sombrero negro que intentan ingresar
+a los sistemas para hacer algo malicioso. Y los hackers de sombrero blanco
+que buscan debilidades en los sistemas para alertar
+a los propietarios de esos sistemas para que puedan solucionarlas
+antes de que alguien haga cosas maliciosas. Aunque hay otros tipos de hackers, estos
+son los dos principales y los más importantes que debemos entender en este momento. El último término es "ataque" que es un intento real
+de ocasionar daños en un sistema. Es muy importante
+ser consciente de las posibles amenazas a tu sistema
+y de sus vulnerabilidades para que te prepares mejor frente a ellas. La triste realidad es que siempre
+existirán ataques contra tu sistema. Pero antes de que empieces
+a buscar un búnker subterráneo donde pasar el resto de tus días recuerda que hay formas
+de detectar y de mitigar los ataques y estamos aquí
+para ayudarte a aprender a hacerlo. En este módulo, hablaremos
+sobre algunos de los ataques más comunes que encontrarás en casa y en tu trabajo. Durante el curso, aprenderás
+cómo proteger tus sistemas de estos ataques. Existen cientos de formas
+en las que pueden atacar a tus sistemas pero también existen cientos
+de maneras de prevenirlas. No hablaremos sobre todas ellas
+pero sí veremos las principales. Deja la idea del búnker
+y prepárate para sumergirte porque todo
+se está por volver muy, muy seguro.

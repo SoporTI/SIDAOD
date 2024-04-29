@@ -1,0 +1,78 @@
+Antes de adentrarnos
+en el próximo curso, quiero felicitarte. Lo lograste;
+llegaste al último curso del programa. Fue un lindo recorrido,
+y mira cuánto progresaste. Aprendiste todo
+lo que hay que saber sobre TI. Llegamos al último curso,
+el que completará tus conocimientos básicos. Me refiero a la seguridad. Sin ella, todos los procesos
+que vimos hasta ahora pueden fallar. Antes de comenzar,
+quisiera volver a presentarme. Nos conocimos hace mucho, en el primer curso cuando hablamos sobre la historia
+de Internet y el Internet de las cosas. Mi nombre es Gian Spicuzza,
+y soy administrador del programa en seguridad de Android. Ayudo a proteger
+más de 2,000 millones de dispositivos Android administrando e impulsando
+nuevas funciones de seguridad para cada nueva versión de Android. Amo la tecnología desde que tengo memoria. Trabajo en TI desde los 16 años
+y me la pasaba leyendo libros sobre nuevas tecnologías
+y construyendo servidores con piezas de computadoras viejas
+en el sótano de mis padres. Nunca me iba bien en los exámenes,
+y eso se reflejaba en mis calificaciones pero no permití
+que eso me impidiera seguir mi carrera. Mientras estudiaba,
+trabajé como el equipo de TI unipersonal para tres organizaciones sin fines de lucro. Era muy estresante ser responsable de todo,
+desde configurar y administrar bases de datos hasta explicarles a los empleados nuevos
+cómo ingresar al correo electrónico y a las herramientas internas. Pero, en retrospectiva,
+fue una experiencia invaluable y, sin dudas, la seguridad
+fue una parte esencial de mi trabajo en TI. Ahora trabajo directamente
+con fabricantes de hardware desarrolladores de apps
+y equipos de ingeniería dentro de Google para crear las experiencias
+más seguras para los usuarios. Para muchos, su teléfono celular
+es la única conexión a Internet que poseen y siento una gran satisfacción de saber
+que mi trabajo puede tener un enorme impacto en personas de todo el mundo
+que dependen tanto de sus dispositivos. Para tener éxito en la ciberseguridad a veces, hay que pensar como un atacante
+y siempre estar un paso adelante. ¿Estás en condiciones
+de hacer el bien pensando mal? Empecemos. En este módulo, aprenderás
+todo lo que hay que saber sobre seguridad cómo son los ataques
+y cómo defenderte de ellos. Para el final del módulo, podrás definir
+y reconocer los riesgos, las amenazas y las vulnerabilidades para la seguridad. También podrás identificar
+los ataques a la seguridad más comunes. Por último, comprenderás cómo la seguridad
+gira en torno al principio de CIA y qué es el principio de CIA. Piensa en seguridad.
+¿Qué es lo primero que viene a tu mente? Probablemente, la seguridad física como asegurarte de que tus pertenencias
+estén a salvo de ladrones trabar las puertas durante la noche y guardar tus objetos de valor
+en un lugar seguro. Pero, hoy en día,
+tu dinero no está solo en tu billetera. También se guarda en cuentas en línea
+a las que accedes con la contraseña correcta. Algunos de nosotros
+no tenemos tarjetas de crédito y quienes tienen
+no solo las llevan en sus billeteras también las guardan
+en sus sitios web favoritos para que hacer compras sea más fácil. No solo nos preocupa el dinero,
+ya que la mayor parte de nuestras vidas cabe en un teléfono: datos personales,
+fotos, mensajes de texto, inicios de sesión en aplicaciones y mucho más se conserva
+en el dispositivo que tenemos en el bolsillo. Lamentablemente, vivimos en un mundo
+en que las personas y las organizaciones intentan robar datos de empresas, Gobiernos
+y hasta de personas como tú y como yo. Que las películas no afecten
+tu percepción de los ladrones digitales, No son tan glamorosos
+o inteligentes como crees. Los ladrones digitales no tienen
+un equipo de hackers y capuchas oscuras ni tipean sin descanso todo el día en sus computadoras
+con la esperanza de hackear una empresa multimillonaria. Y eso no quiere decir
+que no suceda, porque todos sabemos que sí. Pero, en realidad, el atacante promedio
+de Internet es alguien como tú o como yo una persona común, que encontró
+una falla en tu sistema de seguridad y la aprovechó. Podría haber sido algo tan simple
+como descubrir que tu contraseña es el nombre de tu perro. Cuando lo único que protege
+tu cuenta bancaria es el nombre Fido estás en problemas. Pero así como existen alarmas
+de seguridad física para disuadir a los ladrones también hay muchas formas de prevenir
+que la seguridad digital se vea comprometida. Al terminar el curso, tendrás una mayor
+comprensión sobre la seguridad informática. Aprenderás a prevenir
+los ataques a computadoras más comunes y comprenderás varios protocolos y mecanismos de seguridad que usamos
+en nuestras redes y máquinas en la Web. También aprenderás más sobre criptografía,
+autenticación y mecanismos de acceso que son importantes
+para todo especialista en asistencia de TI. Cerraremos el curso brindándote todas
+las herramientas necesarias para evaluar la seguridad de una organización y decidir
+las mejores medidas preventivas de seguridad. Hoy en día, todas las empresas
+y las industrias dependen de la tecnología en gran medida
+para sus actividades cotidianas. ¿Te imaginas una empresa, grande
+o pequeña, que no use correo electrónico ni tenga acceso a Internet
+o computadoras funcionales? Pensemos en una empresa pequeña. Necesita algo de tecnología
+si quiere acceder a las tarjetas de crédito. Ataques recientes, como el criptogusano
+WannaCry y ataques a gran escala con el botnet Mirai, ponen de relieve
+hasta qué punto nos afecta la seguridad. Es algo que no podemos tomar a la ligera. Debido a nuestra gran dependencia
+de la tecnología, la seguridad digital es más importante que nunca
+y va a seguir teniendo un impacto creciente en todas las industrias
+y en los aspectos de nuestras vidas. Asegurémonos de equiparte
+con las herramientas adecuadas para tu seguridad
+y la de tus futuros clientes.

@@ -1,0 +1,35 @@
+Retomemos desde donde dejamos
+con el software malicioso. Hasta ahora, vimos algunos
+de los mayores tipos de software malicioso que puede haber en un sistema. Estos son software malicioso, virus, gusanos,
+software de publicidad o espía, o ransomware. ¿Y si los atacantes pudieran no solo
+hacer cosas maliciosas, como robarnos datos sino también robar los recursos
+de nuestras computadoras, como nuestra CPU? Lamento informarles que esto existe. Existe software malicioso diseñado
+para usar la máquina de otra persona y que el atacante realice una tarea
+que controla centralmente. Estas máquinas atacadas se conocen como bots. Si hay una colección de uno o más bots,
+a esa red de dispositivos la llamamos botnet. Los botnets se diseñaron para usar
+el poder de máquinas conectadas a Internet para realizar algunas funciones distribuidas. Pensemos en la minería de Bitcoin. Minar Bitcoin requiere
+una máquina que realice cálculos que ocupan
+los recursos de tu máquina. Quizás al final
+recibas unos bitcoins como recompensa. Un ataque popular es crear botnets
+para hacer tareas como minar bitcoins. En lugar de tener
+una computadora haciendo los cálculos los atacantes tienen mil computadoras
+y ganan cada vez más y más bitcoins. Una puerta trasera
+es una forma de acceder a un sistema si los otros métodos
+para acceder a él no están permitidos. Es una entrada secreta para los atacantes. Comúnmente, las puertas traseras se instalan después de que un atacante
+haya accedido a tu sistema y quiere mantener ese acceso. Incluso después de descubrir
+que tu sistema fue vulnerado puede que no te des cuenta
+de que tu sistema tiene una puerta trasera. Si la tiene, debes cerrarla
+antes de que puedan hacer más daño. Otro tipo de software malicioso que puede ser
+particularmente problemático es el rootkit. Un rootkit, por definición,
+es un kit para administradores una colección de software o herramientas
+que usaría un administrador. Permite hacer modificaciones
+de administrador en el sistema operativo. Un rootkit puede ser
+muy difícil de detectar porque se esconde del sistema usando el mismo sistema. Pequeño escurridizo. El rootkit puede ejecutar
+miles de procesos maliciosos. Pero, al mismo tiempo, esos procesos
+no se verán en el Administrador de tareas porque se puede ocultar a sí mismo. Una bomba lógica es un tipo de software
+malicioso que se instala intencionalmente a partir de un evento
+o un momento determinado y ejecuta el programa malicioso. Hubo un caso popular
+de bomba lógica ocurrido en 2006 en que el administrador
+de sistemas de un banco descontento activó una bomba lógica
+y derribó los servicios de acompañamiento con la intención de hacer caer sus acciones. Atraparon al exempleado,
+lo acusaron de fraude y lo sentenciaron a 8 años de prisión. No fue la bomba lógica más lógica.

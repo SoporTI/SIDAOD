@@ -1,0 +1,67 @@
+El malware es un tipo de software malicioso
+que se puede usar para obtener información sensible
+o para borrar o modificar archivos. Básicamente, se puede usar
+para todos los fines no deseados. Los tipos más comunes
+de malware que verás son virus, gusanos software con anuncios, software espía,
+troyanos, rootkits, puertas traseras botnets, ¡guau! Lo sé, es una lista extensa,
+pero los veremos a todos en detalle y hasta veremos casos de la vida real. Por ahora, hablemos
+sobre las formas de malware más comunes. Los virus son la forma
+más conocida de malware. Funcionan de la misma manera
+que los virus en el cuerpo humano. Cuando te enfermas, un virus
+se pega a una célula saludable de tu cuerpo luego, se multiplica y se desparrama
+por otras células saludables de tu cuerpo hasta que estornudas,
+jadeas y te sientes fatal. En un virus informático, el virus se adhiere
+a un código ejecutable, como un programa. Cuando el programa
+se ejecuta, "toca" muchos archivos cada uno de los cuales, ahora,
+es susceptible a la infección del virus. El virus se multiplica en esos archivos hace el trabajo malicioso
+para el cual se creó y repite el proceso una y otra vez
+hasta que se desparrama tanto como puede. Da miedo, ¿verdad? Agárrate fuerte porque recién empezamos.
+Los gusanos son parecidos a los virus excepto que, en lugar de tener
+que adherirse a algo para propagarse pueden vivir por su cuenta
+y propagarse a través de canales como la red. Un caso famoso de un gusano informático
+es el del ILoveYou o el bicho del amor que se desparramó por millones
+de computadoras con Windows. El gusano se enviaba por correo electrónico. Alguien te mandaba un mensaje
+que en el asunto decía "I love you" y un archivo adjunto que,
+en realidad, era el gusano disfrazado como un texto, una carta de amor. El archivo de texto
+era un ejecutable que, cuando se abría ejecutaba muchos ataques, como copiarse
+a sí mismo en varios archivos y carpetas lanzar otro software malicioso,
+reemplazar archivos y ocultarse al terminar. El gusano robaba
+las direcciones de correo electrónico y los chats con clientes
+de la computadora de la víctima. Luego, enviaba ese mismo correo
+a todos esos contactos. El bicho del amor
+se desparramó por todo el mundo y causó daños
+por miles de millones de dólares. No tan amoroso. Este es solo uno de los motivos
+por los que no debes abrir archivos adjuntos de correos electrónicos que no reconozcas. El software con anuncios es una de las formas
+más visibles de malware que verás. La mayoría lo vemos a diario. El software con anuncios solo
+te muestra publicidades y recopila datos. A veces, descargamos software
+con anuncios de forma legítima. Esto ocurre cuando aceptas
+las condiciones del servicio que te permiten usar un software gratuito
+a cambio de mostrarte publicidad. Otras veces, se puede
+instalar sin tu consentimiento y puede hacer más cosas maliciosas
+que solo mostrarte publicidades. En la mitología griega, hay un relato famoso
+sobre la invasión a la ciudad de Troya. Los griegos que habían
+intentado acceder a la ciudad amurallada finalmente decidieron esconderse
+dentro de un caballo de madera gigante con el pretexto de que era un regalo. Los troyanos dejaron que el regalo
+entrara a la ciudad y, en mitad de la noche los griegos
+salieron del caballo y atacaron la ciudad. En seguridad informática, existe un malware
+que funciona como un caballo de Troya y recibe su nombre de él. Un troyano es un malware
+que se disfraza de una cosa, pero hace otra. Así como el histórico caballo de Troya fue aceptado en la ciudad
+por los ciudadanos de Troya un troyano informático
+debe ser aceptado por el usuario lo que significa que el usuario
+debe ejecutar el programa. Nadie instalaría malware
+en su máquina intencionalmente. Por eso, los troyanos te seducen
+y se disfrazan de otros softwares para que los instales. El spyware es un tipo de software malicioso
+destinado a espiarte monitoreando las pantallas de tu computadora,
+las teclas que presionas, las cámaras web… Y luego,
+comparte toda esa información con un tercero. No es para nada bueno. Un keylogger es un tipo de software espía que se usa para registrar
+cada tecla que presionas. Puede capturar todos los mensajes
+que ingresas, tu información confidencial tus contraseñas y mucho más. El ransomware es un tipo de ataque
+que retiene tus datos o tus sistemas
+como rehenes hasta que pagas un rescate. Nuestro caso de ransomware
+fue el ataque WannaCry en mayo de 2017. El malware se aprovechaba de una vulnerabilidad
+en sistemas Windows antiguos e infectó cientos de miles
+de máquinas en todo el mundo. Lo más grave
+fue que los ataques apagaron los sistemas del Servicio Nacional de Salud de Inglaterra
+y causaron una crisis sanitaria. El ataque del ransomware WannaCry
+devastó sistemas en todo el mundo. Este tipo de ataques son cada vez
+más frecuentes y debemos estar preparados para combatirlos. Luchemos como soldados.

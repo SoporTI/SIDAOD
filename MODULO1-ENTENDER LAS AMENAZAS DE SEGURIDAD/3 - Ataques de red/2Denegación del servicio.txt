@@ -1,0 +1,37 @@
+Un ataque de denegación del servicio o DoS intenta evitar
+el acceso de usuarios legítimos a un servicio saturando la red o el servidor. Piensa en cómo sueles acceder a un sitio web. La mayoría de los sitios web grandes
+dan servicio a millones de usuarios pero, para este ejemplo, imagina un sitio web
+que solo puede dar servicio a 10 usuarios. Si alguien estuviera realizando un ataque DoS solo ocuparía esos 10 lugares,
+y a los usuarios legítimos se les habría denegado el servicio
+porque ya no hay sitio para ellos. Ahora aplícalo a un sitio
+como Google o Facebook. Los ataques DoS
+intentan ocupar esos recursos del servicio e impedir que usuarios reales accedan a él. No es un cuadro muy bonito. El ping de la muerte, o PoD,
+es un ejemplo sencillo de un ataque DoS. Funciona enviando
+un ping con errores a una computadora. El ping será de un tamaño mayor
+al que el protocolo de Internet puede manejar por lo que genera
+un desbordamiento del búfer. Esto puede provocar la falla del sistema y, posiblemente, permitir
+la ejecución de códigos maliciosos. Otro ejemplo es un ping flood, que envía
+toneladas de paquetes de ping a un sistema. En concreto, envía solicitudes
+de ICMP Echo, ya que un ping espera la misma cantidad
+de respuestas de ICMP Echo. Si una computadora no puede seguir el ritmo es probable
+que se sobrecargue y la desactiven. Eso no está nada bien, ping flood. El SYN flood es similar al ping flood. Recuerda que, para hacer una conexión TCP,
+el cliente envía un paquete SYN al servidor al que se quiere conectar. Luego, el servidor envía un mensaje SYN-ACK. Y el cliente envía un mensaje ACK. En un SYN flood, se bombardea
+al servidor con estos paquetes SYN. El servidor envía paquetes SYN-ACK de vuelta,
+pero el atacante no envía los mensajes ACK. Esto significa que la conexión sigue abierta
+y consume los recursos del servidor. Otros usuarios no podrán conectarse
+al servidor, lo que es un gran problema. Como la conexión TCP está medio abierta,
+también nos referimos a los SYN floods como ataques half-open (medio abiertos). Parece complicado, ¿verdad? Lo es. Los ataques DoS
+que aprendimos hasta ahora usan una sola máquina
+para llevar a cabo los ataques. Pero ¿y si los atacantes
+pudieran usar varias máquinas? Es un panorama mucho más aterrador:
+podrían derribar servicios en mayor volumen y mucho más rápido. Lo que da mucho más miedo
+es que los atacantes pueden hacerlo. Un ataque DoS que usa sistemas múltiples se llama ataque
+de denegación de servicio distribuido o DDoS. Los ataques DDoS necesitan una gran cantidad
+de sistemas para poder efectuar un ataque. Y suelen recibir ayuda
+de atacantes de botnets. En ese contexto, pueden acceder a grande volúmenes de máquinas
+para realizar un ataque. En octubre de 2016, ocurrió un ataque DDoS,
+cuando un proveedor de servicios DNS, Dyn fue víctima de un DDoS. Las solicitudes de búsqueda DNS falsas junto con las SYN floods que realizaban
+las botnets, sobrecargaron su sistema. Dyn administraba los DNS de sitios web
+enormes, como Reddit, GitHub, Twitter, etc. Así que, una vez que cayó, también hizo
+que esos servicios fuesen inaccesibles para sus clientes. No te interpongas entre las personas
+y sus hilos de Reddit o Twitter. Lo sé por experiencia. No es algo lindo.

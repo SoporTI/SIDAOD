@@ -1,0 +1,30 @@
+No hay otra. Las contraseñas son las medidas
+de seguridad más comunes que tenemos para evitar el acceso
+no autorizado a las cuentas. Desafortunadamente,
+una contraseña puede no ser tan fuerte o tan segura como debería. Un ataque común
+para obtener acceso a una cuenta es un ataque a la contraseña. Los ataques
+a las contraseñas utilizan software como descifradores de contraseñas,
+que intentan adivinar la tuya. Y funcionan muy bien. Así que no intentes volver a usar "Fido". No sirvió para proteger tu cuenta bancaria
+y tampoco servirá ahora. Sigamos. Un ataque común a la contraseña
+es un ataque de fuerza bruta que prueba distintas combinaciones
+de caracteres y letras sin descanso hasta obtener el acceso. Como este ataque necesita probar
+muchas combinaciones de contraseñas por lo general,
+se demora bastante haciéndolo. ¿Alguna vez viste un captcha
+al iniciar sesión en un sitio web? Los captcha se usan para distinguir
+a las personas de las máquinas. Suelen tener preguntas como
+"¿Eres un ser humano, robot o bailarín?". Si no dispones de un captcha,
+en un ataque a la contraseña un sistema automático puede
+seguir intentando acceder a tu cuenta hasta encontrar la combinación correcta. Pero, con un captcha,
+se evita que se ejecuten estos ataques. Otro tipo de ataque a las contraseñas
+es el ataque de diccionario. Un ataque de diccionario
+no prueba combinaciones con la fuerza bruta como abc1 o ABC1. En cambio, prueba palabras
+y contraseñas usadas con frecuencia como "contraseña", "mono" y "fútbol". La mejor manera de prevenir
+estos ataques es usando contraseñas fuertes. No incluyas palabras reales
+que existen en el diccionario y asegúrate de usar una mezcla
+de mayúsculas, minúsculas y símbolos. Sin ningún tipo de seguridad como los captcha
+u otras protecciones de cuenta a una aplicación típica
+de descifrado de contraseñas le tomaría un minuto descifrar
+una contraseña como "sandwich". Pero demoraría
+mucho más intentando descifrar algo como lo que se ve en pantalla. Deletreado: s, &, n, D,
+w, h, el número 1, c y  otra h. ¿Ves que es lo mismo,
+pero mucho más difícil de descifrar?

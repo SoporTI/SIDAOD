@@ -1,0 +1,45 @@
+Un ataque a la red sencillo en teoría pero que puede causar mucho daño
+es el de envenenamiento de la caché de DNS. Este tipo de ataque funciona
+engañando a un servidor DNS para que acepte un registro DNS falso
+que te enviará a un servidor DNS afectado. Luego, te dirige a direcciones DNS falsas
+cuando quieres acceder a sitios legítimos. Y no solo eso. El envenenamiento de la caché de DNS
+puede propagarse a otras redes. Si otros servidores DNS reciben
+información DNS de un servidor afectado entregarán esas entradas DNS erróneas
+a otros hosts. Hace varios años, hubo un ataque
+de envenenamiento de la caché de DNS a gran escala en Brasil. Al parecer, los atacantes
+consiguieron envenenar la caché DNS de algunos ISP locales
+insertando registros DNS falsos para varios sitios populares,
+como Google, Gmail o Hotmail. Cuando alguien quería
+visitar alguno de esos sitios se le entregaba un registro DNS falso
+que se enviaba a un servidor controlado por el atacante
+que alojaba un pequeño applet de Java. Luego, se engañaba al usuario
+para que instalara el applet que, en realidad era un troyano bancario malicioso
+diseñado para robar credenciales bancarias. Este es un ejemplo real
+del daño que pueden causar los ataques
+de envenenamiento de la caché de DNS. El ataque de intermediario
+coloca al atacante entre dos hosts que creen que están
+comunicándose directamente entre sí. Hay que actualizar el nombre en inglés,
+ya que no solo hay hackers hombres. El ataque monitoreará la información
+que se envían los hosts entre sí y, posiblemente, la modificará en el proceso. Un ataque de intermediario común
+es una sesión de secuestro de sesión. Digamos que ingresas a un sitio
+y te olvidas de cerrar sesión. Ahora ya te autenticaste
+en el sitio web y generaste un token de sesión
+que te da acceso a ese sitio web. Si había alguien haciendo un secuestro
+de sesión, podría robarte ese token y hacerse pasar por ti en ese sitio web.
+Y nadie quiere eso. Este es otro motivo
+para pensar en las CIA de seguridad. Siempre debes asegurarte
+de que los datos que envías y recibes son íntegros
+y de que nadie los está manipulando. Otra forma de lanzar
+un ataque de intermediario es con un ataque
+de punto de acceso no autorizado. Este tipo de ataque
+se instala en el punto de acceso de la red sin el conocimiento de sus administradores. A veces, en los entornos corporativos,
+alguien puede conectar un router a su red corporativa
+para crear una red inalámbrica sencilla. Algo bastante inocente, ¿verdad? Error. De hecho, esto puede ser muy peligroso
+y podría dar acceso no autorizado a una red autorizada segura. En lugar de que un atacante
+tenga que acceder a una red conectándose directamente a un puerto de red puede estar fuera del edificio
+y conectarse a la red inalámbrica. Un último método de intermediario
+que veremos se llama evil twin. Es similar a un ataque de punto de acceso
+no autorizado con una importante diferencia. La premisa de un ataque evil twin es que te conectes
+a una red idéntica a la tuya. Esta red idéntica
+es el evil twin de nuestra red y la controla nuestro atacante. Una vez que nos conectemos,
+supervisará todo nuestro tráfico.

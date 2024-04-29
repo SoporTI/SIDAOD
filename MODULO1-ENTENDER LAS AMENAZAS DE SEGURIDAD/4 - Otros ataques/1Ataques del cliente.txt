@@ -1,0 +1,32 @@
+Hablamos mucho sobre los ataques de seguridad
+orientados directamente a las víctimas pero no son los únicos
+ataques que ocurren en la Web. Quizás en algún momento
+trabajes en el desarrollo de software o en la ingeniería
+de software, y deberás estar al tanto de estos otros tipos de ataques
+para garantizar la seguridad de tu trabajo. Un fallo de seguridad común
+en el desarrollo de software y que hace estragos en la Web
+es la posibilidad de un atacante de inyectar un código malicioso. Nos referimos a este tipo
+de ataques como ataques de inyección. ¿Cómo funcionan los ataques de inyección? Excelente pregunta. Para simplificar, no entraremos en los detalles de la implementación
+del código, pero imagínate un auto. Mantienes el auto
+en marcha gracias a la gasolina. Ahora, considera que alguien
+quiere hacerle algo dañino al auto. Esa persona podría inyectar un batido
+de banana y fresa en el tanque del auto. Si bien suena delicioso, podría arruinarlo. Así que, ¿cómo luchas contra eso? Una forma hipotética de prevenir esto
+es agregando un mecanismo a tu auto para que solo acepte gasolina
+y ningún otro líquido. Los ataques de inyección y los sitios web
+trabajan de esta misma manera a excepción
+del delicioso batido de banana y fresas y sin soluciones demasiado complejas. Estos ataques pueden mitigarse con buenos principios
+de desarrollo de software como la validación de entrada
+y el saneamiento de los datos. ¿Alguien más tiene hambre?
+¿Tomamos un batido? ¿No? Está bien, sigamos. Los ataques de secuencias de comandos
+entre sitios o XSS son un tipo de ataque de inyección en el que el atacante
+puede insertar código malicioso y dirigirse al usuario del servicio. Los ataques XSS son una forma común
+de lograr un secuestro de sesión. Es algo tan simple como insertar
+una secuencia de comandos maliciosa en un sitio web, y el usuario,
+sin saberlo, la ejecuta en su navegador. Así, la secuencia de comandos
+puede hacer maldades como robar las cookies de la víctima
+y acceder al ingreso a un sitio web. Mmm… Galletas. Otro tipo de ataque de inyección
+es el de secuela o de inyección SQL. A diferencia de un ataque XSS
+que se dirige a un usuario el ataque de inyección SQL se dirige a todo el sitio web
+si este usa una base de datos SQL. Los atacantes pueden ejecutar comandos SQL
+que les permitan borrar datos del sitio web copiarlos y ejecutar
+otros comandos maliciosos. Con esto aclarado, es hora de la merienda.

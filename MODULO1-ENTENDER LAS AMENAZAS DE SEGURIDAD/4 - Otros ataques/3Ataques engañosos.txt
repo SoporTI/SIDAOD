@@ -1,0 +1,51 @@
+Prepárate porque estamos por sumergirnos
+en uno de los ataques menos técnicos pero más preocupantes
+de todos: la ingeniería social. La ingeniería social
+es un tipo de ataque que depende mucho de las interacciones
+con los humanos en lugar de computadoras. Puedes fortalecer
+tus defensas tanto como quieras. Puedes gastar millones de dólares en una infraestructura
+de seguridad vanguardista. Pero si Susan, la administradora del sistema,
+tiene acceso total a tu sistema y la engañan para que entregue todas sus credenciales,
+no podrás hacer nada para detenerlo. Como aprendimos
+de las películas de ciencia ficción los humanos siempre
+serán el eslabón más débil en la vida y en tu sistema de seguridad. La ingeniería social es un juego de estafas
+en el que los atacantes usan técnicas engañosas
+para obtener acceso a información personal. Luego, tratan de hacer
+que un usuario ejecute algo y, básicamente,
+estafan a la víctima para que haga eso. Un ataque popular
+de ingeniería social es un ataque de phising. El phishing ocurre
+cuando un correo electrónico malicioso se envía a la víctima
+disfrazado de algo legítimo. Un ataque de phishing común es un correo en el que te dicen
+que tu cuenta bancaria fue atacada y te piden que hagas clic en un vínculo
+para restablecer tu contraseña. Cuando visitas el vínculo,
+se ve igual al sitio web de tu banco pero, de hecho, es un sitio falso. Te engañan para que ingreses
+tu contraseña y tus credenciales actuales y restablezcas tu contraseña actual. Otra variante
+es el ataque de phishing dirigido. Ambos esquemas de phishing
+tienen los mismos objetivos pero el phishing dirigido
+ataca específicamente a individuos o grupos. Los correos falsos
+pueden contener algo de información personal como tu nombre
+o los nombres de amigos o familiares por lo que parecen confiables. Otro ataque popular de ingeniería social
+es la falsificación de identidad en correos que es cuando una fuente
+se hace pasar por otra. Piensa en una falsificación de identidad. Ocurre cuando recibes un correo
+con una dirección de remitente engañosa. Puedes enviar un correo y hacer
+que parezca que procede de donde quieras ya sea que exista o no. Imagina que abres un correo
+que pensabas que era de tu amigo Brian. Puedes ver la dirección real
+de Brian, y el correo dice que tienes que ver un enlace divertido. Conoces a Brian, es genial
+y siempre te envía correos muy graciosos así que, haces clic en el vínculo. De pronto,
+tienes software malicioso instalado. Seguramente, ahora
+no crees que Brian sea tan genial. No toda la ingeniería social
+ocurre de forma digital. De hecho, un ataque ocurre
+a través del contacto físico. A esto se le llama baiting. Se usa para incitar
+a la víctima a hacer algo. Por ejemplo, un atacante
+podría dejar una unidad USB en un lugar con la esperanza de que alguien la conecte
+a su computadora para ver qué contiene. Esa persona acaba de instalar
+software malicioso en su máquina sin saberlo. Otro ataque popular que puede
+ocurrir sin conexión se llama tailgating. En esencia, consiste en obtener
+acceso a un área restringida de un edificio siguiendo a un empleado real adentro. En la mayoría de los entornos corporativos el acceso a edificios
+se restringe al uso de una tarjeta-llave u otro método de entrada. Los que hacen tailgate
+usan técnicas de la ingeniería social para engañar a un empleado y hacerles
+creer que están ahí por una razón legítima como hacer mantenimiento
+en el edificio o entregar un paquete. Una vez que esa persona entró, tiene
+acceso físico a los bienes corporativos. Es bastante aterrador lo que hemos visto. Seguro que no sabías que había
+tantas formas de comprometer la seguridad. Esperamos que hayas comprendido mejor los ataques y las señales
+más comunes a tener en cuenta.
