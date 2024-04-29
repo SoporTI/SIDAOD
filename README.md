@@ -9,3 +9,6 @@ Al final de este curso, entenderás:
 ● cómo evaluar los riesgos potenciales y recomendar formas de reducir el riesgo.
 ● mejores prácticas para asegurar una red.
 ● cómo ayudar a otros a comprender los conceptos de seguridad y protegerse a sí mismos.
+
+> [!IMPORTANT]  
+> Faltan los videos de cada modulo.
