@@ -1,0 +1,83 @@
+Sistemas de detección
+y prevención de intrusiones o IDS/IPS. Los sistemas IDS/IPS funcionan a través de la supervisión
+del tráfico de red y su análisis. Como especialista en asistencia de TI
+podrías brindar asistencia a la plataforma subyacente
+en la que se ejecutan los IDS/IPS. También podrías necesitar
+mantener el sistema mismo asegurar que se actualicen las reglas
+y tal vez hasta responder a las alertas. ¿Qué hacen los sistemas IDS e IPS? Buscan comportamientos coincidentes o características que indiquen
+un tráfico malicioso. La diferencia entre un sistema IDS y uno IPS es que el IDS solo es
+un sistema de detección. No hará nada para bloquear
+o prevenir un ataque cuando se detecte solo lo registrará y alertará. Pero un sistema IPS puede ajustar
+las reglas de firewalls en tiempo real para bloquear o quitar
+el tráfico malicioso cuando se lo detecta. Los sistemas IDS/IPS pueden
+estar basados en un host o en la red. En el caso de un sistema
+de detección de intrusiones en la red, o NIDS el sistema de detección se implementa en algún lugar de una red
+en donde pueda supervisar el tráfico de un segmento de red o subred. Un sistema de detección
+de intrusiones basado en host sería un software
+implementado en un host, que supervisa el tráfico hacia y desde ese host solamente. También podría supervisar archivos de sistemas
+en busca de cambios no autorizados. Los sistemas NIDS se asemejan
+a los firewalls en muchas formas. Pero un firewall está diseñado
+para prevenir intrusiones y bloquear el tráfico potencialmente malicioso
+que proviene de afuera y reforzar las LCA entre redes. Los sistemas NIDS deben detectar y alertar
+sobre la actividad potencialmente maliciosa que proviene de dentro de la red. Además, los firewalls solo tienen visibilidad del tráfico
+que fluye entre las redes que deben proteger. Generalmente, no tendrían visibilidad
+del tráfico entre hosts dentro de la red. La ubicación del NIDS debe considerarse
+con cuidado cuando se implementa un sistema. Debe ubicarse
+en la topología de la red de forma que tenga acceso al tráfico que queremos supervisar. Una buena forma de tener acceso
+al tráfico de red es con la funcionalidad de reflejo de puertos que tienen
+muchos switches empresariales. Permite que todos los paquetes
+de un puerto, un intervalo de puertos o una VLAN completa se dupliquen en otro puerto
+en el que se conectarán los hosts NIDS. Con esta configuración,
+nuestra máquina NIDS podrá ver todos los paquetes que fluyen desde y hacia los hosts
+en el segmento del switch. Esto nos permite supervisar
+las comunicaciones entre hosts y el tráfico desde los hosts
+hacia las redes externas, como Internet. El host NIDS analizará este tráfico y habilitará el modo promiscuo
+en el puerto de análisis. Esta es la interfaz de red que está conectada al puerto duplicado
+en un switch. Puede ver todos los paquetes
+que pasan y realizar un análisis del tráfico. Como esta interfaz se usa para recibir paquetes duplicados
+de la red que queremos supervisar un host NIDS debe tener
+al menos dos interfaces de red. Una es para supervisar y analizar,
+y otra es para conectarse a nuestra red con fines administrativos. La ubicación de un NIPS o sistema de prevención
+contra intrusiones de red es diferente de la de un sistema NIDS. Esto se debe
+a que un sistema de prevención podrá tomar medidas
+contra el tráfico que se sospeche malicioso. Para que un dispositivo NIPS pueda bloquear
+o quitar el tráfico de una amenaza detectada debe ubicarse
+en línea con el tráfico que se supervisa. Esto significa que el tráfico
+que se supervisa debe pasar por el dispositivo NIPS. Si no fuera así, el host NIPS no podría
+tomar medidas contra el tráfico sospechado. Piénsalo así. Un dispositivo NIDS es un observador pasivo que solo vigila el tráfico
+y envía una alerta si ve algo. No es como un dispositivo NIPS,
+que no solo supervisa el tráfico sino que puede reaccionar,
+en general, bloqueando o quitando el tráfico. La detección de amenazas
+o del tráfico malicioso suele manejarse mediante
+la detección basada en firmas que es similar a cómo un software antivirus
+detecta un software malicioso. Como especialista en asistencia de TI
+podrías estar a cargo de mantener la configuración del IDS o el IPS,
+lo que incluirá asegurar que las reglas
+y las firmas estén actualizadas. Las firmas son características únicas
+de un tráfico malicioso conocido. Podrían ser secuencias específicas
+de paquetes o paquetes con ciertos valores codificados
+en el campo de encabezado específico. Esto permite que los sistemas de detección
+y prevención de intrusiones reconozcan con facilidad y rapidez
+el tráfico malicioso conocido de fuentes como botnets gusanos y otros vectores de ataque
+comunes de Internet. Pero, como ocurre con los antivirus,
+los ataques menos comunes o segmentados podrían no detectarse
+con un sistema basado en firmas ya que quizá no haya firmas
+desarrolladas para estos casos. También es posible crear reglas personalizadas
+que coincidan con el tráfico que podría considerarse sospechoso,
+pero no necesariamente malicioso. Esto permitiría
+que los investigadores observen el tráfico con mayor detalle
+para determinar el nivel de malicia. Si el tráfico fuera malicioso,
+sería posible desarrollar una firma a partir del tráfico
+e incorporarla al sistema. ¿Qué sucede cuando un sistema NIDS
+detecta algo malicioso? Esto puede configurarse, pero un sistema NIDS
+suele registrar el evento de detección junto con la captura del paquete completo
+de tráfico malicioso. También suele activarse una alerta
+para notificarle al equipo de investigación que debe observar el tráfico detectado. Según la gravedad del evento, la alerta puede
+enviar un correo electrónico a un grupo o crear un ticket para un seguimiento. O podría llamar a alguien
+en medio de la noche si se determinó que es muy grave y urgente. Estas alertas también incluirán
+información de referencia vinculada a una vulnerabilidad conocida
+o más información sobre la naturaleza de la alerta para ayudar
+al investigador a analizar el evento. Hablamos mucho
+sobre la seguridad de nuestras redes. Espero que tengas
+la seguridad para continuar. Si no es así, puedes revisar
+los conceptos que ya analizamos.

@@ -1,0 +1,80 @@
+La Wi-Fi Alliance reemplazó la WEP
+con WPA, o Acceso Wi-Fi protegido. WPA se diseñó como un reemplazo a corto plazo
+que sería compatible con el hardware antiguo habilitado para WEP,
+con una simple actualización del firmware. Esto ayudó a los usuarios a adoptarlo,
+ya que no requería la compra de nuevo hardware de Wi-Fi. Para abordar
+las deficiencias de seguridad de WEP se introdujo un nuevo protocolo de seguridad llamado TKIP o protocolo
+de integridad de clave temporal. TKIP implementaba tres nuevas funciones
+que lo hacían más seguro que WEP. En primer lugar, se usó un método
+de derivación de claves más sólido para incorporar de forma más segura
+el IV a la clave de encriptación por paquete. En segundo lugar, se implementó
+un contador de secuencias para evitar ataques de repetición
+al rechazar los paquetes desordenados. En tercer lugar, se incluyó una comprobación
+de integridad de mensajes (MIC) de 64 bits para evitar la falsificación, manipulación
+o corrupción de paquetes. TKIP sigue usando el cifrado RC4
+como algoritmo de encriptación subyacente pero soluciona las deficiencias
+de generación de claves WEP a través de una función de combinación de claves para generar
+claves de encriptación únicas por paquete. También usa claves largas de 256 bits. Esta función de combinación de claves
+incorpora la eterna frase de contraseña de Wi-Fi con el IV. Esto es diferente de la simple concatenación
+de la clave compartida y el IV. En WPA, la clave precompartida
+es la contraseña de Wi-Fi que compartes con otros cuando van a tu casa
+y quieren usar tu red inalámbrica. Esto no se usa de forma directa
+para encriptar el tráfico. Se usa como factor
+para derivar la clave de encriptación. La frase de contraseña
+se introduce en la PBKDF2 o función de derivación de claves
+basada en contraseña 2 junto con el SSID de la red Wi-Fi
+como dato aleatorio (sal). Luego, esto se procesa 4,096 veces
+con la función HMAC-SHA1 para generar una clave de encriptación única. El SSID "sal" se incorpora para defenderse
+de los ataques de tabla rainbow. Las 4,096 rondas de HMAC-SHA1
+aumentan la potencia computacional necesaria para un ataque de fuerza bruta. Debo señalar que la clave precompartida
+se puede ingresar con dos métodos diferentes. Se puede ingresar
+un valor hexadecimal de 64 caracteres o se puede usar el valor
+de 64 caracteres como clave que es 64 caracteres hexadecimales
+multiplicados por 4 bits es decir, 256 bits. Otra opción es usar la función PBKDF2,
+pero solo si se ingresan caracteres ASCII como frase de contraseña. Si ese es el caso, la frase de contraseña
+puede tener entre 8 y 63 caracteres. Puede que encuentres WPS en una pequeña tienda de TI
+que use routers SOHO comerciales. Puede ser útil en estos entornos más pequeños
+para facilitar la conexión segura de clientes inalámbricos a la red inalámbrica pero la habilitación
+tiene implicaciones de seguridad que debes tener en cuenta. La Wi-Fi Alliance introdujo WPS en 2006. Proporciona varios métodos diferentes
+que permiten a nuestro cliente inalámbrico conectarse de forma segura
+a una red inalámbrica sin tener que ingresar
+la clave precompartida. Esto facilita el uso de frases de contraseña
+muy largas y seguras sin que sea innecesariamente complicado. WPS lo simplifica al permitir
+el intercambio seguro del SSID y la clave precompartida. Esto se hace después de autenticar
+o intercambiar datos a través de uno de los cuatro métodos admitidos. WPS admite la autenticación con PIN,
+NFC o USB para el intercambio fuera de banda de los detalles de la red,
+o la autenticación con botón pulsador. Probablemente hayas visto el mecanismo
+del botón pulsador. Por lo general, es un pequeño botón
+en algún lugar del router doméstico con dos flechas
+que apuntan en sentido antihorario. El mecanismo requiere que se pulse un botón tanto en el lado del AP
+como en el lado del cliente. Esto requiere proximidad física
+y un corto período de tiempo en el que el cliente puede autenticarse
+con solo pulsar un botón. Los métodos de NFC y USB
+solo proporcionan un canal diferente de transmisión de los detalles
+para unirse a la red. Los métodos con PIN son muy interesantes
+pero introducen una falencia crítica. El mecanismo de autenticación con PIN
+admite dos modos. En un modo, el cliente genera un PIN,
+que luego se ingresa en el AP. En el otro, el AP tiene un PIN hard-coded
+en el firmware, que se ingresa en el cliente. El segundo modo es el vulnerable
+a un ataque de fuerza bruta en línea. El método de autenticación con PIN usa
+pines de ocho dígitos, pero el último dígito es una suma de comprobación que se calcula
+a partir de los primeros siete dígitos. Esto hace que el total de pines posibles sea
+10^7, o alrededor de 10 millones de opciones. Pero el AP autentica el PIN por mitades. Eso significa que el cliente enviará
+los primeros cuatro dígitos del AP esperará una respuesta positiva o negativa
+y luego enviará la segunda mitad del PIN si la primera mitad era correcta. ¿Notaste algo erróneo en esta situación? De hecho, estamos reduciendo más el total
+de pines válidos posibles y haciendo que sea más fácil
+adivinar cuál es el correcto. La primera mitad del PIN, de cuatro dígitos,
+tiene alrededor de 10,000 posibilidades. La segunda mitad, de solo tres dígitos debido
+al valor de la suma de comprobación tiene un máximo de solo 1,000 posibilidades. Esto significa que el PIN correcto se puede
+adivinar en un máximo de 11,000 intentos. Parece mucho, pero no lo es. Sin ninguna limitación de velocidad,
+un atacante podría recuperar el PIN y la clave precompartida
+en menos de cuatro horas. En respuesta a esto, la Wi-Fi Alliance revisó
+los requisitos de la especificación WPS e introdujo un período de bloqueo
+de 1 minuto tras 3 intentos de PIN incorrectos. Esto aumenta el tiempo máximo para adivinar
+el PIN de cuatro horas a menos de tres días. Eso está dentro del ámbito
+de las posibilidades para un atacante decidido y paciente,
+pero empeora. Si tu red se ve comprometida con este ataque
+porque el PIN es un elemento inmutable que forma parte de la configuración del AP,
+el atacante podría reutilizar el PIN WPS ya recuperado
+para obtener la nueva contraseña. Esto sucedería incluso si detectaras
+clientes inalámbricos no autorizados en tu red y cambiaras tu contraseña de Wi-Fi.

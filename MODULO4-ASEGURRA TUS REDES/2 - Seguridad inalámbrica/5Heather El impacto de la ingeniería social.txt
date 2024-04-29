@@ -1,0 +1,13 @@
+[MÚSICA] A menudo, me sorprende cuán creativo
+es el equipo de Ataque interno de Google y los tipos de errores
+que cometemos casi sin querer al crear nuestro propio software. Pero los ataques más interesantes creo
+que son los que se aprovechan de las personas los llamamos "ingeniería social". Y hemos notado que no importa
+lo que hagamos, siempre será posible aplicar ingeniería social
+a los Googlers para que hagan algo por ti. Una vez, tuvimos un caso fantástico en el que diseñamos una lámpara de plasma y le pusimos una pegatina de Google. Era como un regalo de aniversario. Y la lámpara de plasma tenía un cable USB. Y la idea era que, al conectarla
+a la computadora, se encendiera y brillara. Pero dentro había un código de ataque
+que se apoderaría de la computadora. La pusieron en una caja, parecía un regalo,
+y los Googlers la abrieron y dijeron "Google es fantástico, recibí
+un regalo por el aniversario de diez años". Y conectaron
+la lámpara de plasma a su computadora. Así que, creo que podríamos
+crear la computadora perfecta y deshacernos de los hackers,
+pero el problema seguiría existiendo.

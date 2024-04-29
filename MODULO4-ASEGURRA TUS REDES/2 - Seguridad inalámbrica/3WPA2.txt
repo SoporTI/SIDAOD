@@ -1,0 +1,76 @@
+WPA2 mejora aún más la seguridad de WPA
+al implementar el protocolo CCMP o protocolo de código de autenticación
+de mensajes de encadenamiento de bloques de cifrado en modo contador. Se basa en el cifrado AES, que por fin se
+aleja del cifrado inseguro RC4. El proceso de derivación de claves no cambió
+con respecto a WPA y los requisitos de la clave precompartida son los mismos. El contador con CBC-MAC es un modo de funcionamiento particular
+para algoritmos de cifrado por bloques. Permite la encriptación autenticada,
+lo que significa que los datos se mantienen confidenciales y se autentican. Para eso se usa un mecanismo
+de autenticación y encriptación. Primero se calcula el resumen CBC-MAC y luego
+el código de autenticación resultante se encripta junto con el mensaje
+mediante un algoritmo de cifrado por bloques. En este caso, estamos usando AES
+en modo contador. Convierte un algoritmo de cifrado por bloques
+en un cifrado de flujo usando un valor inicial aleatorio
+con un contador incremental para crear un flujo de claves
+con el que encriptar los datos. Veamos el proceso
+del protocolo de enlace de cuatro vías que autentica clientes de la red. Te ayudará a entender
+cómo se puede descifrar WPA2. Este proceso también genera la clave
+de encriptación temporal que se usará para encriptar los datos de este cliente. Está diseñado para que un AP pueda confirmar
+que el cliente tiene la clave precompartida o clave maestra por pares (PMK) correcta
+en una configuración WPA-PSK sin revelar la PMK. La PMK es una clave duradera
+y puede que no cambie en mucho tiempo. Una clave de encriptación se deriva de la PMK
+que se usa para la verdadera encriptación y desencriptación del tráfico
+entre un cliente y un AP. Esta clave se denomina clave transitoria
+por pares o PTK. La PTK se genera con la PMK, el nonce del AP,
+el nonce del cliente la dirección MAC del AP
+y la dirección MAC del cliente. Todo esto se concatena
+y se procesa con una función. Los nonces de AP y cliente son
+bits de datos aleatorios que cada parte genera e intercambia. Las direcciones MAC de cada parte ya se
+conocerían a través de los encabezados de paquetes y ambas partes
+ya deberían tener la PMK correcta. Con esta información, se
+puede generar la PTK. Esto cambia para cada cliente, para permitir
+la confidencialidad entre ellos. La PTK consta de cinco claves individuales,
+cada una con una finalidad propia. Se usan dos claves para encriptar y confirmar
+los paquetes EAPOL y el protocolo de encapsulación
+lleva estos mensajes. Se usan dos claves para enviar y recibir
+códigos de integridad de los mensajes y, por último, hay una clave temporal
+que se usa para encriptar los datos. El AP también transmitirá
+la clave transitoria por grupos, o GTK. Se encripta con la clave de encriptación
+EAPOL contenida en la PTK que se usa para encriptar el tráfico
+multicast o broadcast. Como este tipo de tráfico debe ser legible
+por todos los clientes conectados a un AP esta GTK se comparte
+entre todos los clientes. Se actualiza y se retransmite con regularidad
+cuando un cliente desvincula el AP. Es mucho para asimilar. Recapitulemos. Los cuatro mensajes intercambiados, en orden,
+son estos: el AP envía un nonce al cliente. El cliente envía su nonce al AP. El AP envía la GTK y el cliente responde con
+un ACK y confirma el éxito de la negociación. El estándar WPA y WPA2, también introducido
+en la autenticación 802.1X para redes Wi-Fi suele llamarse WPA2 Enterprise. Las configuraciones que no son 802.1X se
+denominan WPA2 Personal o WPA 2 PSK. Como usan una clave precompartida para
+autenticar a los clientes, no repetiremos 802.1X, ya que funciona de forma similar
+a 802.1X en las redes cableadas que ya vimos. La única diferencia es que, en este caso,
+el AP actúa como autenticador. El RADIUS de backend sigue siendo el
+servidor de autenticación y la PMK se genera usando componentes
+del método EAP elegido. Aunque no es una función de seguridad, WPS,
+o Wi-Fi Protected Setup es una función práctica
+para facilitar que los clientes se unan a una red protegida por WPA-PSK. WPA2 es un protocolo de seguridad muy sólido. Se desarrolló con los mejores mecanismos
+de su clase para prevenir ataques y garantizar la confidencialidad
+de los datos que protege. Sin embargo, es susceptible
+a algunas formas de ataque. El protocolo de enlace de autenticación
+de cuatro vías que vimos antes es susceptible a un ataque
+de fuerza bruta fuera de línea. Si un atacante consigue capturar el proceso
+del protocolo de enlace de cuatro vías solo para paquetes, puede empezar
+a adivinar la clave precompartida o PMK. Puede tomar los nonces y las direcciones MAC
+de los paquetes del protocolo de enlace de cuatro vías y calcular las PTK. Como las claves secretas
+del código de autenticación del mensaje se incluyen como parte de la PTK,
+si se adivina la PMK podría obtenerse una PTK
+capaz de validar un MIC. Se trata de un ataque de fuerza bruta
+o basado en diccionario por lo que depende de la calidad
+de los intentos de adivinar la contraseña. Para calcular la PMK adivinando
+la frase de contraseña y los valores del SSID se necesita bastante potencia de cálculo. Pero la mayor parte de los requisitos
+computacionales son para calcular la PMK. Se requieren 4,096 iteraciones de una función
+hash, que puede agilizarse enormemente con el uso de cálculos acelerados por GPU
+y recursos de computación en la nube. Como la mayor parte de los cálculos implican
+deducir la PMK incorporando conjeturas de contraseña con los SSID,
+es posible precalcular PMK en forma masiva para las combinaciones comunes
+de SSID y contraseña. Esto reduce los requisitos computacionales
+necesarios para derivar la PTK a partir de los elementos de sesión únicos. Estos conjuntos precalculados se denominan
+tablas rainbow, y esto ya se ha hecho. Se pueden descargar tablas rainbow
+de los 1,000 SSID más frecuentes y un millón de contraseñas.

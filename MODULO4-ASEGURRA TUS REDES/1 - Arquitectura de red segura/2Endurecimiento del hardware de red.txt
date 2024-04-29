@@ -1,0 +1,107 @@
+En este video, veremos algunas formas
+en que un especialista en asistencia de TI puede implementar
+el endurecimiento del hardware de la red. En una lección anterior
+sobre redes, vimos DHCP. Es el protocolo donde
+a los dispositivos de una red se les asigna información
+de configuración crítica para comunicarse en la red. También aprendiste a configurar DHCP
+en otro curso de este programa. Como puedes ver, DHCP es un objetivo
+de los atacantes debido a la importancia del servicio proporcionado. Si un atacante logra implementar
+un servidor DHCP no autorizado en tu red podría otorgar concesiones de DHCP
+con cualquier información que quiera. Esto incluye configurar una dirección
+de puerta de enlace o un servidor DNS que en realidad
+sea una máquina bajo su control. Esto le da acceso a tu tráfico
+y abre la puerta para ataques futuros. A este tipo de ataque lo llamamos ataque
+de servidor DHCP no autorizado. Para protegerse contra este ataque
+de servidor DHCP no autorizado la empresa desactiva
+una función llamada espionaje de DHCP. Un switch que tiene espionaje de DHCP
+supervisará el tráfico de DHCP que se envía a través de él. También rastreará las asignaciones de IP
+y las asignará a los hosts conectados a los puertos del switch. Esto crea un mapa de direcciones IP asignadas
+a los puertos del switch físico. Esta información también se puede usar
+para proteger contra la falsificación de IP
+y los ataques de envenenamiento de ARP. El espionaje de DHCP también te permite
+designar una IP de servidor DHCP confiable si está funcionando como asistente de DHCP
+y reenviando solicitudes de DHCP al servidor. O puedes habilitar
+la confianza de espionaje de DHCP en el puerto de enlace ascendente de donde ahora provendrían
+las respuestas de DHCP legítimas. Cualquier respuesta de DHCP proveniente
+de una dirección IP que no sea de confianza o de un puerto de switch
+de enlace descendente se detectará como no confiable
+y el switch la descartará. Veamos otra forma de endurecimiento
+del hardware de red la inspección ARP dinámica. ARP permite los ataques
+de intermediario de capa 2 debido a su naturaleza no autenticada. Permite a un atacante falsificar una respuesta ARP
+para anunciar que su dirección MAC es la dirección física que coincide
+con la dirección IP de la víctima. Este tipo de respuesta ARP
+se denomina respuesta ARP gratuita ya que está respondiendo con eficacia
+a una consulta que nadie hizo. Cuando esto sucede, todos los clientes
+en el segmento de la red local almacenan en caché esta entrada de ARP. Debido a la entrada de ARP falsificada,
+envían tramas que estaban destinadas a la dirección IP de la víctima
+a la máquina del atacante. El atacante podría habilitar el reenvío de IP lo que le permitiría monitorear con claridad
+el tráfico destinado a la víctima. También podría manipular
+o modificar los datos. La inspección ARP dinámica (DAI)
+es otra función de los switches empresariales
+que previene este tipo de ataque. Requiere el uso de espionaje de DHCP
+para establecer un enlace confiable de direcciones IP
+para los puertos de switch. La DAI detecta
+estos paquetes ARP gratuitos falsificados y los descarta. Lo hace porque tiene una tabla de
+espionaje de DHCP con las asignaciones
+de direcciones IP autorizadas por puerto. La DAI también impone
+la limitación de la velocidad de los paquetes ARP por puerto
+para evitar el escaneo de ARP. Es probable que un atacante
+realice un escaneo de ARP antes de intentar el ataque de ARP. Para evitar ataques de falsificación de IP,
+se puede habilitar la protección IP de origen o IPSG en los switches empresariales,
+junto con el espionaje de DHCP. Si eres especialista en asistencia de TI
+en una pequeña empresa que usa hardware de conmutación de clase empresarial,
+seguramente usarás IPSG. Funciona usando la tabla de espionaje
+de DHCP para crear LCA de forma dinámica
+para cada puerto del switch. Esto descarta los paquetes que no coinciden
+con la dirección IP para el puerto
+según una tabla de espionaje de DHCP. Si realmente quieres proteger tu red,
+puedes implementar 802.1X. Es importante que un especialista
+en asistencia de TI conozca 802.1X. Se trata del estándar del IEEE
+para encapsular el tráfico EAP o protocolo de autenticación extensible
+en las redes 802. También se denomina EAP sobre LAN o EAPOL. Al comienzo se diseñó para Ethernet,
+pero se le agregó compatibilidad con otros tipos de redes,
+como Wi-Fi y redes de fibra. No profundizaremos
+en todos los tipos de autenticación de EAP admitidos. Hay alrededor de 100 tipos compatibles,
+por lo que llevaría demasiado tiempo. Pero analizaremos mejor EAP-TLS,
+ya que es uno de los métodos EAP más comunes y seguros. Cuando un cliente quiere autenticarse
+en una red con 802.1X hay tres partes involucradas. Al dispositivo cliente
+lo llamamos solicitante. A veces también llamamos así al software
+que se ejecuta en la máquina cliente y que controla el proceso
+de autenticación del usuario. La utilidad de código abierto de Linux,
+solicitante WPA, es uno de ellos. El solicitante se comunica
+con el autenticador y actúa como guardián de acceso de la red. Requiere que los clientes
+se autentiquen con éxito en la red antes de que se les permita
+comunicarse con ella. Suele ser un switch empresarial
+o un punto de acceso en redes inalámbricas. Si bien el solicitante
+se comunica con el autenticador en realidad no es el autenticador
+quien toma la decisión de autenticación. El autenticador actúa como intermediario
+y reenvía la solicitud de autenticación al servidor de autenticación. Allí es donde ocurre la verificación
+y la autenticación de credenciales. El servidor de autenticación
+suele ser un servidor RADIUS. EAP-TLS es un tipo de autenticación admitida
+por EAP que usa TLS para proporcionar autenticación mutua
+del cliente y del servidor de autenticación. Esta se considera una de las configuraciones
+más sólidas para la seguridad inalámbrica. Quizás veas este tipo de autenticación
+en tu carrera de TI. Como ocurre con muchos de estos protocolos,
+comprender cómo funciona puede ayudarte si necesitas solucionar un problema. Quizás recuerdes del Curso 4 que HTTPS
+es una combinación del protocolo de transferencia de hipertexto,
+HTTP con los protocolos criptográficos SSL y TLS. Al implementar TLS para el tráfico HTTPS,
+se especifica un certificado de cliente como factor de autenticación opcional. De manera similar, la mayoría de las
+implementaciones de EAP-TLS requieren certificados del lado del cliente. La autenticación puede basarse
+en certificados y requerir que el cliente presente un certificado válido
+firmado por la AC autenticadora. O un cliente puede usar un certificado,
+más un nombre de usuario, una contraseña e incluso un segundo factor de autenticación,
+como una contraseña de un solo uso. La seguridad de EAP-TLS surge
+de la protección inherente que brindan el protocolo TLS y PKI. Eso también significa que los obstáculos
+son los mismos cuando se trata de gestionar bien
+los elementos PKI. Debes proteger bien las claves privadas
+y garantizar la distribución del certificado de la AC
+a los dispositivos cliente para permitir la verificación
+del lado del servidor. Una configuración aún más segura
+para EAP-TLS sería vincular los certificados del lado del cliente
+a sus plataformas mediante TPM. Esto evitaría el robo de los certificados
+de las máquinas cliente. Cuando se combina esto con FDE,
+incluso el robo de una computadora evitaría la vulnerabilidad de la red. Estamos viendo muchos procesos complejos. No dudes en volver a ver este video
+para asentar los temas. Como especialista en asistencia de TI,
+no necesitas saber todos los detalles paso a paso. Conocer estos procesos
+y saber cómo funcionan puede ser favorable al momento de solucionar problemas y
+evaluar la seguridad de las infraestructuras.

@@ -1,0 +1,64 @@
+Para poder supervisar el tipo de tráfico
+que está en tu red necesitas un mecanismo que permita capturar paquetes
+del tráfico de red para el análisis y el posible registro. El sniffing o la captura de paquetes es
+el proceso de interceptar paquetes de red en su totalidad para el análisis. Es una herramienta invaluable para que los especialistas de TI
+solucionen problemas. Existen muchas herramientas
+que facilitan mucho esto. Antes de adentrarnos
+en los detalles de cómo usarlas analicemos algunos conceptos básicos
+del sniffing de paquetes. De forma predeterminada, las interfaces
+y la pila de software de red en un SO se comportarán
+como una interfaz educada. Solo aceptarán y procesarán
+paquetes dirigidos a su dirección de interfaz específica, en general,
+identificada por una dirección MAC. Si se encuentra un paquete con una dirección
+de destino diferente la interfaz eliminará el paquete. Pero si quisiéramos capturar
+todos los paquetes que una interfaz puede ver como cuando supervisamos todo el tráfico
+de red en un segmento de red este comportamiento sería
+una molestia para nosotros. Para anularlo, podemos ubicar
+la interfaz en lo que se llama modo promiscuo. Es un modo especial para las interfaces de redes de Ethernet
+que dice "Dame todos los paquetes". En lugar de solo aceptar y manejar
+los paquetes destinados a su dirección ahora aceptará y procesará
+todos los paquetes que vea. Esto es mucho más útil
+para el análisis o la supervisión de la red. También debería decir que se necesitan
+privilegios de usuario raíz o administrador para ubicar una interfaz en modo promiscuo
+y para empezar a capturar paquetes. Muchas herramientas de captura
+de paquetes se encargarán de esto por ti. Otra cosa muy importante para considerar
+cuando realices capturas de paquetes es si tienes acceso
+al tráfico que quieres capturar y supervisar. Digamos que quisieras analizar
+todo el tráfico entre los hosts conectados a un switch y que tu máquina
+está conectada a un puerto de ese switch. ¿Qué tráfico podrás ver en este caso? Como es un switch,
+el único tráfico que podrás capturar será el que proviene de tu host
+o está destinado a él. Eso no es muy útil para permitirte
+analizar el tráfico de otro host. Si los paquetes no se enviarán
+a tu interfaz en primer lugar el modo promiscuo no te ayudará a verlos. Pero si tu máquina se insertó entre el puerto
+de enlace ascendente del switch y el dispositivo de enlace ascendente
+que está más arriba (upstream) tendrás acceso a todos los paquetes
+que entran y salen del segmento de red local. Los switches administrados por empresas
+suelen tener una función llamada reflejo de puertos
+que ayuda con este tipo de situación. El reflejo de puertos permite
+que el switch tome los paquetes de un puerto un intervalo de puertos o toda la VLAN,
+y duplique los paquetes en un puerto de switch específico. Esto te permite tener acceso
+a todos los paquetes que pasen por un switch
+de forma más segura y conveniente. Existe otra forma práctica
+pero menos avanzada para tener acceso a los paquetes
+en un entorno de red conmutada. Puedes insertar un concentrador
+en la topología con los dispositivos donde quieres supervisar el tráfico,
+y conectarlo al concentrador y a la máquina de supervisión. Los concentradores permiten duplicar paquetes
+en la interfaz de captura rápida e indiscriminadamente. Tienen sus desventajas,
+como la capacidad de procesamiento reducida y el potencial de introducir colisiones. Si capturas paquetes
+desde una red inalámbrica el proceso es un poco diferente. El modo promiscuo aplicado
+a un dispositivo inalámbrico permite que el cliente procese y reciba paquetes de la red
+a la que está asociado con destino para otros clientes. Pero si quisiéramos capturar y analizar todo el tráfico inalámbrico
+que podemos recibir en el área inmediata podríamos ubicar nuestra interfaz inalámbrica
+en un modo llamado modo monitor. Este modo nos permite analizar los canales
+para ver todo el tráfico inalámbrico que envían los AP y los clientes. No importa para qué redes son ni requiere que el dispositivo del cliente esté asociado
+o conectado a cualquier red inalámbrica. Para capturar tráfico inalámbrico, necesitas
+una interfaz ubicada en modo monitor. Puedes hacerlo con un comando sencillo,
+como cuando habilitas el modo promiscuo pero las herramientas que se usan
+para capturar paquetes inalámbricos suelen controlar la habilitación
+y la inhabilitación del modo. Debes estar cerca del AP
+y del cliente para recibir una señal y, luego, puedes empezar
+a capturar tráfico desde el aire. Hay muchas utilidades de supervisión
+y captura inalámbrica de código abierto como Aircrack-ng y Kismet. Es importante decir
+que si una red inalámbrica está encriptada puedes capturar los paquetes,
+pero no podrás decodificar las cargas útiles de tráfico sin saber
+la contraseña de la red inalámbrica.

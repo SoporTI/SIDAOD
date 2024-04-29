@@ -1,0 +1,104 @@
+En esta lección, veremos
+prácticas recomendadas para implementar la seguridad inalámbrica. Como especialista en asistencia de TI,
+serás responsable de la configuración
+y de la infraestructura de Wi-Fi. Comprender las opciones de seguridad
+para las redes inalámbricas es muy importante para asegurarse de elegir la mejor solución. Ya vimos los aspectos prácticos
+del protocolo inalámbrico 802.11 y explicamos cómo funcionan
+las redes inalámbricas. No lo repasaremos. Pero veremos con más detalle
+las implementaciones de seguridad disponibles para proteger redes inalámbricas. Antes de entrar en los detalles
+de la seguridad inalámbrica hazte esta pregunta. ¿Cuál crees que es la mejor opción
+de seguridad para proteger una red Wi-Fi? No pasa nada si no lo sabes. Solo ten en cuenta esta pregunta mientras repasamos
+todas las opciones disponibles junto con sus ventajas e inconvenientes. ¡Alerta de spoiler! Hay algunas cuestiones de seguridad
+bastante técnicas en camino. Así que ponte a pensar. El primer protocolo de seguridad introducido
+para las redes Wi-Fi fue WEP o privacidad equivalente por cable. Era parte del estándar 802.11 original
+introducido en 1997. El objetivo de WEP era ofrecer
+la misma privacidad que una red por cable. Eso significa que la información transmitida
+a través de la red debería estar protegida
+de las escuchas de terceros. Esta fue una consideración importante
+al diseñar la especificación inalámbrica. A diferencia de las redes por cable,
+cualquiera que se encontrara físicamente cerca del punto de acceso
+o de la estación cliente podía interceptar los paquetes. Sin algún tipo de encriptación
+que protegiera los paquetes cualquiera que quisiera escuchar
+podría leer el tráfico inalámbrico. Se demostró que WEP era muy malo
+para proporcionar confidencialidad o seguridad a las redes inalámbricas. Se descartó en 2004
+para dar lugar a sistemas más seguros. Aun así, lo veremos con fines históricos. Quiero dejar claro
+que nadie debería seguir usando WEP. Nunca se sabe. Puede que veas
+sistemas muy obsoletos cuando trabajes
+como especialista en asistencia de TI. Es importante que entiendas por qué WEP
+está obsoleto y qué puedes hacer en su lugar. WEP usa el cifrado de flujo simétrico RC4
+para la encriptación. Usaba una clave compartida de 40 o 104 bits,
+de la que se derivaba la clave de encriptación
+de los paquetes individuales. La clave de encriptación real de cada paquete
+se calculaba al tomar la clave compartida proporcionada por el usuario y unirla
+a un vector de inicialización (IV) de 24 bits. Es un dato aleatorio para evitar reutilizar la misma clave de encriptación
+entre paquetes. Como estos bits de datos
+están concatenados o unidos el esquema de clave compartida de 40 bits
+usa una clave de 64 bits para la encriptación y el esquema de 104 bits
+usa una clave de 128 bits. En un comienzo, la encriptación WEP
+se limitaba a 64 bits debido a las restricciones a la exportación impuestas por EE.UU.
+a las tecnologías de encriptación. Una vez modificadas esas leyes,
+fue posible usar la encriptación de 128 bits. La clave compartida se introdujo
+con 10 caracteres hexadecimales para WEP de 40 bits o con 26 caracteres
+hexadecimales para WEP de 104 bits. Cada carácter hexadecimal tenía 4 bits. La clave también podía especificarse
+suministrando 5 o 13 caracteres ASCII donde cada carácter ASCII
+representaba 8 bits. Pero esto en realidad limita
+el espacio disponible para la clave solo a los caracteres ASCII válidos en vez de a todos
+los valores hexadecimales posibles. Como es un componente de la clave real,
+la clave compartida debe tener exactamente tantos caracteres
+como sea adecuado para el esquema de encriptación. En su origen, la autenticación WEP admitía
+dos modos diferentes autenticación de sistema abierto
+y autenticación de clave compartida. El modo de sistema abierto no requería
+que los clientes suministraran credenciales. En su lugar, se les permitía autenticarse
+y asociarse con el punto de acceso. Pero el punto de acceso
+empezaría a comunicarse con el cliente al encriptar las tramas de datos
+con la clave WEP precompartida. Si el cliente no tuviera la clave o tuviera
+una clave incorrecta no podría descifrar las tramas procedentes
+del punto de acceso o AP. Tampoco podría comunicarse con el AP. La autenticación de clave compartida
+funcionaba al exigirles a los clientes que se autenticaran con un proceso
+de respuesta a desafíos de cuatro pasos. El AP pide al cliente
+que demuestre que tiene la clave correcta. Funciona así. El cliente envía
+una solicitud de autenticación al AP. El AP responde con un desafío de texto claro,
+un bit de datos aleatorios que el cliente debe encriptar
+a través de la clave WEP compartida. El cliente responde al AP
+con los textos cifrados resultantes del encriptado del texto
+que recibió como desafío. El AP lo verifica al desencriptar
+la respuesta y compararla con el texto sin formato del desafío. Si coinciden, se envía
+una respuesta positiva. ¿Nos llama la atención
+algo posiblemente inseguro en el esquema? Estamos transmitiendo el texto sin formato
+y el texto cifrado de una manera que expone
+ambos mensajes a posibles intrusos. Esto abre la posibilidad de que el atacante recupere
+la clave encriptada. Un concepto general
+de seguridad y encriptación es no enviar nunca juntos
+el texto sin formato con el cifrado para que los atacantes no descubran
+la clave usada para el encriptado. Pero la verdadera debilidad
+de WEP no estaba relacionada con los esquemas de autenticación. Su uso del cifrado de flujo RC4 y la forma en que se usaban
+los IV para generar claves de encriptación provocaron la caída definitiva de WEP. El objetivo principal de un IV es introducir
+más elementos aleatorios en la clave de encriptación
+para evitar reusarla. Cuando se usa un cifrado de flujo como RC4 es muy importante
+que la clave de encriptación no se reutilice. Esto permitiría a un atacante comparar
+dos mensajes encriptados con la misma clave y recuperar información. Pero la clave de encriptación en WEP
+solo está formada por la clave compartida que no cambia con frecuencia. Tiene 24 bits de datos aleatorios,
+incluido el IV pegado al final. De este modo, solo habrá una reserva
+de 24 bits de la que se extraerán las claves de encriptación únicas
+que aún no se hayan usado. Como el IV se compone de 24 bits de datos,
+el número total de valores posibles no es muy grande
+para los estándares informáticos modernos. Solo hay unos 17 millones
+de posibles IV únicos lo que significa que un IV se reutilizará
+después de unos 5,000 paquetes. Cuando se reutiliza un IV también se reutiliza
+la clave de encriptación. Es importante señalar que el IV
+se transmite en texto sin formato. Si estuviera encriptado,
+el receptor no podría desencriptarlo. Esto significa que un atacante
+solo tiene que hacer un seguimiento de los IV y estar atento a los que se repiten. Lo que en verdad permite a un atacante
+recuperar la clave WEP son las debilidades de algunos IV y el modo en que el cifrado RC4
+genera el flujo de claves usado para encriptar
+las cargas útiles de datos. Esto permite al atacante reconstruir
+este flujo de claves a través de paquetes encriptados
+con los IV débiles. En este curso,
+no abordaremos los detalles del ataque. También puedes ver
+las herramientas de código abierto que demuestran este ataque en acción,
+como Aircrack-ng o AirSnort. Pueden recuperar una clave WEP en minutos. Es aterrador pensar en eso. Quizá te preguntes por qué es importante
+conocer WEP si ya no se recomienda su uso. Como especialista en asistencia de TI,
+quizás te encuentres con algunos casos en los que el hardware heredado
+siga ejecutando WEP. Es importante entender
+las implicaciones de seguridad de usar este protocolo ineficaz para actualizarlo cuanto antes
+y dejar de usarlo.

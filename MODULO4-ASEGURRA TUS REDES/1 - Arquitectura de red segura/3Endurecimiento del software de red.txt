@@ -1,0 +1,62 @@
+Te damos la bienvenida otra vez. En la última lección,
+vimos las medidas de seguridad de endurecimiento de hardware y red que debes conocer como
+especialista en asistencia de TI. Ahora, pasaremos a las técnicas
+de endurecimiento del software de red. Como con el endurecimiento
+del hardware de red es importante saber cómo implementar el endurecimiento del software de red que incluye elementos
+como firewalls, proxies y VPN. Estas soluciones de software de seguridad
+tendrán un rol importante en la protección de las redes y su tráfico
+para tu organización. Como mencionamos antes, los firewalls
+son fundamentales para proteger una red. Se pueden implementar como dispositivos
+de infraestructura de red dedicados que regulan
+el flujo de tráfico de toda una red. También pueden estar basados en host
+como software que se ejecuta en el sistema de un cliente
+y proporciona protección solo para ese host. Por lo general, se recomienda
+implementar ambas soluciones. Un firewall basado en host brinda protección
+a dispositivos móviles por ejemplo, a una laptop que podría usarse
+en un entorno malicioso y no confiable como un hotspot de Wi-Fi
+de un aeropuerto. Los firewalls basados en host
+también son útiles para proteger a otros hosts de ser vulnerados
+por dispositivos corruptos en la red interna. Eso es algo
+contra lo que un firewall basado en la red tal vez no ofrezca defensa. Es casi seguro que encontrarás
+firewalls basados en host ya que hoy en día todos los SO principales
+los tienen integrados. También es muy probable que tu empresa tenga algún tipo de firewall
+basado en la red. Hasta el router de tu casa tiene incorporado
+un firewall basado en la red. También se recomiendan las VPN
+para conceder acceso seguro a recursos internos
+para usuarios móviles o itinerantes. No volveremos a repasar todos los detalles,
+pero haremos un resumen rápido. Las VPN se suelen usar
+para proporcionar acceso remoto seguro y vincular dos redes de forma segura. Digamos que tenemos dos oficinas,
+ubicadas en edificios en lados opuestos de la ciudad. Queremos crear una red unificada
+que permita a los usuarios de cada ubicación conectarse sin problemas a dispositivos
+y servicios de cualquier ubicación. Podríamos usar una VPN de sitio a sitio
+para vincular estas dos oficinas. Para las personas que están en las oficinas,
+todo funcionaría podrían conectarse
+a un servicio alojado en el otro edificio sin ninguna configuración específica. Al usar un túnel VPN,
+el tráfico entre las oficinas se puede proteger mediante encriptación. Esto permite que las dos redes remotas
+se asocien sin problemas. De esta forma, los clientes de una red
+pueden acceder a dispositivos de la otra red sin tener que conectarse
+a un servicio VPN de forma individual. En general, se puede usar
+la misma infraestructura para ofrecer
+servicios de VPN de acceso remoto a los clientes individuales
+que necesitan acceder a recursos internos mientras están fuera de la oficina. Los proxies pueden ser útiles para proteger los dispositivos cliente y su tráfico. También brindan acceso remoto seguro
+sin usar una VPN. Se puede configurar un proxy web estándar
+para los dispositivos cliente. Esto permite que el tráfico web sea proxy
+a través de un servidor proxy que controlamos por muchos motivos. La configuración puede usarse para registrar solicitudes web
+de dispositivos cliente. Los dispositivos se pueden usar
+para análisis de tráfico y registros y para investigaciones forenses. El servidor proxy se puede configurar
+para bloquear contenido que pueda ser malicioso, peligroso
+o contrario a la política de la empresa. Se puede configurar un proxy inverso
+para permitir el acceso remoto seguro a servicios basados en la web
+sin necesidad de una VPN. Como especialista en asistencia de TI,
+puede que necesites configurar o mantener un servicio de proxy inverso
+como alternativa a la VPN. Al configurar un proxy inverso
+en el perímetro de tu red el proxy inverso detiene las solicitudes de conexión a servicios
+dentro de la red provenientes del exterior. Luego se reenvían al servicio interno con el proxy inverso
+que actúa como retransmisor. Esto une las comunicaciones
+entre el cliente remoto fuera de la red y el servicio interno. Esta configuración de proxy
+se puede proteger aún más al requerir
+el uso de certificados TLS del cliente junto con la autenticación
+de nombre de usuario y contraseña. También se pueden configurar
+LCA específicas en el proxy inverso para restringir aún más el acceso. Muchas soluciones proxy populares
+admiten una configuración proxy inversa como HAProxy, Nginx
+e incluso el servidor web Apache.

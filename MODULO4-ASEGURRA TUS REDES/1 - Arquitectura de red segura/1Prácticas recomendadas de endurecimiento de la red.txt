@@ -1,0 +1,118 @@
+¡Felicitaciones! Llegaste muy lejos. Estás a más de la mitad del curso
+y muy cerca de completar el programa. En esta sección, veremos
+formas de endurecer tus redes. El endurecimiento de la red es el proceso
+de asegurar una red a través de la reducción de sus posibles vulnerabilidades
+haciendo cambios en la configuración y tomando medidas específicas. En las próximas lecciones, profundizaremos en las prácticas recomendadas
+que debe conocer un especialista en asistencia de TI
+para implementar el endurecimiento de la red. También hablaremos de la protección
+de la seguridad de la red así como de su supervisión y análisis. Hay un principio general de seguridad
+que puede aplicarse a la mayoría de los ámbitos de la seguridad. Es el concepto de inhabilitar
+los servicios extras innecesarios o restringir su acceso. Dado que cualquier servicio habilitado
+y accesible puede ser atacado este principio debe aplicarse también
+a la seguridad de la red. Las redes serían mucho más seguras
+si se inhabilitara el acceso a los servicios de red innecesarios
+y se impusieran restricciones de acceso. La denegación implícita
+es un concepto de seguridad de red según el cual se debe denegar todo
+lo que no está explícitamente permitido. Es diferente de bloquear todo el tráfico,
+ya que una configuración de denegación implícita seguirá dejando pasar el tráfico
+que hayas definido como permitido. Puedes hacerlo
+a través de la configuración de LCA. Por lo general, esto se puede configurar
+en un firewall, lo que facilita la creación de reglas de firewall seguras. En lugar de tener que bloquear
+todo el tráfico que no deseas puedes limitarte a crear reglas
+para el tráfico que necesitas mantener. Se trata de un listado de permisos
+en lugar de un listado de prohibiciones. Esto es un poco menos práctico,
+pero es una configuración mucho más segura. Para que un nuevo servicio funcione,
+hay que definirle una nueva regla lo que reduce un poco la practicidad. Otro componente fundamental
+de la seguridad de red es la supervisión y el análisis
+del tráfico en tu red. Ya aprendiste sobre la supervisión
+en un curso anterior de este programa. Pero aquí nos referiremos a la supervisión
+en el contexto del análisis de redes. Supervisar tu red es muy importante
+por varias razones. La primera es que te permite establecer
+una referencia de cómo es tu tráfico de red. Esto es clave porque, para reconocer
+el tráfico inusual o con potencial de ataque es necesario saber cómo es el tráfico normal. Esto se logra con la supervisión
+del tráfico de red y el análisis de registros. Más adelante profundizaremos en este tema. Veamos de forma breve cómo los registros
+pueden ser útiles en este contexto. El análisis de registros
+es la práctica de recopilar registros de diferentes dispositivos de red y, a veces, de clientes de tu red, para luego
+realizarles un análisis automatizado. Esto resaltará posibles intrusiones,
+indicios de contaminación con software malicioso
+o un comportamiento atípico. Deberías analizar aspectos
+como los registros del firewall los del servidor de autenticación
+y los de las aplicaciones. Como especialista en asistencia de TI,
+debes prestar mucha atención a los dispositivos o servicios externos. Están sujetos a mucho más tráfico malicioso,
+lo que aumenta el riesgo de vulnerabilidad. El análisis de los registros implicaría
+la búsqueda de determinados mensajes de registro de interés,
+como en los registros de firewall. Puede valer la pena investigar los intentos
+de conexión a un servicio interno desde una dirección de origen no fiable. Las conexiones desde la red interna
+hacia rangos de direcciones conocidos de servidores de comando y control
+de botnets podrían significar que hay una máquina vulnerada en la red. Como aprendiste en cursos anteriores,
+los sistemas de registro y análisis son una práctica recomendada
+que los especialistas en asistencia de TI deben usar e implementar. Esto también es válido
+para el endurecimiento de la red. Los sistemas de análisis de registros se configuran con reglas
+definidas por el usuario para que coincidan con entradas de registro
+interesantes o atípicas. Estos resultados se pueden hacer públicos
+a través de un sistema de alerta para que los ingenieros
+de seguridad los investiguen. Parte de este proceso de alerta
+implicaría la categorización de la alerta en función de la regla coincidente. También habría que asignar una prioridad
+para facilitar esta investigación y permitir una mejor búsqueda o filtrado. Las alertas pueden consistir en el envío
+de un correo electrónico o un SMS con información
+y un enlace al evento detectado. Incluso podrías despertar a alguien
+a la noche si el evento fuera muy grave. La normalización de los datos de registro
+es un paso importante, ya que los registros de diferentes dispositivos y sistemas
+pueden no tener un formato común. Quizás necesites convertir los componentes del registro
+a un formato común para facilitar el análisis
+a los analistas y sistemas de detección basados en reglas. Esto también facilita
+el análisis de correlaciones. El análisis de correlaciones es el proceso
+de tomar datos de registro de diferentes sistemas y hacer coincidir
+los eventos entre los sistemas. Si vemos una conexión sospechosa procedente
+de una dirección de origen sospechosa y el firewall se registra en nuestro servidor
+de autenticación, será recomendable correlacionar esa conexión registrada
+con los datos de registro del servidor de autenticación. Eso mostrará cualquier intento
+de autenticación del cliente sospechoso. Este tipo de análisis de registros también
+es muy importante para investigar y recrear los eventos que ocurrieron
+una vez que se detecta una vulneración. Esto suele denominarse
+análisis de fallas. En él se investiga cómo se produjo una vulneración
+después de detectar la brecha. El registro detallado y el análisis
+de los registros permitirán la reconstrucción detallada de los eventos
+que llevaron a la vulneración. Es de esperar que esto permita
+al equipo de seguridad realizar los cambios oportunos
+en los sistemas de seguridad para evitar nuevos ataques. También podría ayudar a determinar
+el alcance y la gravedad de la vulneración. Un registro detallado también podría
+mostrar si otros sistemas se vieron vulnerados tras la brecha inicial. También nos diría si se robaron o no datos
+y, en caso afirmativo, cuáles fueron. Un sistema de análisis de registros popular y
+potente es Splunk, un sistema de agregación y búsqueda de registros
+muy flexible y extensible. Splunk puede obtener datos de registros
+de una gran variedad de sistemas y en grandes cantidades de formatos. También se puede configurar
+para generar alertas y permite una visualización potente de la actividad
+basada en los datos de registro. Las protecciones contra ataques flood
+ofrecen protección contra ataques DoS o de denegación de servicio. Piensa en la tríada CID
+de la que hablamos antes. La disponibilidad es un elemento importante
+de la seguridad y es lo que se pretende garantizar con las
+protecciones contra ataques flood. Esto funciona con la identificación
+de los tipos de ataques flood comunes como SYN floods o UDP floods. A continuación, se activan alertas cuando se alcanza
+un umbral de tráfico configurable. Hay otro umbral llamado umbral de activación. Cuando se alcanza,
+desencadena una acción preconfigurada. Por lo general, esto bloqueará
+el tráfico del ataque identificado durante un período de tiempo específico. Suele ser una función de los routers
+o firewalls de nivel empresarial aunque es un concepto de seguridad general. Una herramienta común de protección contra ataques flood de código abierto
+es Fail2ban. Vigila los indicios de ataque a un sistema
+y bloquea los nuevos intentos desde una dirección sospechosa de ataque. Fail2ban es una herramienta popular
+para las organizaciones a pequeña escala. Si eres la única persona a cargo
+de la asistencia de TI en tu empresa o tienes una flota pequeña de máquinas,
+esta herramienta puede resultarte muy útil. La protección contra ataques flood
+también puede describirse como un sistema
+de prevención contra intrusiones. La separación o segmentación de redes
+es un buen principio de seguridad que debe aplicar
+un especialista en asistencia de TI. Permite una gestión más flexible de la red
+y aporta algunas ventajas de seguridad. Este es el concepto de usar VLAN
+para crear redes virtuales para diferentes clases
+o tipos de dispositivos. Piénsalo como crear redes virtuales dedicadas
+para que las usen tus empleados pero también disponer de redes separadas
+para que se conecten tus impresoras. La idea es que las impresoras
+no necesiten acceder a los mismos recursos de red
+que los empleados. Probablemente no tenga sentido
+tener las impresoras en la red de empleados. Quizá te preguntes
+cómo van a imprimir los empleados si las impresoras están en una red distinta. De hecho, es una de las ventajas
+de la separación de redes ya que podemos controlar y supervisar con facilidad
+el flujo de tráfico entre redes. Para que los empleados
+tengan acceso a las impresoras configuraremos el enrutamiento
+entre las dos redes en nuestros routers. También implementaremos ACL de red
+que permitan el tráfico apropiado.

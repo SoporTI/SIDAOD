@@ -1,0 +1,84 @@
+Tcpdump es una utilidad muy popular, ligera
+y basada en una línea de comandos que se puede usar
+para capturar y analizar paquetes. Tcpdump usa
+la biblioteca de código abierto libpcap que es una biblioteca de captura
+de paquetes muy popular que se usa en muchas herramientas
+de captura y análisis de paquetes. Tcpdump también admite la escritura de capturas de paquetes en un archivo
+para su análisis posterior para compartir
+o para volver a reproducir tráfico. También admite la lectura
+de capturas de paquetes desde un archivo. El modo operativo predeterminado de tcpdump es proporcionar
+un análisis breve del paquete. Convierte la información clave
+desde la capa 3 en adelante en formatos legibles
+para el ser humano. Luego, imprime la información
+sobre cada paquete en una salida estándar o directamente en tu terminal. Por ejemplo, convierte las direcciones IP
+de origen y destino en el formato de cuatro segmentos separados
+por puntos que conocemos y muestra los números de puerto
+que usan las comunicaciones. Hagamos un análisis rápido
+del resultado de una muestra de Tcpdump. Los primeros bits
+de información son bastante sencillos. Es una marca de tiempo
+que indica el momento en que el kernel procesó el paquete de esta línea,
+en la hora local. Luego, se identifica el protocolo de capa 3. En este caso, es IPV4. Después, se muestra
+la conexión en cuatro partes. Estas son la dirección de origen el puerto de origen, la dirección
+de destino y el puerto de destino. Luego, se establecen las marcas de TCP
+y el número de secuencia de TCP del paquete, si los hay. Le sigue el número de ACK el tamaño de la ventana de TCP, luego,
+las opciones de TCP si están configuradas. Por último, tenemos
+el tamaño de la carga útil en bytes. ¿Lo recuerdas de hace algunas lecciones,
+cuando hablamos de la red? Tcpdump nos permite inspeccionar estos valores
+directamente desde los paquetes. Quiero mencionar que Tcpdump,
+de forma predeterminada intentará resolver las direcciones de host
+en nombres de host. También reemplazará los números de puertos con los servicios asociados
+comúnmente que usan estos puertos. Puedes anular
+este comportamiento con la marca -n. También es posible visualizar los datos sin procesar
+que componen el paquete. Esto se representa como dígitos hexadecimales a través de la marca -x o X si quieres la interpretación hexadecimal
+y ASCII de los datos. Recuerda que los paquetes
+solo son colecciones de datos o agrupaciones de unos y ceros. Representan la información
+en función de los valores de estos datos y de dónde aparecen en el flujo de datos. Piensa en los encabezados de paquetes
+y en cómo se estructuran y se les da forma. La vista que brinda Tcpdump
+nos permite ver los datos que entran en los distintos campos que componen
+los encabezados de las capas en un paquete. Wireshark es otra herramienta de captura
+de paquetes y análisis que puedes usar. Pero es mucho más poderoso que Tcpdump
+para el análisis de aplicaciones y paquetes. Es una utilidad gráfica que también usa
+la biblioteca libpcap para capturar e interpretar los paquetes. Pero es mucho más extensible respecto al análisis de protocolos
+y aplicaciones. Mientras Tcpdump puede hacer
+un análisis básico de algunos tipos de tráfico,
+como las consultas y respuestas de DNS Wireshark puede hacer mucho más. Puede decodificar
+las cargas útiles encriptadas si la clave de encriptación es conocida puede identificar
+y extraer las cargas útiles de datos de las transferencias de archivos
+a través de protocolos como SMB o HTTP. La comprensión de Wireshark
+de los protocolos de nivel de aplicación se extiende a las cadenas de filtros. Permite usar reglas de filtrado;
+por ejemplo, hallar las solicitudes HTTP que contienen cadenas específicas en la URL,
+lo que se vería así http.request.uri matches "q=wireshark". Esa cadena de filtro
+ubicaría en nuestra captura los paquetes que contienen una solicitud URL
+con la cadena especificada. En este caso, coincidiría con un parámetro de consulta
+de una URL que busca Wireshark. Aunque esto podría hacerse con Tcpdump,
+es mucho más fácil con Wireshark. Observemos la interfaz de Wireshark que está dividida en tercios. La lista de paquetes está arriba seguida de la representación en capas de un paquete seleccionado de la lista. Por último, la representación
+hexadecimal y ASCII del paquete seleccionado
+está en la parte de abajo. La vista de la lista está
+codificada por color para distinguir los diferentes tipos
+de tráfico de la captura. La codificación por color es
+configurable por el usuario. La configuración predeterminada es verde
+para los paquetes de TCP celeste para el tráfico de UDP y azul oscuro para el tráfico de DNS. El negro también destaca
+los paquetes de TCP problemáticos como los que están desordenados o repetidos. Sobre el panel de la lista de paquetes
+hay un cuadro de visualización de filtros que permite ver
+el filtrado complejo de paquetes. Es diferente
+a los filtros de capturas, que siguen el estándar de libpcap junto con Tcpdump. La comprensión profunda de Wireshark
+en materia de protocolos permite el filtrado por protocolos
+junto con sus campos específicos. Wireshark admite más de 2,000 protocolos,
+así que no los analizaremos en detalle. Wireshark no solo tiene un manejo y filtrado muy útil
+de los protocolos sino que también entiende y puede seguir
+las sesiones o transmisiones de TCP. Esto te permite volver a ensamblar
+y visualizar ambos lados de la sesión de TCP para poder ver con facilidad el intercambio bidireccional
+completo de información entre las partes. Otra función genial
+de Wireshark es la habilidad de decodificar paquetes inalámbricos encriptados WPA y WEP
+si la contraseña es conocida. También puede visualizar
+el tráfico Bluetooth con el hardware indicado y el tráfico USB
+en otros protocolos, como Zigbee. También admite el corte de archivos o la extracción de cargas útiles de datos
+de los archivos que se transfieren por protocolos sin encriptar,
+como las transferencias HTTP o FTP. Y puede extraer transmisiones de audios
+del tráfico VOIP sin encriptar. Básicamente, Wireshark es genial. Te preguntarás cómo encaja la captura
+y el análisis de paquetes en la seguridad. Como los análisis de registros,
+el análisis del tráfico también es una parte importante de la seguridad de red. El análisis de tráfico se hace
+con las capturas y el análisis de paquetes. El tráfico en una red,
+básicamente, es un flujo de paquetes. Y poder capturar
+e inspeccionar esos paquetes es importante para entender qué tipo de tráfico del que fluye en nuestras redes,
+quisiéramos proteger.

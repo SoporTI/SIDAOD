@@ -1,0 +1,35 @@
+Ya que vimos las opciones de seguridad
+para proteger las redes inalámbricas ¿cuál crees que sería la opción más segura? En un mundo ideal,
+protegeríamos nuestras redes inalámbricas a través de 802.1X con EAP-TLS que ofrece la mejor seguridad disponible
+y asume una administración adecuada y segura de los aspectos relacionados con la PKI. Pero esta opción también agrega
+mucha complejidad y sobrecarga. Esto se debe a que requiere el uso
+de un servidor RADIUS y un backend de autenticación adicional como mínimo. Si se implementa EAP-TLS,
+también serán necesarios todos los componentes
+de la infraestructura de clave pública. Esto agrega aún más complejidad
+y sobrecarga administrativa. No solo hay que implementar de forma segura
+la PKI en la administración de certificados
+del backend sino que debe existir un sistema
+para firmar los certificados de cliente. También hay que distribuirlos
+a cada cliente que se autentique en la red. Esto suele suponer más gastos
+de los que muchas empresas están dispuestas a asumir por la disyuntiva
+entre seguridad y comodidad. Si 802.1X es demasiado complicado
+para una empresa la siguiente mejor alternativa
+sería WPA2 con modo AES/CCMP. Pero para protegernos de los ataques
+de fuerza bruta o de tabla rainbow deberíamos tomar algunas medidas
+para aumentar la exigencia computacional. Una contraseña larga y compleja
+que no se encuentre en un diccionario aumentaría la cantidad de tiempo y recursos
+que el atacante necesitaría para descifrarla. Cambiar el SSID a algo poco común
+y único haría menos probable el ataque de tablas rainbow. El atacante tendría que realizar los cálculos
+por su cuenta, lo que aumentaría el tiempo y los recursos necesarios
+para llevar a cabo un ataque. Si usas una contraseña Wi-Fi larga y
+compleja, te podría tentar usar WPS para unir clientes a la red. Pero ya vimos que esto podría ser una mala
+idea desde el punto de vista de la seguridad. En la práctica, no verás WPS habilitado
+en un entorno empresarial porque es una tecnología
+orientada al consumidor. Si tu empresa valora más
+la seguridad que la comodidad debes asegurarte de que WPS
+no está habilitado en tus AP. Asegúrate de que esta función
+esté inhabilitada en la administración de tus AP. Es recomendable comprobar
+que la función está inhabilitada con una herramienta como Wash que escanea y enumera los puntos de acceso
+que tienen WPS habilitado. Se recomienda esta verificación independiente ya que algunos fabricantes de routers
+no permiten inhabilitarla. En algunos casos, inhabilitar la función
+a través de la consola de administrador no la inhabilita en realidad.
