@@ -1,0 +1,96 @@
+Hacemos todo lo posible
+por proteger nuestros sistemas y redes pero es muy probable
+que haya algún tipo de incidente. Puede ser desde una vulneración
+de todo el sistema y el robo de datos hasta alguien que,
+por accidente, filtre un informe. Más allá del tipo de incidente,
+el manejo correcto de incidentes es importante para comprender
+exactamente qué y cómo ocurrió y cómo evitar que vuelva a ocurrir. El primer paso para manejar
+un incidente es detectarlo en primer lugar. Con suerte, nuestros sistemas de detección
+de intrusiones habrán captado los indicadores de un ataque en curso
+y nos habrán alertado sobre la amenaza. También se pueden
+detectar incidentes de otras formas. Un empleado puede haber notado
+algo sospechoso e informarlo al equipo de seguridad para investigarlo,
+o quizá filtró información que llegó a las noticias. Sin importar cómo descubras
+el incidente, el paso siguiente es analizarlo para determinar los efectos
+y el alcance del daño. ¿Fue una filtración de datos
+o una divulgación de información? Si es así, ¿qué información se escapó? ¿Qué tan malo es?
+¿Se vulneraron los sistemas? ¿Qué sistemas?
+Y, ¿qué nivel de acceso obtuvieron? ¿Es una infección de software malicioso? ¿Qué sistemas se vieron afectados? Algunos ataques son muy obvios y presentan
+signos claros de intrusión, como una página web alterada o procesos inusuales
+que consumen todos los recursos del sistema. Otros pueden ser
+más sutiles y casi imposibles de detectar. Como un cambio pequeño en un único
+archivo de configuración del sistema. Por esto es tan importante
+contar con una buena supervisión y comprender tu modelo de referencia. Una vez que sabes cómo luce
+el tráfico normal en tu red y qué servicios esperas ver, los valores
+atípicos serán más fáciles de detectar. Esto es importante porque cualquier
+pista falsa que el equipo de respuesta ante incidentes debe investigar
+implica desperdiciar tiempo y recursos. Esto puede permitir que las verdaderas
+intrusiones pasen desapercibidas y sin investigarse durante más tiempo. Durante la detección y delimitación
+del alcance, la correlación de datos de distintos sistemas puede revelar
+un panorama mucho mayor de lo ocurrido. Podría demostrar
+cómo logró acceder un intruso. Por ejemplo, podrías detectar un evento
+de conexión registrado por el firewall de una dirección IP sospechosa. Buscar otros eventos relacionados
+con esta dirección IP podría revelar intentos de inicio de sesión en los registros
+de autenticación de un sistema. Esto proporcionará información
+sobre de dónde proviene el atacante y qué intentó hacer en la red. Los registros de autenticación
+también indicarán si pudo o no iniciar sesión con éxito en una cuenta. Si lo hizo, esto te permitirá
+saber qué cuenta se vio vulnerada. Después de determinar el alcance
+del incidente, sigue la contención. Debes contener la infiltración para evitar
+otros daños, la vulneración del sistema e infección por software malicioso. Este paso es bastante urgente. Debes evitar que el software malicioso o
+el atacante usen una máquina vulnerada para redireccionarse
+a otras máquinas de tu red. Esto podría ampliar el alcance
+del incidente y provocar incluso más daños. Las estrategias de contención
+dependerán del tipo de incidente. Si una cuenta se vio vulnerada,
+cambia la contraseña de inmediato. Si el propietario no puede
+cambiar la contraseña rápido bloquea la cuenta y revoca los tokens
+de autenticación de larga duración ya que el atacante
+podría tener alguno de esos datos. Si es una infección por software
+malicioso, ¿es posible ponerlo en cuarentena o eliminar la infección? Si no es así,
+la máquina infectada debe quitarse de la red lo antes posible para evitar
+movimientos laterales en la red. Para ello, puedes ajustar
+las reglas de firewall basadas en la red a fin de poner
+efectivamente en cuarentena a la máquina. También puedes mover la máquina
+a una VLAN independiente que se usa para cuarentenas de seguridad. Se tratará de una VLAN
+con restricciones estrictas y filtros aplicados para evitar
+más infecciones en otros sistemas y redes. En esta fase, es importante hacer todo
+lo posible para no destruir los registros ni la evidencia forense. A menudo, los atacantes intentarán
+cubrir sus rastros mediante la modificación de registros y la eliminación de archivos,
+sobre todo, cuando piensen que los atraparon. Se asegurarán de conservar
+el acceso a los sistemas vulnerados. Esto podría implicar instalar
+una puerta trasera o algún software malicioso con acceso remoto. Otro paso al que debes prestar atención
+es la creación de una nueva cuenta de usuario que pueda usarse
+para autenticarse en el futuro. Con los accesos,
+configuraciones y sistemas efectivos estas actividades
+aparecerán en los registros de auditoría. Así que este tipo de acceso debería
+detectarse al investigar un incidente. Así, podrán tomarse
+acciones para quitar el acceso. Espero no haberte asustado con todos estos
+casos, pero más vale prevenir que curar. Otra parte del análisis de incidentes
+es determinar la gravedad, el impacto y la capacidad
+de recuperación ante el incidente. La gravedad incluye factores como cuántos
+y cuáles sistemas se vieron vulnerados y cómo la infiltración
+afecta las funciones de la empresa. Un incidente que vulnere varias máquinas
+de la red sería más grave que uno en el que solo se hackee
+un único servidor web, por ejemplo. Puedes imaginar
+que el esfuerzo para reparar una vulneración a gran escala afectará negativamente
+la capacidad para trabajar con normalidad. Así que, el impacto del incidente también
+es un problema importante a considerar. Si la organización
+solo tiene un servidor web y este se vulneró se considerará
+una infiltración mucho más grave. Probablemente tendría un impacto directo
+y visible desde el exterior de la empresa. El robo de datos es la transferencia
+no autorizada de datos desde una computadora. Es una cuestión muy importante
+cuando ocurre un incidente de seguridad. Los hackers pueden
+intentar robar datos por varios motivos. Quizás quieren robar
+información de la cuenta para acceder luego. Pueden intentar publicar datos de la empresa
+en línea para provocar pérdidas financieras o dañar la reputación de la organización. En algunos casos, el atacante quizás
+solo quiere ocasionar daño o destrucción lo que podría implicar
+que se desvíen o dañen los datos. Las acciones que se tomen afectarán
+la capacidad de recuperación ante incidentes. La capacidad de recuperación
+se refiere a cuán complicado y prolongado será el trabajo de recuperación. Un incidente del que puedes
+recuperarte con una simple restauración de la copia de seguridad mediante
+los procedimientos documentados se consideraría de fácil recuperación. Pero si el atacante borró una gran
+cantidad de información de clientes e hizo estragos en muchos sistemas
+de infraestructura esenciales es mucho más difícil recuperarse. Podría ser imposible recuperarse en absoluto. En algunos casos, según los sistemas
+y configuraciones de copia de seguridad puede que ciertos datos se pierdan
+para siempre sin poder restaurarse. Las copias de seguridad no incluirán
+los cambios ni los datos nuevos obtenidos después de la última ejecución
+de copia seguridad.

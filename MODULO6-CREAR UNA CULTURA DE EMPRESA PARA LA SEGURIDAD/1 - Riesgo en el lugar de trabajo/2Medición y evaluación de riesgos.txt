@@ -1,0 +1,67 @@
+La seguridad se trata
+sobre determinar los riesgos de exposición comprender la probabilidad de los ataques y diseñar medidas de defensa
+en torno a estos riesgos para reducir el impacto de un ataque. De hecho, este proceso de pensamiento
+lo aplican todas las personas en su día a día se den cuenta o no. Piensa cuando cruzas
+una esquina muy concurrida. Para evaluar la probabilidad
+de que te choque un vehículo que se aproxima y reducir el riesgo, elijes
+el mejor momento para cruzar. La evaluación de riesgos de seguridad
+empieza con el modelado de amenazas. Primero, identificamos
+las posibles amenazas de los sistemas. Luego, les asignamos un nivel de prioridad
+basado en la gravedad y probabilidad. Para ello, pensamos desde el punto
+de vista de un atacante externo y nos ponemos en su lugar. Para empezar, es útil determinar cuáles
+son los objetivos predilectos de un atacante. Desde allí, empiezas a buscar
+posibles vectores de ataque que puedan usarse
+para acceder a activos de alto valor. Los datos de alto valor
+suelen incluir información de cuentas como nombres de usuario y contraseñas. En general, todo tipo
+de datos del usuario son de alto valor sobre todo, si se relacionan
+con el procesamiento de pagos. Otra forma de medir riesgos es conocer
+las vulnerabilidades de los sistemas y redes. Una forma de hacerlo consiste en ejecutar
+análisis frecuentes de vulnerabilidades. Hay muchas soluciones de código abierto
+y comerciales para implementar. Puedes configurarlas y ejecutar
+análisis automáticos programados de los sistemas y las redes designados
+para identificar vulnerabilidades y, luego, generan un informe. Algunas de estas herramientas
+son Nessus, OpenVAS y Qualys. Expliquemos qué hacen
+los escáneres de vulnerabilidades. Aviso: Puede ser un poco complejo,
+así que repasa el tema cuando quieras. Los escáneres de vulnerabilidades son
+servicios que se ejecutan en el sistema que controlas y que realizan análisis
+frecuentes de las redes configuradas. Luego, el servicio ejecuta análisis
+para encontrar los hosts de la red. Una vez hallados, ya sea con un barrido
+de ping o un análisis de puertos se ejecutan análisis más detallados
+en los hosts encontrados. Un análisis tras otro. El análisis de puertos, sean puertos
+comunes o todos los puertos válidos se coteja con los hosts encontrados
+para saber qué servicios están a la escucha. Luego, estos servicios se sondean
+para obtener más información sobre el tipo de servicio y a qué versión
+del puerto pertinente están a la escucha. Esta información luego se puede
+verificar con las bases de datos de vulnerabilidades conocidas. Si se encuentra una versión
+vulnerable de un servicio el escáner la añade al informe. Cuando finaliza el análisis,
+las vulnerabilidades y los hosts encontrados se compilan en el informe. Así, un analista puede ver
+de forma rápida y sencilla dónde están
+las áreas problemáticas de la red. La prioridad
+de las vulnerabilidades encontradas depende de la gravedad y de otras categorías. Para la gravedad,
+se tiene en cuenta una serie de factores como la probabilidad
+de aprovechar una vulnerabilidad. También se analiza el tipo de acceso
+que esta vulnerabilidad daría a un atacante y si puede aprovecharse o no de forma remota. Las vulnerabilidades y el informe
+tendrán vínculos a información detallada y de divulgación sobre cada vulnerabilidad. En algunos casos, también habrá
+recomendaciones sobre cómo eliminarlas. Los escáneres de vulnerabilidades
+detectan muchos elementos desde servicios mal configurados
+que representan un riesgo potencial hasta la presencia
+de puertas traseras en los sistemas. Es importante aclarar
+que este análisis solo detecta vulnerabilidades conocidas y divulgadas,
+además de configuraciones inseguras. Por eso es importante que ejecutes
+un análisis de vulnerabilidades automático con frecuencia. También debes mantener actualizada
+la base de datos de vulnerabilidades para asegurarte de encontrar
+nuevas vulnerabilidades con rapidez. Pero este tipo de análisis no es la única
+forma de probar las defensas. Realizar pruebas de penetración frecuentes
+también es una buena idea para evaluar aún más las defensas. Así, también te asegurarás
+de que los sistemas de detección y alertas funcionen correctamente. La prueba de penetración es la práctica
+de intentar irrumpir en un sistema o red para verificar los sistemas establecidos. Es como si tomaras el papel
+del chico malo con fines educativos. Pero este ejercicio no está destinado
+a evaluar tu talento para la actuación. Solo se busca que pienses como un atacante
+y que uses las mismas herramientas y técnicas que él usaría. Así, puedes probar los sistemas y asegurarte
+de que te protegen como deben hacerlo. Los resultados de los informes de las pruebas
+de penetración también indican dónde están los puntos débiles o ciegos. Estas pruebas mejoran las defensas y orientan
+los futuros proyectos de seguridad. Los miembros del equipo de seguridad
+interno pueden llevarlas a cabo. Si tu equipo interno
+no tiene los recursos para esta práctica puedes contratar a una empresa externa
+que haga pruebas de penetración como servicio o puedes usar ambas opciones. Así, tendrás una mejor idea
+de tus sistemas de defensas y podrás ejecutar pruebas más completas.

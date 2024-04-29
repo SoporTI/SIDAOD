@@ -1,0 +1,81 @@
+Una vez detectada y contenida la amenaza,
+debe eliminarse o solucionarse. Cuando se trata
+de una infección por software malicioso esto implica eliminarlo
+de los sistemas afectados. Pero, en algunos casos
+esto puede no ser posible por lo que los sistemas afectados deben restaurarse
+a una configuración correcta conocida. Para eso, reconstruye la máquina
+o restaura a partir de la copia de seguridad. Ten cuidado al eliminar
+software malicioso de los sistemas ya que algunos
+están diseñados para ser muy persistentes lo que significa
+que se resisten a ser eliminados. Pero, antes de comenzar la recuperación,
+debemos contener el incidente. Esto puede implicar apagar los sistemas
+afectados para evitar más daños o la propagación de la infección. Por otro lado,
+podría eliminarse el acceso a la red de los sistemas afectados para evitar
+la comunicación con los sistemas vulnerados. Lo que nos interesa aquí es evitar
+la propagación de cualquier infección y eliminar el acceso remoto al sistema. La estrategia de contención varía
+según el tipo de sistema afectado. Supongamos que una parte esencial
+de la infraestructura de red se vulneró. Un apagado rápido podría no funcionar ya que afectaría
+otras operaciones de la empresa. Además, eliminar el acceso a la red podría activar la seguridad ante fallas
+y atacar el software o programa malicioso. Digamos que parte de este
+software se diseñó para verificarse en un comando y controlar el servidor. Entregar comunicaciones de red
+con el host infectado podría hacer que el software malicioso activara
+una función de autodestrucción para intentar borrar la evidencia. Es posible que deba realizarse
+un análisis forense para analizar el ataque. Esto se da especialmente
+ante una infección por software malicioso. En el caso del análisis forense,
+las máquinas afectadas podrían investigarse en detalle para determinar
+exactamente qué hizo el atacante. Para esto, se toma una imagen del disco. En esencia, se crea
+una copia virtual del disco duro. Esto permite al investigador
+analizar el contenido del disco sin riesgo de modificar
+o alterar los archivos originales. Si eso ocurriera, se vulneraría
+la integridad de la evidencia forense. La recopilación de evidencia también suele
+formar parte de la respuesta ante incidentes. Proporciona evidencia a las autoridades
+si la organización desea tomar acciones legales contra los atacantes. La evidencia forense es muy útil
+para proporcionar detalles del ataque a la comunidad de seguridad. Permite que otros equipos de seguridad
+estén atentos a nuevas amenazas para estar mejor protegidos. También es muy importante que los miembros
+del equipo legal se involucren en los planes de manejo de incidentes. Dado que un incidente podría tener
+implicaciones legales para la empresa debería haber un abogado
+a quien consultar y que asesore sobre los aspectos
+legales de la investigación. Es fundamental para evitar complicaciones
+o problemas de responsabilidad. Los miembros del equipo de relaciones
+públicas también deberían involucrarse ya que estos incidentes
+pueden afectar la reputación de la empresa. Hay otra parte de la fase de limpieza
+y recuperación que debería mencionar. Tendremos que usar información del análisis
+para evitar otras intrusiones o infecciones. Primero, determinamos el punto de entrada
+para detectar cómo ingresó el atacante o qué vulnerabilidad
+aprovechó el software malicioso. Esto debe hacerse a la vez que la limpieza. Si eliminas la infección del software
+malicioso sin abordar también la vulnerabilidad subyacente,
+los sistemas podrían volver a infectarse justo después de limpiarlos. Los análisis post mortem son
+una excelente forma de documentar incidentes. Lo aprendido puede aplicarse para que esos
+incidentes no vuelvan a ocurrir. Si un sistema esencial se vio vulnerado,
+la corrección puede ser complicada debido al tiempo de inactividad
+durante la corrección y recuperación. Los registros deben auditarse
+para determinar exactamente qué hizo el atacante mientras tuvo acceso al sistema. También indican
+a qué datos tuvo acceso el atacante. Los sistemas
+se deben inspeccionar para garantizar que no se hayan instalado puertas traseras
+o software malicioso en el sistema. Según la gravedad
+de la vulneración o infección es posible que se necesite
+reconstruir el sistema desde cero. La limpieza suele implicar restaurar
+de un punto de la copia de seguridad a una configuración correcta conocida. Los archivos de sistemas
+infectados o dañados pueden restaurarse desde copias correctas conocidas. A veces,
+la limpieza puede ser muy sencilla y rápida. Espero que así sea la mayoría de las veces. Si un sitio web resultó alterado,
+es posible que el atacante haya cargado su archivo HTML alterado y haya
+dirigido el servidor web al archivo nuevo. Cambiar el archivo de configuración y borrar
+el archivo HTML del atacante revertiría esos cambios. Aun así, debes esforzarte
+para determinar cómo accedió. Esa vulnerabilidad debe
+remediarse para evitar futuros ataques. Cuando se hayan eliminado
+y detectado todos los rastros del ataque y se hayan remediado
+las vulnerabilidades conocidas podrás avanzar al último paso. Allí deben probarse minuciosamente
+los sistemas para asegurarse de que se haya restaurado el funcionamiento. A menudo, los sistemas afectados
+también deben mantenerse vigilados a veces con supervisión adicional
+detallada y habilitación de registros. El objetivo es detectar indicios
+adicionales de una intrusión en caso de que se haya omitido
+algo durante la limpieza. También es posible que el atacante
+intente atacar de nuevo al mismo objetivo. Hay una alta posibilidad de que use
+la misma metodología de ataque o una similar en otros objetivos de la red. Es importante incorporar las lecciones
+aprendidas de cualquier incidente a las medidas de seguridad generales. Actualiza las reglas del firewall y las LCA
+si se detectó una exposición durante la investigación. Crea definiciones y reglas nuevas
+para los sistemas de detección de intrusiones que permitan detectar
+indicios del mismo ataque de nuevo. Mantente alerta y preparado
+para proteger tu sistema de los ataques. Recuerda que, en algún momento,
+habrá alguna infiltración de seguridad. Solo mantén la calma y ejecuta
+tu plan para contraatacarla.

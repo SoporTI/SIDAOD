@@ -1,0 +1,55 @@
+Hola, soy Rob. Yo soy Candice. Felicitaciones por realizar este curso. Ahora que llegaste hasta aquí,
+queremos mostrarte lo que podría ser una entrevista sobre los temas
+técnicos tratados en este curso. Esperamos que te ayude
+a tener una idea más clara de qué esperar en tu próxima entrevista. Solo recuerda
+seguir aprendiendo y seguir practicando. Supongamos que soy propietario
+de un negocio pequeño y solo tengo unos 15 empleados,
+pero espero crecer en los próximos años. Un amigo fue hackeado
+y perdió muchos datos confidenciales. Quiero asegurarme de entender
+cómo evitar que eso suceda con mi negocio. Dime algunas prácticas recomendadas
+para la seguridad de las redes. Debes enumerar todos los servicios
+que necesitarás en una red y, luego, debes inhabilitar
+todos los servicios que no usarás. Este principio se puede aplicar
+a todos los aspectos de tu infraestructura. Por ejemplo, tenemos un firewall y lo podemos configurar
+para permitir todos los servicios que quieres
+y para inhabilitar todos los que no de modo que bloquee todo el tráfico. Interesante. ¿Y por qué usamos esa filosofía
+o cómo se llama esa filosofía? La usamos porque te permite
+bloquear las vulnerabilidades y también se llama lista permitida,
+en lugar de lista negra. ¿Por qué inhabilitaríamos
+lo que no vamos a usar? El motivo para restringir
+estos servicios que no vas a usar es que te permitirá saber lo que entra
+porque sabes lo que permitiste entrar en lugar de tener
+algunos servicios bloqueados porque eso permitiría
+el ingreso de más vulnerabilidades. Muy bien. ¿Qué más podría necesitar? Podrías necesitar
+una solución de supervisión de redes. Esa será útil porque te permitirá identificar
+el tráfico que entra a tu red. Algo más que se me ocurre
+es que trabajé con muchos contratistas y muchas veces quieren traer
+sus propias máquinas a nuestra red. ¿Hay algo que deba preocuparme con respecto
+a que ellos conecten sus máquinas a mi red? Sí. Deberías restringir esas máquinas
+porque no las controlas y no sabes lo que contienen. Diría que podríamos establecer
+un segmento diferente en la red o que podríamos tener
+una red inalámbrica diferente. Las redes inalámbricas son muy importantes
+y yo quiero una conexión inalámbrica. ¿Cómo podemos protegerla?
+¿Qué podríamos implementar allí? Podemos usar
+una encriptación fuerte, como WPA2. ¿Qué es WPA2? ¿Y por qué es mejor que algunos
+de los otros métodos de encriptación? WPA2 mejora la seguridad de una red porque tiene un método de encriptación
+más fuerte llamado AES. Lo último que quiero preguntarte
+tiene que ver con los ataques de phishing. Escuché que es una forma muy común
+en que los hackers obtienen contraseñas y datos similares. Quiero asegurarme de que mis empleados
+no sean víctimas de este tipo de ataques. ¿Cómo los evito? Debes hacer que tus empleados
+usen contraseñas seguras. Puedes requerir que las contraseñas incluyan
+símbolos, números, mayúsculas y minúsculas. También debes pedirles que cambien
+las contraseñas varias veces durante el año y que usen la autenticación de dos factores. También les puedes enseñar a no abrir ningún
+correo electrónico que parezca sospechoso o correos electrónicos
+de personas desconocidas. ¿Podrías explicar rápidamente
+qué significa dos factores? Sí. La autenticación de dos factores son dos variaciones
+de métodos de autenticación. Esos métodos pueden ser una contraseña una huella dactilar,
+algo relacionado con datos biométricos o un chip de seguridad. Excelente. No sabía eso. Muchas gracias. Gracias. En este caso, hemos visto
+la importancia de expresarse con claridad y de explicar los conceptos de TI
+y las ventajas de las tecnologías elegidas. En una entrevista técnica, habrá muchos
+conceptos técnicos que deberás explicar. Es importante mantener la calma
+y describirlos sin miedo. Este fue el último juego de roles
+en el último curso del programa. Felicitaciones por llegar hasta aquí. Esperamos haberte ayudado a tener en claro
+qué esperar en tu próxima entrevista. Quizás quieras revisar
+todos los consejos desde el primer curso para llegar en condiciones
+a tu entrevista de asistente de TI. Buena suerte.

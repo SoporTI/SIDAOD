@@ -1,0 +1,49 @@
+Mantener seguros
+los dispositivos móviles es muy importante. Piensa en el tipo de datos que contiene
+un dispositivo móvil: correos electrónicos archivos personales, fotos, datos de salud,
+datos de ubicación y mucho más. Los dispositivos móviles viajan con nosotros
+y no cuentan con la misma protección a nivel físico
+que los servidores en un centro de datos. Es muy fácil robar
+o perder un dispositivo móvil. Por eso debemos protegerlos. A medida que avancemos en el video,
+recuerda que muchas de las configuraciones que veremos pueden hacerse automáticamente o exigirse por política a través
+de la administración de dispositivos móviles. Una de las protecciones más básicas que puedes habilitar en un smartphone
+o tablet es el bloqueo de pantalla. El bloqueo de pantalla presenta
+un desafío que tienes que responder para desbloquear el dispositivo. Puedes ingresar un PIN o una contraseña,
+puedes dibujar un patrón en la pantalla o puedes usar datos biométricos como tu huella dactilar o tu rostro,
+para desbloquear el dispositivo. Ninguna medida de seguridad es infalible. Debemos usar bien la medida de seguridad para proteger los datos
+en dispositivos móviles. ¿Qué ocurre si alguien
+roba el dispositivo y lo reinicia o lo desarma para acceder al almacenamiento? Habilita la encriptación de almacenamiento
+en tus dispositivos móviles para evitarlo. En algunos dispositivos,
+esto se hace automáticamente pero, si no es tu caso, deberías habilitarla. Vimos cómo proteger tu dispositivo
+frente a un atacante externo. Pero ¿qué hay de la protección
+de los datos de tu dispositivo frente a una app que tenga instalada? Los usuarios finales deberían poder controlar
+qué app accede a qué datos en su dispositivo móvil. Veamos rápidamente
+cómo puedes saber qué apps usan o tienen acceso a tipos específicos
+de datos privados en tu dispositivo. Los sistemas operativos móviles
+tienen permisos definidos que controlan qué app tiene acceso a qué sistemas o datos. Cada SO tiene una lista de permisos y la app solicita acceso
+a los permisos específicos que necesita. Las apps para dispositivos móviles pedirán
+permiso cuando se instalen por primera vez o cuando intenten
+usar el permiso por primera vez. A veces, un usuario final puede denegar
+a una app el acceso a un permiso que necesita lo que hará
+que la app no funcione correctamente. Quizás debas ayudarlos a solucionar problemas
+de permisos en las apps. Por ejemplo, un permiso controla el acceso a la información
+de ubicación del dispositivo. Un dispositivo móvil puede usar el GPS,
+la red móvil y la red Wi-Fi para determinar su ubicación. Determinar la ubicación
+del dispositivo consume mucha batería y, desde el ángulo de la privacidad,
+es algo muy delicado. Sin embargo,
+conocer la ubicación del dispositivo es esencial para algunas apps. Por ejemplo, está claro
+que la app de mapas y navegación que usas necesita la información
+de ubicación del dispositivo. Puedes activar y desactivar los servicios
+de ubicación de un dispositivo móvil. También puedes usar la configuración
+de permisos del dispositivo para controlar qué apps tienen acceso
+a la ubicación cuando están activados. Veamos.
+Así es cómo se hace en Android. Aquí está la lista de permisos que las apps
+pueden solicitar y si selecciono uno puedo ver y controlar qué apps tienen acceso
+a la ubicación de mi dispositivo. Puedo hacer eso mismo en iOS
+y con otros permisos, por ejemplo veamos qué apps tienen acceso para grabar
+sonidos con el micrófono del dispositivo. Aquí tengo un iPhone y desde la configuración
+de privacidad puedo ver todas las categorías de datos privados
+y controlar qué apps tienen acceso a qué. Si selecciono uno, puedo ver y controlar
+qué apps tienen acceso al micrófono de mi dispositivo. iOS y Android usan nombres diferentes
+para los distintos tipos de permisos y datos privados
+que pueden conceder a las apps. Pero, en esencia, son iguales.

@@ -1,0 +1,86 @@
+Si estás a cargo
+de una organización de usuarios hay un equilibrio delicado entre la seguridad
+y la productividad de los usuarios. Vimos este equilibro en acción cuando
+abordamos las distintas herramientas y sistemas de seguridad en conjunto. Antes de diseñar
+una arquitectura de seguridad debes definir con exactitud
+qué te gustaría lograr. Esto dependerá de lo que consideren
+más importante en tu empresa. Quizá tenga una forma de controlar
+y almacenar distintos tipos de datos. También debes saber si tu empresa tiene
+requisitos legales respecto a la seguridad. Si maneja pagos por tarjeta de crédito,
+debes respetar las PCI DSS o Normas de Seguridad de Datos
+de la Industria de Tarjetas de Pago según las leyes locales. Hablaremos más sobre las PCI DSS que son un gran ejemplo
+de objetivos de seguridad bien definidos. Las PCI DSS se desglosan
+en seis objetivos generales cada uno con ciertos requisitos. El primer objetivo es crear
+y mantener redes y sistemas seguros. Esto incluye los requisitos para instalar
+y mantener una configuración de firewall para proteger los datos del titular y no usar los valores predeterminados
+del proveedor en las contraseñas del sistema y otros parámetros de seguridad. Como verás, los requisitos
+se relacionan con el objetivo. El objetivo es la meta final
+o lo que nos gustaría alcanzar. Los requisitos son las acciones
+que ayudan a alcanzarlo. Las PCI DSS contemplan
+acciones más detalladas para cada requisito. Brindan pautas más específicas sobre qué debe
+controlar una configuración de firewall. Por ejemplo, una configuración de firewall
+segura debe restringir las conexiones entre redes que no son de confianza
+y cualquier sistema en el entorno de datos del titular de la tarjeta. Si bien es algo genérico, nos orienta
+sobre cómo cumplir los requisitos. La segunda categoría de objetivos es proteger
+los datos del titular de la tarjeta. En este objetivo, el primer requisito es
+proteger los datos almacenados de la tarjeta. El segundo es encriptar la transmisión
+de los datos del titular de la tarjeta en las redes públicas y abiertas. Debo aclarar otra vez que el objetivo general
+es proteger los datos confidenciales almacenados en los sistemas que controlamos. Los requisitos brindan orientación
+específica sobre cómo lograrlo. Los aspectos específicos de estos requisitos
+ayudan a aclarar algunos puntos como qué constituye una red abierta. También recomiendan tener una criptografía
+sólida y brindar algunos ejemplos. Pero no todos los requisitos
+son de tipo técnico. Analicemos el requisito
+para proteger los datos almacenados del titular de la tarjeta. Incluye requisitos para las políticas
+de retención de datos a fin de garantizar que los datos confidenciales para pagos
+no se almacenen por más tiempo del requerido. Una vez autorizado el pago,
+los datos de autenticación ya no deberían requerirse
+y deberían eliminarse de forma segura. Esto pone de manifiesto
+que las buenas defensas de seguridad no son solo de tipo técnico. También se relacionan
+con procedimientos y políticas. El tercer objetivo es mantener
+un programa de gestión de vulnerabilidades. El primer requisito es proteger todos
+los sistemas del software malicioso y actualizar con frecuencia
+los softwares y programas antivirus. El segundo es desarrollar y mantener
+sistemas y aplicaciones seguros. Encontrarás más procedimientos
+de implementación detallados en estos requisitos. Abordan aspectos como garantizar que todos
+los sistemas tengan antivirus instalado y asegurar que el software esté actualizado. También exigen ejecutar análisis
+con frecuencia y mantener registros. Además, hay requisitos para garantizar
+que los sistemas y el software estén protegidos
+contra vulnerabilidades conocidas con la aplicación de parches de seguridad al menos una vez al mes
+tras publicarse el parche. Las bases de datos de vulnerabilidades
+de seguridad de terceros son otro requisito para identificar vulnerabilidades conocidas
+en los sistemas administrados. El cuarto objetivo es implementar
+medidas seguras de control el acceso. Este objetivo tiene tres requisitos. El primero es restringir el acceso
+a los datos del titular de la tarjeta según la necesidad de la empresa. El segundo es identificar y autenticar
+el acceso a los componentes del sistema. El tercero es restringir el acceso físico
+a los datos del titular de la tarjeta. Esto destaca la importancia
+de las buenas medidas de control de acceso y políticas de acceso a los datos adecuadas. El primer objetivo,
+restringir el acceso a los datos según la necesidad de la empresa significa que cualquier dato confidencial
+debe dirigirse a las políticas de acceso a los datos para garantizar
+un uso correcto de los datos del cliente. Como parte de este requisito, debe aplicarse
+la autenticación por contraseña para el acceso al sistema y la autenticación
+de dos factores para el acceso remoto. Este es el requisito mínimo. Otro aspecto importante que incluyen
+los requisitos de las PCI DSS es el control del acceso físico. Es un aspecto de seguridad esencial
+que debes tener en cuenta ya que se deben proteger
+los sistemas y los datos contra los robos físicos y ataques virtuales. El quinto objetivo es supervisar
+y probar las redes con frecuencia. El primer requisito es rastrear y supervisar
+todo acceso a los recursos de redes y datos del titular de la tarjeta. El segundo es probar con frecuencia
+los sistemas y procesos de seguridad. El requisito de supervisión
+y prueba de redes es otra parte esencial de un buen plan de seguridad. Esto incluye tareas como instalar
+y configurar los sistemas de detección de intrusiones y realizar
+análisis de vulnerabilidades de la red que lo explicaremos más adelante. Probar las defensas es otra parte crucial. Contar con los sistemas no es suficiente. Es muy útil probar
+los sistemas de defensa a menudo para garantizar que brinden
+la protección que deseas. También garantiza
+que los sistemas de alertas estén operativos. El sexto y último objetivo es mantener
+una política de seguridad de la información. Tiene solo un requisito. Mantener una política que aborde la seguridad
+de la información de todo el personal. Este requisito trata de por qué debemos tener
+buenas políticas de seguridad establecidas. Ayudan a administrar y regular
+el comportamiento de los usuarios en relación a los aspectos de seguridad. Es importante aclarar que este requisito
+menciona que las políticas deberían aplicarse a todo el personal. La responsabilidad
+de la seguridad de la información no solo recae en los equipos de seguridad. Todos los miembros de una organización son responsables
+de la seguridad de la información. Las políticas de seguridad bien diseñadas
+abordan las preguntas o los casos de uso más habituales que los usuarios tendrán
+según los detalles específicos de la organización. Todo usuario de los sistemas de la red
+de tu organización puede eludir la seguridad. Quizá no sea a propósito,
+pero pueden disminuir la seguridad en general con sus acciones y prácticas. Por ello, contar con políticas
+de seguridad bien pensadas también requiere que sean
+fáciles de encontrar e interpretar.

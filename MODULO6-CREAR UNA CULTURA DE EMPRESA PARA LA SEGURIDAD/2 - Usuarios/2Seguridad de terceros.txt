@@ -1,0 +1,54 @@
+A veces, necesitas usar proveedores
+de servicios o soluciones externos ya que probablemente
+no puedas abordar todo a nivel interno. Este es el caso si eres especialista
+en asistencia de TI en una tienda pequeña. En algunos casos,
+deberás confiar a ese proveedor externo muchos datos
+potencialmente confidenciales o el acceso. Así que, ¿cómo te aseguras de no estar
+exponiéndote a tanto riesgo innecesario? Cuando contratas servicios externos confías en que protegerán
+tus datos y las credenciales involucradas. Si la seguridad que ofrecen es deficiente,
+estarás debilitando tus defensas de seguridad a través de una nueva vía de ataque. Es importante que contrates
+proveedores de confianza siempre que puedas. También debes administrar
+las interacciones de forma controlada. Esto implica realizar una evaluación
+de riesgos o de seguridad del proveedor. En las evaluaciones de seguridad habituales,
+solicitas que el proveedor complete un cuestionario que aborda diferentes
+aspectos de sus políticas de seguridad procedimientos y medidas de defensa. Con el cuestionario se busca determinar si ha implementado buenos
+esquemas de seguridad en su organización. En el caso de proveedores
+de servicios de software o hardware también podrías
+solicitar probar el software o hardware. Así, puedes evaluarlos frente a posibles
+vulnerabilidades o inquietudes de seguridad
+antes de decidir si contratar sus servicios. Es importante comprender
+qué tan bien protegidos están tus socios comerciales
+antes de decidir trabajar con ellos. Si sus prácticas
+de seguridad son deficientes la seguridad
+de tu organización podría estar en riesgo. Si contratas servicios de una empresa
+que manejará datos en tu nombre la seguridad
+de tus datos estará en sus manos. Es importante comprender
+cuán seguros estarán tus datos con ellos. A veces,
+los proveedores realizan tareas por ti así que,
+tendrán acceso a tu red y sistemas. En estos casos, es importante comprender
+cuán protegido está el proveedor externo. La vulneración de su infraestructura podría
+significar una infiltración en tus sistemas. Aunque el cuestionario es una forma
+rápida de evaluar a un proveedor externo no es lo ideal. Depende de que autoinforme
+sus prácticas, lo que es poco confiable. Sin poder verificar
+ni probar lo que se indica allí debes confiar en la honestidad de la empresa. Aunque desearías que la empresa
+con la que haces negocios sea honesta, es mejor verificar. Si puedes, solicita un informe
+de evaluación de seguridad de terceros. La información del cuestionario
+puede verificarse, como los resultados de auditorías de seguridad de terceros
+y los informes de prueba de penetración. En el caso del software externo podrías realizar evaluaciones
+y pruebas de vulnerabilidad básicas para asegurarte de que el producto
+cuente con ciertas medidas de seguridad. Hay muchas empresas que te cobran
+por evaluar al proveedor, pero Google lanzó hace poco cuestionarios de evaluación
+de seguridad de proveedores gratis. El comienzo ideal para diseñar tu propio
+cuestionario de evaluación de seguridad de proveedores
+o podrías usarlos sin modificarlos. Si el servicio externo implica instalar
+equipos de infraestructura en el sitio presta atención a cómo lo hacen. Debes asegurarte de que los equipos
+se administren de una forma que no perjudique la seguridad en general. Supongamos que la empresa proveedora
+solicita acceso remoto al dispositivo de infraestructura para el mantenimiento. En ese caso ajusta correctamente las reglas
+del firewall para restringir el acceso. Así te asegurarás de que no pueda usarse
+como punto de entrada a tu red. También deberías agregar
+supervisión a este dispositivo de terceros ya que representa una nueva
+superficie de ataque posible en tu red. Si el proveedor lo permite, primero evalúa
+el hardware en un entorno de laboratorio. Allí, puedes ejecutar
+evaluaciones de vulnerabilidad detalladas y pruebas de penetración al hardware y asegurarte de que el producto
+no presente vulnerabilidades evidentes. Informa tus hallazgos al proveedor y solicita
+que aborde los problemas detectados.

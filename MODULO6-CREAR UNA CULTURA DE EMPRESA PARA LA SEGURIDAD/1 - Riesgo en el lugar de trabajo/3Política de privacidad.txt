@@ -1,0 +1,52 @@
+Cuando brindas asistencia a sistemas
+que manejan datos de clientes es fundamental protegerlos
+del acceso no autorizado e inapropiado. No se trata de protegerlos
+de amenazas externas sino de proteger los datos
+de un uso inadecuado por parte del personal. Este tipo de comportamiento sería parte
+de las políticas de privacidad de la empresa. Las políticas de privacidad supervisan
+el acceso y el uso de datos sensibles. También definen qué es
+el uso apropiado y autorizado y qué disposiciones o restricciones
+se aplican en torno al uso de datos. Recuerda que la gente puede no contemplar las consecuencias relacionadas
+con la seguridad de sus acciones. Tanto las políticas de privacidad
+como de acceso a los datos son importantes para orientar e informar a las personas sobre cómo mantener la seguridad
+a la hora de manipular datos. Tener políticas de privacidad
+bien establecidas y definidas es un aspecto importante
+de las prácticas recomendadas de privacidad Pero también se necesita una forma
+de aplicar estas políticas. Con las auditorías frecuentes de casos
+donde se accedió a datos sensibles se puede lograr. Obtuvimos esto con nuestros sistemas
+de registro y supervisión. Auditar los registros
+de acceso a datos es crucial. Ayuda a garantizar que solo accedan
+personas autorizadas a los datos sensibles y que los usen por motivos adecuados. Una buena idea es aplicar
+el principio de privilegio mínimo aquí mediante la prohibición del acceso
+a este tipo de datos por defecto. Debes exigir a cualquiera que necesite
+acceso que realice una solicitud de acceso con la justificación correspondiente. Pero no puede ser
+una solicitud de acceso genérica o imprecisa. Debes exigirle que especifique
+a qué tipo de datos necesita acceder. En general, estas solicitudes deberían
+incluir un límite de tiempo detallado en la solicitud. Así, te aseguras
+de que el acceso a los datos sea válido solo por motivos empresariales legítimos,
+lo que disminuye la probabilidad de un acceso o a los datos o uso inapropiado. Mediante el registro de cada solicitud
+de acceso y el acceso efectivo a los datos podemos correlacionar
+las solicitudes con el uso. Todo acceso sin la solicitud correspondiente
+debe marcarse como una posible infiltración de alta prioridad,
+que debe investigarse lo más pronto posible. Las políticas de las empresas sirven
+como pautas y recursos informativos sobre cómo acceder y manipular datos. Ambos son igual de importantes aquí. Las políticas comprenden el manejo de datos
+sensibles y las comunicaciones públicas. Las políticas de manipulación de datos deben
+detallar la clasificación de distintos tipos. ¿Qué hace que ciertos datos
+sean sensibles y otros no? ¿Cuáles se consideran "datos confidenciales"? Tras clasificar los distintos tipos de datos,
+debes establecer las pautas sobre cómo manipularlos. Si algún dato se clasifica
+como sensible o confidencial puede que dispongas que no se almacene
+en medios que se pierdan o roben fácilmente como las memorias USB
+o los discos duros portátiles. Además, se suelen usar
+sin ningún tipo de encriptación. Imagina si un empleado pierde
+un disco duro portátil no encriptado con información de los clientes. Sería un desastre. Eso es exactamente lo que se intenta evitar
+con una política de acceso a los datos. También puede ser lógico incluir
+laptops o dispositivos móviles como celulares y tablets,
+en esta clasificación de medios extraíbles. dado que estos dispositivos
+son fáciles de perder o robar. A pesar de que hoy suelen estar encriptados,
+la tasa de perdida y robo es mucho mayor. Quizá no quieras que almacenen
+datos sensibles en un medio extraíble pero a veces no hay otra opción. Puede que haya ocasiones donde sea
+la única forma de completar una tarea. Si es así,
+sería útil conocer las recomendaciones sobre cómo abordar
+la situación de forma segura. Podrías brindar
+alguna solución de encriptación como así también instrucciones
+y asistencia para su uso.

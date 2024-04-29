@@ -1,0 +1,77 @@
+Cuando se trata de la seguridad,
+debes incluir a los usuarios. Es fundamental y puede parecer obvio,
+pero en general, se pasa por alto. Puedes crear el sistema más seguro del mundo pero no te protegerá si los usuarios
+aplican prácticas de seguridad deficientes. Si un usuario escribe
+su contraseña en una nota adhesiva la pega en su laptop y la deja desbloqueada
+y desatendida en una cafetería puede ser todo un problema. Pero asegurarte de que los usuarios
+tomen precauciones de seguridad razonables implica esfuerzo
+y puede ser bastante complejo. Asegúrate de que los hábitos
+y las acciones de los usuarios se relacionen con políticas
+de seguridad claras y razonables. Pero aún puedes hacer más
+para garantizar que los usuarios sean cuidadosos
+a la hora de mantener la seguridad. Supongamos que tus empleados
+tienen una buena intención y que las filtraciones y divulgaciones no son
+intencionales y se deben en su mayoría a un manejo inadecuado
+de los datos sensibles. Para evitar las filtraciones y divulgaciones,
+es necesario comprender qué deben hacer los empleados para cumplir sus tareas. También debes asegurarte de que cuenten
+con las herramientas adecuadas para trabajar sin comprometer la seguridad. Si un empleado necesita compartir
+un archivo confidencial con un socio externo y es muy pesado para el correo electrónico,
+debería subirlo a un sitio web externo de uso compartido de archivos
+en el que tengan una cuenta. Esto es riesgoso. Nunca debes subir información
+confidencial a un servicio externo sin la evaluación de tu empresa. Si compartir archivos pesados
+con terceros es común para tus empleados debes buscar una solución que cubra
+las necesidades de los usuarios y las pautas de seguridad. Con un mecanismo autorizado y aprobado
+para compartir este tipo de archivos será menos probable que los usuarios expongan
+la organización a riesgos innecesarios. Abordamos la seguridad mediante contraseña
+cuando abordamos la autenticación con contraseña, pero hay más
+de qué hablar sobre usuarios y contraseñas. Odio decirlo, pero en general,
+los usuarios son perezosos con la seguridad. No les gusta
+memorizar contraseñas largas y difíciles pero es fundamental
+para mantener protegida la empresa. ¿Cómo podemos resolver este problema? Si solicitamos contraseñas de 20 caracteres
+que hay que cambiarlas cada tres meses es muy probable que los usuarios
+terminen anotándola. Esto compromete la seguridad que la política
+compleja de contraseñas debería garantizar. Es importante comprender ante qué
+deben protegernos las políticas de contraseñas ante amenazas. Así, puedes buscar un mejor equilibrio
+entre la seguridad y la usabilidad. El requisito de usar
+una contraseña larga y compleja busca brindar protección
+contra ataques de fuerza bruta ya sea en los sistemas de autenticación o si sustraen
+una base de datos de contraseñas con hash. Como los ataques de fuerza bruta
+contra la infraestructura de autenticación deben detectarse fácilmente y bloquearse
+con sistemas de prevención contra intrusiones pueden considerarse de muy bajo riesgo. Pero el robo de una base de datos
+de contraseñas sería muy grave. Sí contamos con muchas
+capas de seguridad adicionales para evitar que una vulneración crítica
+como esta suceda en primer lugar. Los dos tipos de ataques que se buscan evitar
+principalmente con contraseñas complejas son de riesgo bastante bajo. Así, podemos disminuir la exigencia
+de los requisitos un poco y no solicitar contraseñas demasiado largas. Incluso podemos ajustar
+el plazo obligatorio para rotarlas. La reutilización de contraseñas
+es otra práctica habitual de los usuarios. Nadie quiere memorizar
+un montón de contraseñas. Para muchos, es más sencillo usar la misma
+contraseña para la cuenta del correo personal y para la del trabajo. Pero esto atenta contra la seguridad
+de su contraseña del trabajo. Si un servicio en línea se ve vulnerado
+y se filtra la base de datos de contraseñas estarán en problemas. Las contraseñas de la base de datos
+servirán para acceder a archivos usados para descifrar contraseñas
+y cometer ataques de fuerza bruta. Una vez que una contraseña ya no es secreta,
+no debe usarse más. El riesgo de que una entidad maliciosa
+use la contraseña es muy alto. Por eso es importante asegurarse
+de que los empleados usen contraseñas nuevas y únicas
+y que no reutilicen las de otros servicios. También es importante tener un sistema
+de cambio de contraseña que las compare con contraseñas anteriores. Esto evita que los usuarios cambien
+la contraseña por otra que ya usaron con el riesgo de verse vulnerada. Un riesgo  mayor en el lugar de trabajo
+en el que los usuarios deben capacitarse es el robo de credenciales
+mediante correos de phishing. Estos correos son muy efectivos. Aprovechan la tendencia de la gente
+a abrir un correo electrónico sin analizarlo con detenimiento. Si un correo electrónico
+que parece auténtico termina conduciendo a una página de acceso falsa,
+los usuarios pueden ingresar sus credenciales a ciegas en el sitio falso
+y compartírselas a un atacante. Si bien la autenticación de dos factores
+brinda protección contra este tipo de ataque las soluciones de dos factores basadas en OTP aún pueden suministrar
+credenciales útiles a un atacante. Además, este aún tiene una contraseña,
+algo malo para un entorno de dos factores. Si alguien ingresa su contraseña en un sitio
+de phishing o sospecha que lo hizo es importante cambiarla lo antes posible. Si es posible, en tu organización deberían
+detectar este tipo de divulgaciones de contraseñas con herramientas
+como Alerta de contraseña. Es una extensión de Chrome
+diseñada por Google para detectar cuándo ingresas una contraseña
+en una página que no es de Google. Saber cuándo se ingresa una contraseña
+es un sitio que parece poco confiable permite a tu organización detectar
+toda posible vulnerabilidad por phishing. Pero, también puedes evitar los ataques
+de phishing con un buen filtro para spam y una capacitación adecuada de los usuarios. Para influir en el buen comportamiento
+de los usuarios, capacítalos en seguridad.
