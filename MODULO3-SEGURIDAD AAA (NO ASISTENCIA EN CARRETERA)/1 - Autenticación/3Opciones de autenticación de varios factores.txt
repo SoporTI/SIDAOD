@@ -1,0 +1,82 @@
+La otra categoría de autenticación de
+varios factores son los sistemas biométricos que se han vuelto populares recientemente,
+en especial con los dispositivos móviles. La autenticación biométrica es el proceso
+de usar características fisiológicas únicas de una persona para identificarla. A través de la confirmación de la firma
+biométrica, la persona se autentica. Es común usar escáneres de huellas digitales
+en los dispositivos móviles para desbloquearlos. Para ello, registras primero
+las huellas digitales con un sensor óptico que captura imágenes de su patrón único. Así como las contraseñas no deben
+almacenarse en texto sin formato, los datos biométricos que se usan para autenticación
+nunca deben almacenarse directamente. Esto es incluso más importante
+al manejar datos biométricos. A diferencia de las contraseñas, los rasgos
+biométricos son inherentes a una persona por lo que el robo o la filtración
+de estos datos repercute en la privacidad. Las características biométricas
+pueden ser muy difíciles de cambiar si se ven vulneradas,
+a diferencia de las contraseñas. Así que, en lugar de almacenar
+los datos de las huellas directamente estos se procesan con un algoritmo de hash
+y se almacena el hash único que se genera. Una ventaja de la autenticación biométrica
+frente a sistemas basados en conocimientos o tokens es que es más confiable
+al identificar personas para su autenticación ya que los rasgos biométricos
+no suelen poder compartirse. Por ejemplo, no puedes
+darle tus huellas digitales a tu amigo para que inicie sesión como tú,
+eso esperarías, de todos modos. Pero, a medida que las escuelas
+introducen sistemas de registro de asistencia basados en huellas digitales,
+los alumnos buscan formas de engañarlos. Crean huellas digitales falsas con elementos
+como pegamento para que sus amigos marquen como si estuvieran presentes
+cuando llegan tarde o faltan a la escuela. Esto es más difícil
+que compartir una contraseña pero es ingenioso
+que los chicos piensen en ello. Realmente se esfuerzan
+por faltar a clase estos días. No es que apruebe este comportamiento. Otros sistemas biométricos
+usan funciones como el escaneo del iris reconocimiento facial,
+detección de la marcha e, incluso, de la voz. Microsoft desarrolló
+el sistema de autenticación biométrica para Windows 10, llamado Windows Hello,
+que admite la identificación de huellas digitales, del iris
+y el reconocimiento facial. Usa dos cámaras,
+una para el color y otra para los infrarrojos lo que permite detectar la profundidad. De esta forma, no es posible
+engañar al sistema con una impresión del rostro de un usuario autorizado. La evolución de los tokens físicos
+es el U2F, o Universal 2nd Factor un estándar desarrollado conjuntamente
+por Google, Yubico y NXP Semiconductors. FIDO Alliance
+aloja los estándares finalizados de U2F. U2F incorpora
+un mecanismo de desafío-respuesta junto con criptografía de clave
+pública para implementar una solución de autenticación de dos
+factores más segura y práctica. Los tokens de U2F
+se conocen como llaves de seguridad y los comercializa
+una amplia variedad de fabricantes. Las llaves de seguridad son básicamente
+pequeños criptoprocesadores incorporados con almacenamiento seguro
+de claves asimétricas y ranuras adicionales para ejecutar código incorporado. Resumamos cómo funcionan
+exactamente las llaves de seguridad y en qué medida superan a una solución OTP. El primer paso es el registro ya que la llave de seguridad
+debe registrarse en un sitio o servicio. Al registrarse, la llave de seguridad
+genera un par de claves públicas/privadas único para ese sitio y envía
+la clave pública al sitio para el registro. Además, vincula
+la identidad del sitio al par de claves. Los pares de claves únicos
+existen por cuestiones de privacidad. Si un sitio se ve vulnerado, esto evita
+las referencias cruzadas entre las claves públicas registradas y la detección
+de similitudes entre sitios en función de los datos de registro. Una vez que te registres en el sitio,
+la próxima vez que debas autenticarte se te solicitará tu nombre de usuario
+y contraseña como de costumbre. Pero, más adelante,
+deberás presionar tu llave de seguridad. Presionar físicamente la llave de seguridad es una pequeña verificación de tu presencia
+para garantizar que un software malicioso no pueda autenticarse en tu nombre
+sin que lo sepas. Esto desbloqueará las claves privadas
+almacenadas en la llave de seguridad que se usa para autenticar. La autenticación se da
+como un proceso de desafío-respuesta para brindar protección
+contra ataques de repetición. Con este mecanismo, un espía no podrá
+usar de nuevo la sesión de autenticación porque el desafío
+y la respuesta resultantes serán distintos en cada sesión de autenticación. Lo que ocurre es que el sitio genera
+un desafío, básicamente un dato aleatorio y lo envía
+al cliente que intenta autenticarse. El cliente, entonces, seleccionará
+la clave privada que coincida con el sitio y la usará para firmar el desafío
+y devolver los datos firmados. Ahora, el sitio puede
+verificar la firma con la clave pública que se registró antes. Si la firma es válida,
+el usuario se autentica. Desde la perspectiva de la seguridad,
+es un diseño mucho más seguro que el de OTP. Esto se debe a que el flujo de autenticación
+se protege contra los ataques de phishing dada la característica
+interactiva del proceso. Las llaves de seguridad también resisten
+la clonación y falsificación porque tienen secretos únicos incorporados
+y están protegidas contra la manipulación. Desde la perspectiva de la conveniencia,
+es un flujo de autenticación mucho más atractivo que OTP,
+ya que el usuario no tiene que transcribir manualmente una cadena
+de números en el diálogo de autenticación. Solo debe presionar
+la llave de seguridad, así de simple. Como especialista en asistencia de TI,
+quizás tengas que trabajar con configuraciones de autenticación
+de varios factores. Quizás, incluso,
+debas ayudar a implementar una. Así que es importante comprender
+cómo mejoran la protección de las cuentas y conocer las opciones disponibles.

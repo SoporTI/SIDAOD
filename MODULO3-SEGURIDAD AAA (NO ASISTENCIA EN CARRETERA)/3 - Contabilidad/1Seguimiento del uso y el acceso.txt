@@ -1,0 +1,35 @@
+Por último, el tercer elemento
+de la seguridad AAA es la contabilización. Esto significa mantener registros
+de los recursos y servicios a los que acceden los usuarios o de lo que hicieron
+cuando usaron tus sistemas. Un componente fundamental es la auditoría,
+que consiste en revisar estos registros para asegurarte
+de que no haya nada fuera de lo normal. Si examinamos y registramos el uso
+de nuestros sistemas, pero nunca comprobamos los datos de uso, no es muy útil. ¿Qué registran exactamente
+los sistemas de recuento? Depende de la finalidad
+y del propósito del sistema. Por ejemplo, un servidor TACACS+
+se ocuparía más de realizar un seguimiento
+de la autenticación de usuarios en qué sistemas se autenticaron
+y qué comandos ejecutaron durante su sesión. Esto se debe a que TACACS+ es un sistema AAA
+de acceso a dispositivos que gestiona quién tiene acceso a tus dispositivos de red
+y qué hace en ellos. El sistema AAA de Cisco admite
+la contabilización de los comandos individuales ejecutados la conexión hacia los dispositivos de red
+y desde ellos los comandos ejecutados en modo privilegiado,
+y los servicios de red y detalles del sistema como recargas de configuración o reinicios. RADIUS rastrearía detalles como la duración
+de la sesión, la ubicación del cliente y el ancho de banda u otros recursos
+usados durante la sesión. Esto se debe a que RADIUS
+es un sistema AAA de acceso a la red por lo que rastrea detalles
+sobre el acceso y el uso de la red. La contabilización de RADIUS comienza
+cuando el servidor de acceso a la red envía un paquete
+de solicitud de contabilización al servidor de contabilización que contiene
+un registro de eventos que deben registrarse. Esto inicia la sesión de contabilización
+en el servidor. El servidor devuelve
+una respuesta de contabilización que indica la recepción del mensaje. El NAS seguirá enviando
+mensajes de contabilización periódicos con estadísticas de la sesión hasta que se reciba un
+paquete para detener la contabilización. Los ISP pueden usar la contabilización
+de RADIUS con fines de facturación porque registra la duración de una sesión
+y la cantidad de datos enviados y recibidos por el usuario. Estos datos se pueden usar para aplicar
+cuotas de datos o de tiempo, lo que limita la duración de las sesiones o restringe los
+datos que pueden enviarse o recibirse. Pero esta información de contabilización no está detallada
+y no contiene datos específicos de lo que hizo
+el usuario durante la sesión. No se registra información como los sitios
+web visitados o los protocolos usados.

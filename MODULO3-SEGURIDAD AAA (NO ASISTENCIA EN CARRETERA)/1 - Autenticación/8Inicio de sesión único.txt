@@ -1,0 +1,47 @@
+El inicio de sesión único, o SSO,
+es un concepto de autenticación que permite a los usuarios autenticarse
+una vez para recibir acceso a muchos servicios y aplicaciones diferentes. Dado que no es necesario
+reautenticarse para cada servicio los usuarios no necesitan
+varios conjuntos de nombres de usuario y contraseñas
+para los diversos servicios y aplicaciones. El SSO se logra mediante la autenticación
+en un servidor de autenticación central como un servidor LDAP. Este luego proporciona
+una cookie o un token que se puede usar a fin de acceder a las aplicaciones
+configuradas para usar el SSO. Kerberos es de hecho un buen ejemplo
+de un servicio de autenticación de SSO. El usuario se autenticará
+en el servicio de Kerberos una vez lo que luego le entregará
+un ticket de otorgamiento de tickets. Este luego puede presentarse
+al servicio de otorgamiento de tickets en lugar de las credenciales tradicionales. El usuario puede ingresar
+las credenciales una vez y obtener acceso a una variedad de servicios. El SSO es muy práctico. Permite a los usuarios tener
+un conjunto de credenciales que les otorgan acceso a varios servicios,
+lo que hace que sea menos probable que las contraseñas
+se escriban o almacenen de forma insegura. Esto también debería reducir
+la sobrecarga de asistencia para contraseñas y ahorrar el tiempo dedicado
+a reautenticar durante la jornada laboral. Entonces, ¿cuál es la desventaja? Un atacante que logre vulnerar una cuenta
+tendrá mucho más acceso en un esquema de SSO. Las credenciales del usuario otorgarán
+acceso a todas las aplicaciones y servicios a los que pueda acceder la cuenta. Así que lo importante es usar
+la autenticación de varios factores junto con un esquema de SSO. Pero esto abre un nuevo canal de ataque:
+el robo de las cookies o tokens de la sesión de SSO. En lugar de apuntar
+directamente a las credenciales los atacantes pueden intentar
+robar directamente los tokens de SSO lo que les dará un acceso amplio,
+aunque sea por un breve período. El hurto de estos tokens también
+generó protecciones de autenticación de varios factores para evitar atacantes,
+ya que el token de sesión otorga acceso sin requerir la autenticación completa
+hasta que venza. Un ejemplo de un sistema de SSO es el sistema de autenticación
+descentralizada de OpenID. Se trata de un estándar abierto que permite que los sitios que participan,
+conocidos como partes confiantes acepten la autenticación de usuarios mediante un servicio
+de autenticación de terceros. Esto permite
+que los sitios acepten la autenticación sin que se les exija contar
+con una infraestructura de autenticación lo que puede resultar
+difícil de implementar y mantener. Además, permite que los usuarios
+accedan a un sitio sin solicitarles que creen una nueva cuenta lo que simplifica la administración
+de accesos en una variedad de sitios. En cambio, el usuario solo debe tener
+una cuenta con un proveedor de identidad. Para solicitar la autenticación,
+primero, la parte confiante busca el proveedor de OpenID
+y luego establece un secreto compartido con el proveedor, si aún no hay ninguno. Este secreto compartido se usará para validar
+los mensajes del proveedor de OpenID. Luego, el usuario se redireccionará
+o se le solicitará que se autentique en una nueva ventana mediante el flujo
+de acceso de los proveedores de identidad. Una vez autenticado,
+el usuario deberá confirmar si confía o no en la parte confiante. Luego de confirmarlo, las credenciales
+se retransmitirán a la parte confiante en general, en forma de token,
+no de credenciales reales de usuario lo que indicará que el usuario
+se autenticó en el servicio.

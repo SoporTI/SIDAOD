@@ -1,0 +1,22 @@
+RADIUS o Servicio
+de autenticación remota telefónica de usuario es un protocolo que proporciona servicios
+de AAA para los usuarios de una red. Es un protocolo muy conocido que se usa
+para administrar el acceso a redes internas redes Wi-Fi, servicios
+de correo electrónico y servicios VPN. Diseñado para transportar
+información de autenticación de usuarios de acceso telefónico remoto evolucionó para incluir varios protocolos
+de autenticación estándar, como EAP o protocolo de autenticación extensible. Aunque es poco probable que te encargues
+de configurar el servidor RADIUS como especialista en asistencia de TI es posible que debas asistir
+a clientes que se autentiquen en un servidor RADIUS de backend. En esos casos,
+debes comprender el rol del servidor RADIUS en esta situación
+de autenticación para estar mejor preparado para solucionar
+los problemas que puedan surgir. Los clientes que quieren
+autenticarse en un servidor RADIUS no interactúan directamente con él. En cambio, cuando un cliente
+quiere acceder a un recurso protegido presenta las credenciales de autenticación
+a un NAS, o servidor de acceso a la red que retransmitirá
+las credenciales al servidor RADIUS. El servidor RADIUS verificará
+luego las credenciales con un esquema de autenticación configurado. Los servidores RADIUS pueden verificar
+la información de autenticación del usuario almacenada en un archivo plano
+o conectarse a fuentes externas como bases de datos SQL, LDAP,
+Kerberos o Active Directory. Una vez que el servidor RADIUS evalúa
+la solicitud de autenticación del usuario responde con uno de tres mensajes:
+rechazar, desafiar o aceptar el acceso.

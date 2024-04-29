@@ -1,0 +1,20 @@
+Antes explicamos la autenticación,
+el primer componente de las tres bases de la seguridad. A continuación, abordaremos la autorización que suele estar
+muy relacionada con la autenticación. Mientras que la autenticación implica
+verificar la identidad de un usuario la autorización se encarga de describir
+a qué puede acceder y a qué no. Son componentes distintos
+e independientes del protocolo AAA que tienen objetivos diferentes. Un usuario puede autenticarse
+con éxito en un sistema con credenciales válidas, pero si el nombre
+de usuario con el que se autenticó no está autorizado
+para acceder al sistema en cuestión se le negará el acceso. Cuando hablamos sobre Kerberos,
+el usuario se autenticaba y obtenía un ticket de otorgamiento de tickets. Este puede usarse para solicitar acceso
+a un servicio en particular a través de una solicitud
+al servicio de otorgamiento de tickets. Aquí entra en juego la autorización,
+ya que el servicio de otorgamiento de tickets decidirá si el usuario en cuestión
+tiene o no permiso para acceder al servicio solicitado. Si no tiene permiso o no está autorizado
+para acceder al servicio el servicio de otorgamiento de tickets
+rechazará la solicitud. Si el usuario es autorizado,
+el servicio de otorgamiento de tickets devolverá un ticket, el cual autorizará
+al usuario a acceder al servicio. Un estándar abierto muy difundido
+en la autenticación y delegación de acceso es OAuth, que emplean empresas
+como Google, Facebook y Microsoft.

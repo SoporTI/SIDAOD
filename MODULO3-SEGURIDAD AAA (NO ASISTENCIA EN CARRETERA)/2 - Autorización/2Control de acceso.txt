@@ -1,0 +1,66 @@
+OAuth es un estándar abierto mediante el cual
+los usuarios permiten que sitios web y aplicaciones de terceros
+accedan a su información sin compartir las credenciales de la cuenta. Puede considerarse una forma
+de delegación de acceso, ya que el acceso a la cuenta del usuario
+se delega a un tercero. Para ello, se solicita
+al usuario que confirme que acepta permitir el acceso de un tercero
+a cierta información de su cuenta. En general, en esta solicitud
+se menciona específicamente la información o el acceso que se solicita. Una vez confirmada,
+el proveedor de identidad suministrará al tercero un token que otorga
+acceso a la información del usuario. El tercero puede usar este token
+para acceder a los datos o servicios que ofrece el proveedor de identidad
+directamente en nombre del usuario. OAuth suele usarse para que las aplicaciones
+de terceros puedan acceder a las API que ofrecen las grandes empresas de Internet,
+como Google, Microsoft y Facebook. Supongamos que quieres usar
+un sitio de creación de memes de terceros. Este sitio web
+permite crear memes con plantillas y guardar tus creaciones para enviarlas
+por correo electrónico a tus amigos. En lugar de que el sitio
+envíe los correos electrónicos directamente desde lo que parecería una dirección
+desconocida para tus amigos el sitio usa OAuth para obtener
+permiso y enviar los memes con tu cuenta de correo electrónico directamente. Para ello, se envía una solicitud de OAuth
+al proveedor de correo electrónico. Una vez aprobada la solicitud, el proveedor
+de correo electrónico emite un token que permite al sitio
+acceder a tu cuenta de correo electrónico. El token de acceso tendrá un alcance
+que indica que solo se puede usar para acceder al correo electrónico,
+no a otros servicios de la cuenta. Así que puede acceder al correo electrónico,
+pero no a los archivos de Cloud Storage o Calendario, por ejemplo. Es importante que los usuarios presten
+atención a qué solicita acceso el tercero y exactamente a qué están otorgando acceso. Los permisos de OAuth pueden usarse
+en ataques estilo phishing para acceder a cuentas sin que las credenciales
+se vean vulneradas. Para ello, se envían correos electrónicos
+de phishing que parecen solicitudes legítimas de autorización de OAuth a posibles víctimas. En los correos, se solicita al usuario acceso
+a ciertos aspectos de su cuenta mediante OAuth. Cuando el usuario otorga acceso el atacante accede a la cuenta
+mediante el token de autorización de OAuth. Esto se usó en un ataque de gusano
+basado en OAuth a principios de 2017. Hubo una serie de correos electrónicos
+de phishing que parecían ser de un amigo o colega que quería
+compartir un documento de Google. Cuando se accedía el vínculo, se solicitaba
+a la víctima que iniciara sesión y autorizara el acceso
+al correo electrónico, los documentos y los contactos a un servicio de terceros que solo se identificaba
+con el nombre de Google Apps. Pero, en realidad, era un servicio malicioso
+que luego enviaba correos electrónicos a los contactos de la cuenta de correo
+electrónico para perpetuar el ataque. Es importante distinguir OAuth de OpenID. OAuth es específicamente
+un sistema de autorización y OpenID es un sistema de autenticación,
+aunque a menudo se usan en conjunto. OpenID Connect es una capa
+de autenticación creada a partir de OAuth 2.0 para mejorar OpenID
+y optimizar la integración con las autorizaciones de OAuth. TACACS+ es un sistema de AAA completo. También maneja la autorización
+junto con la autenticación. Una vez que un usuario se autentica,
+se permite o se impide que la cuenta del usuario
+ejecute ciertos comandos o acceda a determinados dispositivos. Esto te permite otorgar acceso
+de administrador a usuarios que administran dispositivos y restringir el acceso
+a otros usuarios cuando es necesario. Este es un ejemplo: ya que tus equipos
+de redes son responsables de configurar y mantener los switches de red,
+los routers y la infraestructura les otorgarás acceso de administrador
+a tu red y equipos. Mientras, puedes otorgar acceso limitado
+de solo lectura a tu equipo de asistencia ya que no necesita cambiar
+la configuración de los switches. El acceso de solo lectura es suficiente
+para que resuelvan los problemas. El resto de las cuentas
+de usuario no tendrán ningún tipo de acceso ni podrán conectarse
+a la infraestructura de red. Así que los sistemas AAA más sofisticados
+y configurables pueden permitir incluso ajustes de autorización más precisos
+hasta a nivel de comando. Esto te ofrece mucha más flexibilidad
+a la hora de otorgar acceso a usuarios o grupos específicos de tu organización. RADIUS también
+te permite autorizar el acceso a la red. Por ejemplo, quizás necesites permitir
+que algunos usuarios tengan acceso a Wi-Fi y a la VPN,
+mientras que quizás otros no lo necesiten. Cuando se autentican en el servidor RADIUS,
+si la autenticación tiene éxito, el servidor RADIUS devuelve información de configuración
+al servidor de acceso a la red. Esto incluye autorizaciones
+que especifican a qué servicios de red puede acceder el usuario.

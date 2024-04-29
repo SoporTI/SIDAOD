@@ -1,0 +1,49 @@
+Como aprendimos antes,
+los certificados son claves públicas firmadas por una autoridad certificadora (AC)
+como símbolo de confianza. Vimos los certificados de servidor TLS,
+pero también puede haber certificados de cliente. Estos funcionan de forma
+muy similar a los certificados de servidor pero los entregan los clientes
+y permiten que los servidores autentiquen y verifiquen a los clientes. Como especialista en asistencia de TI,
+es importante que comprendas los certificados de cliente
+y la autenticación basada en certificados ya que podrías encontrarte
+con ellos a lo largo de tu carrera. Es habitual que los sistemas de VPN
+o las configuraciones de Wi-Fi empresariales usen certificados
+de cliente para la autenticación. Así que comprender cómo funcionan
+te ayudará a solucionar problemas. Para emitir certificados de cliente,
+una organización debe configurar y mantener una infraestructura
+de AC para emitir y firmar certificados. La autenticación de certificados
+también implica que el cliente autentique el servidor,
+lo que ofrece una autenticación mutua. Esto es positivo,
+ya que el cliente puede verificar que habla con el servidor de autenticación real,
+y no con un ladrón de identidad. En este caso, todos los clientes que usan
+la autenticación de certificados también deberán tener el certificado de la AC
+en su almacén de confianza. Esto establece la confianza
+con la AC y permite al cliente verificar que habla con el servidor real
+cuando intenta autenticarse. La autenticación de certificados
+es como presentar una identificación en el aeropuerto: muestras tu ID
+o certificado para demostrar quién eres. El ID se verifica para comprobar
+si lo emitió una autoridad de confianza para el verificador. ¿Lo emitió una entidad gubernamental
+o es una licencia de fantasía? Obviamente, en el aeropuerto
+aceptarán uno de esos ID y lo mismo ocurrirá con los certificados
+firmados por una AC de confianza. En el aeropuerto, también se verificará
+la fecha de vencimiento de tu ID para garantizar su validez, y lo mismo
+ocurrirá al autenticar certificados. Aunque los certificados
+tienen dos fechas que deben verificarse no válido antes y no válido después. No válido antes verifica
+si el certificado ya es válido dado que puede haber
+certificados emitidos para un uso futuro. No válido después es una fecha
+de vencimiento clara después de la cual
+el certificado ya no es válido. Las autoridades del aeropuerto también
+tienen una lista de ID específicos marcados. Si tu ID está en esa lista,
+no podrás abordar el vuelo. De forma similar, el certificado se cotejará
+con la lista de revocación, o CRL. Se trata de una lista firmada que publica
+la AC y que especifica los certificados que se han revocado explícitamente. El último paso del proceso
+de verificación del servidor de autenticación es demostrar que tienes
+la clave privada correspondiente ya que el certificado
+incluye una clave pública firmada. Si no puedes demostrarlo, nada evita
+que un atacante copie el certificado ya que no se considera secreto,
+y pretenda ser el propietario. Para evitar esto la posesión de la clave privada se verifica
+con un mecanismo de desafío-respuesta. Aquí es donde el servidor
+solicita que se firmen datos aleatorios con la clave privada que corresponde a la clave pública
+presentada para la autenticación. Esto es similar a cómo verifican la foto
+de tu ID en el aeropuerto para asegurarse de que te parezcas a la persona
+de la foto y no estés robando su identidad.

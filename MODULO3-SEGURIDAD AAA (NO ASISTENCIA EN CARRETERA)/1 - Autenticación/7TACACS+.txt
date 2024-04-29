@@ -1,0 +1,17 @@
+T-A-C-A-C-S plus,
+pronunciado "TACACS Plus" significa Sistema de control de acceso mediante control del acceso desde terminales
+plus. Se trata de un protocolo AAA desarrollado
+por Cisco, lanzado como estándar abierto en 1993. Reemplazó al anterior protocolo de TACACS,
+desarrollado en 1984 para MILNET la red no clasificada de DARPA,
+que luego se convirtió en NIPRNet. TACACS+ también reemplazó
+a X-T-A-C-A-C-S o TACACS extendido una extensión propiedad de Cisco
+complementaria a TACACS. TACACS+ se usa principalmente
+para administrar, autenticar, autorizar y contabilizar dispositivos, frente a RADIUS,
+que se usa más para la AAA de acceso a redes. Cabe señalar las diferencias entre
+las funciones que brindan estos servicios aunque las diferencias
+principales están relacionadas con la autorización y contabilización,
+más que con la autenticación. Por más que no tengas que implementar TACACS+
+durante tu carrera de asistencia es algo que deberías conocer. TACACS+ es útil ante todo
+como sistema de autenticación para dispositivos de infraestructura de red,
+que suelen ser un objetivo muy valioso para los atacantes. Es algo que deberías considerar implementar
+a medida que crece tu organización.

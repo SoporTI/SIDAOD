@@ -1,0 +1,16 @@
+Una lista de control de acceso o LCA
+es una forma de definir permisos o autorizaciones para objetos. El caso más común tiene que ver
+con los permisos del sistema de archivos. Un sistema de archivos tendría una LCA,
+que es una tabla o base de datos con una lista de entradas que especifica los derechos de
+acceso de individuos o grupos a diversos objetos en el sistema de archivos,
+como carpetas, archivos o programas. Estos permisos de acceso individuales
+por objeto se denominan entradas de control de acceso
+y conforman la LCA. Las entradas individuales pueden definir
+permisos que controlen si un usuario o grupo puede leer, escribir y ejecutar objetos o no. Las LCA también se usan mucho
+en seguridad de redes ya que aplican controles de acceso a
+routers, switches y firewalls. Las LCA de red se usan
+para restringir y controlar el acceso a los servicios alojados
+que se ejecutan en los hosts de tu red. Se pueden definir LCA de red
+para el tráfico entrante y saliente. También se pueden usar para restringir el acceso externo a los sistemas
+y limitar el tráfico saliente para aplicar políticas o impedir
+transferencias de datos no autorizadas.

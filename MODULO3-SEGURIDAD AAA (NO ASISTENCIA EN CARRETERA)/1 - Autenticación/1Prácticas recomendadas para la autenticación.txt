@@ -1,0 +1,80 @@
+En este módulo, abordaremos
+las tres bases de la seguridad la autenticación, la autorización
+y la contabilización. Veremos exactamente qué son,
+cómo se relacionan entre ellas y sus implementaciones
+y protocolos habituales. Empecemos con la autenticación
+y, por tanto, con la identificación. Deberías conocer la autenticación;
+un ejemplo es cuando se te solicita el nombre de usuario y contraseña
+para ingresar al correo electrónico. Tomémoslo como ejemplo
+para ver las diferencias entre la identificación y autenticación. La identificación es la idea
+de describir una entidad de forma única como tu dirección de correo electrónico,
+que es tu identidad cuando inicias sesión. Pero, ¿cómo demuestras
+que eres quien dices ser? Ese proceso se llama autenticación. Cuando entras al correo electrónico,
+afirmas que te pertenece y proporcionas una contraseña asociada
+a esa identidad para demostrarlo o, al menos, para demostrar que sabes
+la contraseña asociada a la cuenta. Muy sencillo. La autorización es bastante distinta,
+que se refiere a los recursos y la identidad a los que se tiene acceso. Estos dos conceptos suelen diferenciarse
+entre sí en el campo de la seguridad con los términos "authn" para autenticación
+y "authz" para autorización. En el ejemplo del correo y el acceso a través de la autenticación con la dirección
+y la contraseña, tu identidad es autorizada para ingresar a tu bandeja de entrada,
+pero no para ingresar a la de otra persona. Por supuesto que nadie más
+debería ingresar a nuestra bandeja. ¿Qué hacemos para garantizar
+que solo nosotros podamos identificarnos y autenticarnos
+como nuestra cuenta de correo? Primero, nos aseguraremos
+de tener una contraseña segura. Pero, ¿qué es en sí una contraseña segura? ¿Qué opinas de la contraseña "ponis"? ¿La considerarías una contraseña segura?
+Espero que no. La contraseña es muy corta
+y tiene solo seis caracteres que están todos en minúscula. Es una contraseña corta y fácil
+que pueden adivinarla sin problemas con ataques de fuerza bruta o de diccionario. Es muy probable que "ponis" esté
+en un archivo de diccionario y que, con seis caracteres, no haya
+muchas opciones para que pruebe un atacante. Para tener una contraseña segura,
+podemos hacerla más larga y difícil agregando números, letras en mayúscula
+y caracteres especiales como los signos de puntuación. ¿Cuán segura crees que es esta contraseña? Parece mucho más segura, ¿no? Es más compleja, lo que aumenta la cantidad
+de contraseñas posibles y tiene 10 caracteres. Pero, ¿cuál de estas dos contraseñas
+crees que recordarías mañana? La segura posiblemente no. Aquí surge
+un concepto fundamental en seguridad. A menudo, hay una disyuntiva
+entre la seguridad y la usabilidad. En la contraseña de ejemplo cuanto más útil y fácil de memorizar
+es una contraseña, menos segura es y cuanto más segura es,
+más difícil es recordarla. Este concepto es válido para muchos otros
+temas de seguridad importantes no solo para las contraseñas. Considera la seguridad
+como la mitigación de riesgos. Cuando hablamos de mitigar riesgos,
+es imposible eliminarlos por completo. Lo mejor que puedes hacer es comprender
+qué riesgos enfrentan tus sistemas tomar medidas
+para reducirlos y supervisarlos. Piénsalo de esta forma. El sistema informático más seguro
+es aquel que no está conectado a nada ni a las redes ni a una fuente de energía,
+y está asegurado en un búnker de concreto a cientos de metros
+bajo tierra y al que nadie tiene acceso. Si bien es una máquina muy segura,
+casi imposible de vulnerar es básicamente inservible, ya que está
+apagada y nadie puede acceder a ella. Este es un ejemplo exagerado de la disyuntiva
+entre seguridad y usabilidad pero se entiende la idea. Si retomamos nuestra contraseña de ejemplo,
+sin dudas debemos encontrar un punto medio. Pero, ¿dónde hay
+una contraseña razonablemente segura que también sea fácil de memorizar? ¿Qué te parece esta? Empezamos con una frase corta,
+"I like ponies" y reemplazamos algunas letras por números parecidos
+parecidos a las letras para recordarla mejor. También cambiamos la S por la Z,
+ya que suenan parecido y tomamos algunos números como sufijo. A primera vista, parece una contraseña muy
+compleja y difícil de recordar pero es más fácil que el ejemplo
+de la contraseña aleatoria. Problema resuelto, ¿no? Ten cuidado
+con este proceso de sustitución numérica porque los atacantes y las herramientas
+para robar contraseñas lo conocen bien. Como especialista en asistencia de TI,
+asegurarse de que en tu organización se usen contraseñas y prácticas seguras y un buen cuidado
+de las contraseñas es fundamental. Literalmente son las llaves del reino. ¿Qué deberíamos hacer? Incorporar buenas políticas de contraseñas
+en la organización es clave para garantizar que los empleados protejan sus cuentas
+con contraseñas seguras. Un buen sistema de políticas de contraseñas
+impone requisitos de extensión complejidad de caracteres y revisión
+de palabras del diccionario lo cual repercute
+en la seguridad de las contraseñas. Nunca escribas una contraseña
+ni la registres en texto sin formato no reutilices cuentas cruzadas
+ni las compartas con nadie. Reutilizar una contraseña es riesgoso, ya que
+si se vulnera la contraseña de una cuenta el resto de las cuentas
+con la misma contraseña también estarían en riesgo. Compartir las contraseñas tampoco
+es recomendable porque perjudica la identidad de una cuenta, ya que alguien más
+puede iniciar sesión como ese usuario. Además de exigir contraseñas seguras también se recomienda aplicar una política
+de rotación de contraseñas dado que previene cualquier ataque eventual
+e imprevisto a las contraseñas. Pero es importante que el período
+de rotación no sea muy corto. ¿Por qué?
+El problema de cambiar la contraseña tan seguido es que puede fomentar prácticas
+negativas vinculadas a la seguridad. Supongamos que exiges en tu organización
+crear contraseñas muy complejas y cambiarlas cada tres meses. Es muy probable que un gran porcentaje
+de los usuarios escriban su contraseña en notas adhesivas o en su teléfono,
+lo que está sumamente prohibido. A pesar de que la política se creó
+para aumentar la seguridad causa el efecto contrario debido
+al problema que representa para los usuarios.
